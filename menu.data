@@ -1,0 +1,2678 @@
+# $Id: cgi/menu.data 1.124.1.34 2019/05/06 11:48:38CST Alan Duffy (duffya) Exp  $
+Item: Area Radiation Monitoring System
+# Area Radiation Monitoring List
+# All areas have a Dose Rate, Cumulative Dose, and Alarm Levels list
+
+Menu: ARMS
+Archive: Archive-Rad
+
+Item: AARMS_VM
+Menu: AARMS_VM
+Item: Radiation Permissive
+Pattern: GUN0001-01:RadPrmsv
+End: AARMS_VM
+
+Item: Permanent
+Menu: Permanent
+
+Item: Exp Floor
+Menu: Exp Floor
+
+Item: Cells 1-3
+Menu: Cells 1-3
+Item: Dose Rate
+Pattern: [GN]P160[13].*:Rate_Filtered$|[GN]P1602-101:Rate_Filtered$|[GN]P1602-01:Rate_Filtered$
+Item: Cumulative Dose
+Pattern: [GN]P160[13].*:Dose$|[GN]P1602-101:Dose$|[GN]P1602-01:Dose$
+Item: Dose Sum (Gamma + Neutron)
+Pattern: 160[13].*:DoseSum$|1602-101:DoseSum$|1602-01:DoseSum$
+End: Cells 1-3
+
+Item: Cells 4-6
+Menu: Cells 4-6
+Item: Dose Rate
+Pattern: [GN]P1604-01:Rate_Filtered$|[GN]P1604-101:Rate_Filtered$|[GN]P1606-[01].*:Rate_Filtered$|[GN]P1605-101:Rate_Filtered$
+Item: Cumulative Dose
+Pattern: [GN]P1604-01:Dose$|[GN]P1604-101:Dose$|[GN]P1606-[01].*:Dose$|[GN]P1605-101:Dose$
+Item: Dose Sum (Gamma + Neutron)
+Pattern: 1604-01:DoseSum$|1604-101:DoseSum$|1606-[01].*:DoseSum$|1605-101:DoseSum$
+End: Cells 4-6
+
+Item: Cells 7-9
+Menu: Cells 7-9
+Item: Dose Rate
+Pattern: [GN]P160[78]-01:Rate_Filtered$|[GN]P1608-901:Rate_Filtered$|[GN]P1607-[15]01:Rate_Filtered$|[GN]P1609-101:Rate_Filtered$
+Item: Cumulative Dose
+Pattern: [GN]P160[78]-01:Dose$|[GN]P1608-901:Dose$|[GN]P1607-[15]01:Dose$|[GN]P1609-101:Dose$
+Item: Dose Sum (Gamma + Neutron)
+Pattern: 160[78]-01:DoseSum$|1608-901:DoseSum$|1607-[15]01:DoseSum$|1609-101:DoseSum$
+End: Cells 7-9
+
+Item: Cells 10-12
+Menu: Cells 10-12
+Item: Dose Rate
+Pattern: [GN]P161[02].*:Rate_Filtered$|[GN]P1611-0.:Rate_Filtered$
+Item: Cumulative Dose
+Pattern: [GN]P161[02].*:Dose$|[GN]P1611-0.:Dose$
+Item: Dose Sum (Gamma + Neutron)
+Pattern: 161[02].*:DoseSum$|1611-0.:DoseSum$
+End: Cells 10-12
+
+End: Exp Floor
+
+Item: Rings
+Menu: Rings
+Item: Dose Rate
+Pattern: [GN]P1500-01:Rate_Filtered$|[GN]P150[123]-01:Rate_Filtered$|[GN]P1502-02:Rate_Filtered$|[GN]P240[02]-01:Rate_Filtered$
+Item: Cumulative Dose
+Pattern: [GN]P1500-01:Dose$|[GN]P150[123]-01:Dose$|[GN]P1502-02:Dose$|[GN]P240[02]-01:Dose$
+Item: Dose Sum (Gamma + Neutron)
+Pattern: 1500-01:DoseSum$|150[123]-01:DoseSum$|1502-02:DoseSum$|240[02]-01:DoseSum$
+End: Rings
+
+Item: Linac
+Menu: Linac
+Item: Dose Rate
+Pattern: [GN]P00S1-01:Rate_Filtered$|[GN]P0102-101:Rate_Filtered$|[GN]P0104-01:Rate_Filtered$
+Item: Cumulative Dose
+Pattern: [GN]P00S1-01:Dose$|[GN]P0102-101:Dose$|[GN]P0104-01:Dose$
+Item: Dose Sum (Gamma + Neutron)
+Pattern: 00S1-01:DoseSum$|0102-101:DoseSum$|0104-01:DoseSum$
+End: Linac
+
+Item: Machine
+Menu: Machine
+Item: Dose Rate
+Pattern: 1400-01:Rate_Filtered$
+Item: Cumulative Dose
+Pattern: 1400-01:Dose$
+Item: Dose Sum (Gamma + Neutron)
+Pattern: 1400-01:DoseSum$
+End: Machine
+
+Item: Medical Isotope Project
+Menu: MIP
+Item: Dose Rate
+Pattern: 0102-101:Rate_Filtered$|0102-501:Rate_Filtered$|0013-02[AB]*:Rate_Filtered$
+Item: Cumulative Dose
+Pattern: 0102-101:Dose$|0102-501:Dose$|0013-02[AB]*:Dose$
+Item: Dose Sum (Gamma + Neutron)
+Pattern: 0102-101:DoseSum$|0102-501:DoseSum$|0013-02[AB]*:DoseSum$
+End: MIP
+
+End: Permanent
+
+Item: Mobile
+Menu: Mobile
+
+Item: 0000-01
+Menu: 0000-01
+Item: Dose Rate
+Pattern: [GN]P0000-01:Rate_Filtered$
+Item: Cumulative Dose
+Pattern: [GN]P0000-01:Dose$
+Item: Dose Sum (Gamma + Neutron)
+Pattern: 0000-01:DoseSum$
+End: 0000-01
+
+Item: 0000-02
+Menu: 0000-02
+Item: Dose Rate
+Pattern: [GN]P0000-02:Rate_Filtered$
+Item: Cumulative Dose
+Pattern: [GN]P0000-02:Dose$
+Item: Dose Sum (Gamma + Neutron)
+Pattern: 0000-02:DoseSum$
+End: 0000-02
+
+Item: 0000-03
+Menu: 0000-03
+Item: Dose Rate
+Pattern: [GN]P0000-03:Rate_Filtered$
+Item: Cumulative Dose
+Pattern: [GN]P0000-03:Dose$
+Item: Dose Sum (Gamma + Neutron)
+Pattern: 0000-03:DoseSum$
+End: 0000-03
+
+Item: 0000-04
+Menu: 0000-04
+Item: Dose Rate
+Pattern: [GN]P0000-04:Rate_Filtered$
+Item: Cumulative Dose
+Pattern: [GN]P0000-04:Dose$
+Item: Dose Sum (Gamma + Neutron)
+Pattern: 0000-04:DoseSum$
+End: 0000-04
+
+Item: 0000-05
+Menu: 0000-05
+Item: Dose Rate
+Pattern: [GN]P0000-05:Rate_Filtered$
+Item: Cumulative Dose
+Pattern: [GN]P0000-05:Dose$
+Item: Dose Sum (Gamma + Neutron)
+Pattern: 0000-05:DoseSum$
+End: 0000-05
+
+Item: 0000-06
+Menu: 0000-06
+Item: Dose Rate
+Pattern: [GN]P0000-06:Rate_Filtered$
+Item: Cumulative Dose
+Pattern: [GN]P0000-06:Dose$
+Item: Dose Sum (Gamma + Neutron)
+Pattern: 0000-06:DoseSum$
+End: 0000-06
+
+Item: 0000-07
+Menu: 0000-07
+Item: Dose Rate
+Pattern: [GN]P0000-07:Rate_Filtered$
+Item: Cumulative Dose
+Pattern: [GN]P0000-07:Dose$
+Item: Dose Sum (Gamma + Neutron)
+Pattern: 0000-07:DoseSum$
+End: 0000-07
+
+Item: 0000-08
+Menu: 0000-08
+Item: Dose Rate
+Pattern: [GN]P0000-08:Rate_Filtered$
+Item: Cumulative Dose
+Pattern: [GN]P0000-08:Dose$
+Item: Dose Sum (Gamma + Neutron)
+Pattern: 0000-08:DoseSum$
+End: 0000-08
+
+Item: 0000-09
+Menu: 0000-09
+Item: Dose Rate
+Pattern: [GN]P0000-09:Rate_Filtered$
+Item: Cumulative Dose
+Pattern: [GN]P0000-09:Dose$
+Item: Dose Sum (Gamma + Neutron)
+Pattern: 0000-09:DoseSum$
+End: 0000-09
+
+Item: 0000-10
+Menu: 0000-10
+Item: Dose Rate
+Pattern: [GN]P0000-10:Rate_Filtered$
+Item: Cumulative Dose
+Pattern: [GN]P0000-10:Dose$
+Item: Dose Sum (Gamma + Neutron)
+Pattern: 0000-10:DoseSum$
+End: 0000-10
+
+Item: 0000-11
+Menu: 0000-11
+Item: Dose Rate
+Pattern: [GN]P0000-11:Rate_Filtered$
+Item: Cumulative Dose
+Pattern: [GN]P0000-11:Dose$
+Item: Dose Sum (Gamma + Neutron)
+Pattern: 0000-11:DoseSum$
+End: 0000-11
+
+Item: 0000-12
+Menu: 0000-12
+Item: Dose Rate
+Pattern: [GN]P0000-12:Rate_Filtered$
+Item: Cumulative Dose
+Pattern: [GN]P0000-12:Dose$
+Item: Dose Sum (Gamma + Neutron)
+Pattern: 0000-12:DoseSum$
+End: 0000-12
+
+Item: 0000-13
+Menu: 0000-13
+Item: Dose Rate
+Pattern: [GN]P0000-13:Rate_Filtered$
+Item: Cumulative Dose
+Pattern: [GN]P0000-13:Dose$
+Item: Dose Sum (Gamma + Neutron)
+Pattern: 0000-13:DoseSum$
+End: 0000-13
+
+Item: 0000-14
+Menu: 0000-14
+Item: Dose Rate
+Pattern: [GN]P0000-14:Rate_Filtered$
+Item: Cumulative Dose
+Pattern: [GN]P0000-14:Dose$
+Item: Dose Sum (Gamma + Neutron)
+Pattern: 0000-14:DoseSum$
+End: 0000-14
+
+Item: 0000-15
+Menu: 0000-15
+Item: Dose Rate
+Pattern: [GN]P0000-15:Rate_Filtered$
+Item: Cumulative Dose
+Pattern: [GN]P0000-15:Dose$
+Item: Dose Sum (Gamma + Neutron)
+Pattern: 0000-15:DoseSum$
+End: 0000-15
+
+Item: 0000-16
+Menu: 0000-16
+Item: Dose Rate
+Pattern: [GN]P0000-16:Rate_Filtered$
+Item: Cumulative Dose
+Pattern: [GN]P0000-16:Dose$
+Item: Dose Sum (Gamma + Neutron)
+Pattern: 0000-16:DoseSum$
+End: 0000-16
+
+End: Mobile
+
+Item: Previous Displays
+Menu: Previous Displays
+
+Item: Nov 2010 to Dec 2018
+Menu: 2010-11_2018-12
+
+Item: Permanent
+Menu: Permanent
+
+Item: Exp Floor
+Menu: Exp Floor
+
+Item: Cells 1-3
+Menu: Cells 1-3
+Item: Dose Rate
+Pattern: [GN]P160[13].*:Rate_Filtered$|[GN]P1602-101:Rate_Filtered$|[GN]P1602-01:Rate_Filtered$
+Item: Cumulative Dose
+Pattern: [GN]P160[13].*:Dose$|[GN]P1602-101:Dose$|[GN]P1602-01:Dose$
+Item: Dose Sum (Gamma + Neutron)
+Pattern: 160[13].*:DoseSum$|1602-101:DoseSum$|1602-01:DoseSum$
+Item: Alarm Levels
+Pattern: [GN]P160[13].*:Dose_Alarm$|[GN]P1602-101:Dose_Alarm$|[GN]P1602-01:Dose_Alarm$|[GN]P160[13].*:Rate_Alarm_High$|[GN]P1602-101:Rate_Alarm_High$|[GN]P1602-01:Rate_Alarm_High$|[GN]P160[13].*:Rate_Alarm_Warn$|[GN]P1602-101:Rate_Alarm_Warn$|[GN]P1602-01:Rate_Alarm_Warn$
+End: Cells 1-3
+
+Item: Cells 4-6
+Menu: Cells 4-6
+Item: Dose Rate
+Pattern: [GN]P1604-01:Rate_Filtered$|[GN]P1604-101:Rate_Filtered$|[GN]P1606-[01].*:Rate_Filtered$|[GN]P1605-101:Rate_Filtered$
+Item: Cumulative Dose
+Pattern: [GN]P1604-01:Dose$|[GN]P1604-101:Dose$|[GN]P1606-[01].*:Dose$|[GN]P1605-101:Dose$
+Item: Dose Sum (Gamma + Neutron)
+Pattern: 1604-01:DoseSum$|1604-101:DoseSum$|1606-[01].*:DoseSum$|1605-101:DoseSum$
+Item: Alarm Levels
+Pattern: [GN]P1604-01:Dose_Alarm$|[GN]P1604-101:Dose_Alarm$|[GN]P1606-[01].*:Dose_Alarm$|[GN]P1604-01:Rate_Alarm_High$|[GN]P1604-101:Rate_Alarm_High$|[GN]P1606-[01].*:Rate_Alarm_High$|[GN]P1604-01:Rate_Alarm_Warn$|[GN]P1604-101:Rate_Alarm_Warn$|[GN]P1606-[01].*:Rate_Alarm_Warn$|[GN]P1605-101:Dose_Alarm$|[GN]P1605-101:Rate_Alarm_High$|[GN]P1605-101:Rate_Alarm_Warn$
+End: Cells 4-6
+
+Item: Cells 7-9
+Menu: Cells 7-9
+Item: Dose Rate
+Pattern: [GN]P160[78]-01:Rate_Filtered$|[GN]P1608-901:Rate_Filtered$|[GN]P1607-[15]01:Rate_Filtered$|[GN]P1609-101:Rate_Filtered$
+Item: Cumulative Dose
+Pattern: [GN]P160[78]-01:Dose$|[GN]P1608-901:Dose$|[GN]P1607-[15]01:Dose$|[GN]P1609-101:Dose$
+Item: Dose Sum (Gamma + Neutron)
+Pattern: 160[78]-01:DoseSum$|1608-901:DoseSum$|1607-[15]01:DoseSum$|1609-101:DoseSum$
+Item: Alarm Levels
+Pattern: [GN]P160[78]-01:Dose_Alarm$|[GN]P1608-901:Dose_Alarm$|[GN]P1607-[15]01:Dose_Alarm$|[GN]P1609-101:Dose_Alarm$|[GN]P160[78]-01:Rate_Alarm_High$|[GN]P1608-901:Rate_Alarm_High$|[GN]P1607-[15]01:Rate_Alarm_High$|[GN]P1609-101:Rate_Alarm_High$|[GN]P160[78]-01:Rate_Alarm_Warn$|[GN]P1608-901:Rate_Alarm_Warn$|[GN]P1607-[15]01:Rate_Alarm_Warn$|[GN]P1609-101:Rate_Alarm_Warn$
+End: Cells 7-9
+
+Item: Cells 10-12
+Menu: Cells 10-12
+Item: Dose Rate
+Pattern: [GN]P161[02].*:Rate_Filtered$|[GN]P1611-0.:Rate_Filtered$
+Item: Cumulative Dose
+Pattern: [GN]P161[02].*:Dose$|[GN]P1611-0.:Dose$
+Item: Dose Sum (Gamma + Neutron)
+Pattern: 161[02].*:DoseSum$|1611-0.:DoseSum$
+Item: Alarm Levels
+Pattern: [GN]P161[02].*:Dose_Alarm$|[GN]P1611-0.:Dose_Alarm$|[GN]P161[02].*:Rate_Alarm_High$|[GN]P1611-0.:Rate_Alarm_High$|[GN]P161[02].*:Rate_Alarm_Warn$|[GN]P1611-0.:Rate_Alarm_Warn$
+End: Cells 10-12
+
+End: Exp Floor
+
+Item: Rings
+Menu: Rings
+Item: Dose Rate
+Pattern: [GN]P1500-01:Rate_Filtered$|[GN]P150[123]-01:Rate_Filtered$|[GN]P1502-02:Rate_Filtered$|[GN]P240[02]-01:Rate_Filtered$
+Item: Cumulative Dose
+Pattern: [GN]P1500-01:Dose$|[GN]P150[123]-01:Dose$|[GN]P1502-02:Dose$|[GN]P240[02]-01:Dose$
+Item: Dose Sum (Gamma + Neutron)
+Pattern: 1500-01:DoseSum$|150[123]-01:DoseSum$|1502-02:DoseSum$|240[02]-01:DoseSum$
+Item: Alarm Levels
+Pattern: [GN]P1500-01:Dose_Alarm$|[GN]P1500-01:Rate_Alarm_High$|[GN]P1500-01:150[123]-01:Rate_Alarm_High$|[GN]P150[123]-01:Rate_Alarm_Warn$|[GN]P1502-02:Dose_Alarm$|[GN]P1502-02:Rate_Alarm_High$|[GN]P1502-02:Rate_Alarm_Warn$|[GN]P240[02]-01:Dose_Alarm$|[GN]P240[02]-01:Rate_Alarm_High$|[GN]P240[02]-01:Rate_Alarm_Warn$
+End: Rings
+
+Item: Linac
+Menu: Linac
+Item: Dose Rate
+Pattern: [GN]P00S1-01:Rate_Filtered$|[GN]P0102-101:Rate_Filtered$|[GN]P0104-01:Rate_Filtered$
+Item: Cumulative Dose
+Pattern: [GN]P00S1-01:Dose$|[GN]P0102-101:Dose$|[GN]P0104-01:Dose$
+Item: Dose Sum (Gamma + Neutron)
+Pattern: 00S1-01:DoseSum$|0102-101:DoseSum$|0104-01:DoseSum$
+Item: Alarm Levels
+Pattern: [GN]P00S1-01:Dose_Alarm$|[GN]P00S1-01:Rate_Alarm_High$|[GN]P00S1-01:Rate_Alarm_Warn$|[GN]P0102-101:Dose_Alarm$|[GN]P0102-101:Rate_Alarm_High$|[GN]P0102-101:Rate_Alarm_Warn$|[GN]P0104-01:Dose_Alarm$|[GN]P0104-01:Rate_Alarm_High$|[GN]P0104-01:Rate_Alarm_Warn$
+End: Linac
+
+Item: Third Probes
+Menu: Third Probes
+Item: Exp Floor
+Menu: Exp Floor
+
+Item: Cells 1-3
+Menu: Cells 1-3
+Item: Dose Rate
+Pattern: TP160[13].*:Rate_Filtered$|TP1602-101:Rate_Filtered$|TP1602-01:Rate_Filtered$
+Item: Cumulative Dose
+Pattern: TP160[13].*:Dose$|TP1602-101:Dose$|TP1602-01:Dose$
+Item: Alarm Levels
+Pattern: TP160[13].*:Dose_Alarm$|TP1602-101:Dose_Alarm$|TP1602-01:Dose_Alarm$|TP160[13].*:Rate_Alarm_High$|TP1602-101:Rate_Alarm_High$|TP1602-01:Rate_Alarm_High$|TP160[13].*:Rate_Alarm_Warn$|TP1602-101:Rate_Alarm_Warn$|TP1602-01:Rate_Alarm_Warn$
+End: Cells 1-3
+
+Item: Cells 4-6
+Menu: Cells 4-6
+Item: Dose Rate
+Pattern: TP1604-01:Rate_Filtered$|TP1604-101:Rate_Filtered$|TP1606-[01].*:Rate_Filtered$|TP1605-101:Rate_Filtered$
+Item: Cumulative Dose
+Pattern: TP1604-01:Dose$|TP1604-101:Dose$|TP1606-[01].*:Dose$|TP1605-101:Dose$
+Item: Alarm Levels
+Pattern: TP1604-01:Dose_Alarm$|TP1604-101:Dose_Alarm$|TP1606-[01].*:Dose_Alarm$|TP1604-01:Rate_Alarm_High$|TP1604-101:Rate_Alarm_High$|TP1606-[01].*:Rate_Alarm_High$|TP1604-01:Rate_Alarm_Warn$|TP1604-101:Rate_Alarm_Warn$|TP1606-[01].*:Rate_Alarm_Warn$|TP1605-101:Dose_Alarm$|TP1605-101:Rate_Alarm_High$|TP1605-101:Rate_Alarm_Warn$
+End: Cells 4-6
+
+Item: Cells 7-9
+Menu: Cells 7-9
+Item: Dose Rate
+Pattern: TP160[78]-01:Rate_Filtered$|TP1608-901:Rate_Filtered$|TP1607-[15]01:Rate_Filtered$|TP1609-101:Rate_Filtered$
+Item: Cumulative Dose
+Pattern: TP160[78]-01:Dose$|TP1608-901:Dose$|TP1607-[15]01:Dose$|TP1609-101:Dose$
+Item: Alarm Levels
+Pattern: TP160[78]-01:Dose_Alarm$|TP1608-901:Dose_Alarm$|TP1607-[15]01:Dose_Alarm$|TP1609-101:Dose_Alarm$|TP160[78]-01:Rate_Alarm_High$|TP1608-901:Rate_Alarm_High$|TP1607-[15]01:Rate_Alarm_High$|TP1609-101:Rate_Alarm_High$|TP160[78]-01:Rate_Alarm_Warn$|TP1608-901:Rate_Alarm_Warn$|TP1607-[15]01:Rate_Alarm_Warn$|TP1609-101:Rate_Alarm_Warn$
+End: Cells 7-9
+
+Item: Cells 10-12
+Menu: Cells 10-12
+Item: Dose Rate
+Pattern: TP161[02].*:Rate_Filtered$|TP1611-0.:Rate_Filtered$
+Item: Cumulative Dose
+Pattern: TP161[02].*:Dose$|TP1611-0.:Dose$
+Item: Alarm Levels
+Pattern: TP161[02].*:Dose_Alarm$|TP1611-0.:Dose_Alarm$|TP161[02].*:Rate_Alarm_High$|TP1611-0.:Rate_Alarm_High$|TP161[02].*:Rate_Alarm_Warn$|TP1611-0.:Rate_Alarm_Warn$
+End: Cells 10-12
+
+End: Exp Floor
+
+Item: Rings
+Menu: Rings
+Item: Dose Rate
+Pattern: TP1500-01:Rate_Filtered$|TP150[123]-01:Rate_Filtered$|TP1502-02:Rate_Filtered$|TP240[02]-01:Rate_Filtered$
+Item: Cumulative Dose
+Pattern: TP1500-01:Dose$|TP150[123]-01:Dose$|TP1502-02:Dose$|TP240[02]-01:Dose$
+Item: Alarm Levels
+Pattern: TP1500-01:Dose_Alarm$|TP1500-01:Rate_Alarm_High$|TP1500-01:150[123]-01:Rate_Alarm_High$|TP150[123]-01:Rate_Alarm_Warn$|TP1502-02:Dose_Alarm$|TP1502-02:Rate_Alarm_High$|TP1502-02:Rate_Alarm_Warn$|TP240[02]-01:Dose_Alarm$|TP240[02]-01:Rate_Alarm_High$|TP240[02]-01:Rate_Alarm_Warn$
+End: Rings
+
+Item: Linac
+Menu: Linac
+Item: Dose Rate
+Pattern: TP00S1-01:Rate_Filtered$|TP0102-101:Rate_Filtered$|TP0104-01:Rate_Filtered$
+Item: Cumulative Dose
+Pattern: TP00S1-01:Dose$|TP0102-101:Dose$|TP0104-01:Dose$
+Item: Alarm Levels
+Pattern: TP00S1-01:Dose_Alarm$|TP00S1-01:Rate_Alarm_High$|TP00S1-01:Rate_Alarm_Warn$|TP0102-101:Dose_Alarm$|TP0102-101:Rate_Alarm_High$|TP0102-101:Rate_Alarm_Warn$|TP0104-01:Dose_Alarm$|TP0104-01:Rate_Alarm_High$|TP0104-01:Rate_Alarm_Warn$
+End: Linac
+End: Third Probes
+
+Item: Machine
+Menu: Machine
+Item: Dose Rate
+Pattern: 1400-01:Rate_Filtered$
+Item: Cumulative Dose
+Pattern: 1400-01:Dose$
+Item: Dose Sum (Gamma + Neutron)
+Pattern: 1400-01:DoseSum$
+Item: Alarm Levels
+Pattern: 1400-01:Dose_Alarm$|1400-01:Rate_Alarm_High$|1400-01:Rate_Alarm_Warn$
+End: Machine
+
+Item: Medical Isotope Project
+Menu: MIP
+Item: Dose Rate
+Pattern: 0102-501:Rate_Filtered$|0013-02[AB]*:Rate_Filtered$
+Item: Cumulative Dose
+Pattern: 0102-501:Dose$|0013-02[AB]*:Dose$
+Item: Dose Sum (Gamma + Neutron)
+Pattern: 0102-501:DoseSum$|0013-02[AB]*:DoseSum$
+Item: Alarm Levels
+Pattern: 0102-501:Dose_Alarm$|0102-501:Rate_Alarm_High$|0102-501:Rate_Alarm_Warn$|0013-02[AB]*:Dose_Alarm$|0013-02[AB]*:Rate_Alarm_High$|0013-02[AB]*:Rate_Alarm_Warn$
+End: MIP
+
+End: Permanent
+
+Item: Mobile
+Menu: Mobile
+
+Item: IOC0006-102
+Menu: IOC0006-102
+Item: Dose Rate
+Pattern: 0006-0[1-7]:Rate_Filtered$
+Item: Cumulative Dose
+Pattern: 0006-0[1-7]:Dose$
+Item: Dose Sum (Gamma + Neutron)
+Pattern: 0006-0[1-7]:DoseSum$
+Item: Alarm Levels
+Pattern: 0006-0[1-7]:Dose_Alarm$|0006-0[1-7]:Rate_Alarm_High$|0006-0[1-7]:Rate_Alarm_Warn$
+End: IOC0006-102
+
+Item: IOC0102-104
+Menu: IOC0102-104
+Item: Dose Rate
+Pattern: 0102-10[1-8]:Rate_Filtered$
+Item: Cumulative Dose
+Pattern: 0102-10[1-8]:Dose$
+Item: Dose Sum (Gamma + Neutron)
+Pattern: 0102-10[1-8]:DoseSum$
+Item: Alarm Levels
+Pattern: 0102-10[1-8]:Dose_Alarm$|0102-10[1-8]:Rate_Alarm_High$|0102-10[1-8]:Rate_Alarm_Warn$
+End: IOC0102-104
+
+Item: IOC1500-103
+Menu: IOC1500-103
+Item: Dose Rate
+Pattern: 1500-0[1-9]:Rate_Filtered$
+Item: Cumulative Dose
+Pattern: 1500-0[1-9]:Dose$
+Item: Dose Sum (Gamma + Neutron)
+Pattern: 1500-0[1-9]:DoseSum$
+Item: Alarm Levels
+Pattern: 1500-0[1-9]:Dose_Alarm$|1500-0[1-9]:Rate_Alarm_High$|1500-0[1-9]:Rate_Alarm_Warn$
+End: IOC1500-103
+
+Item: IOC2403-310
+Menu: IOC2403-310
+Item: Dose Rate
+Pattern: 2403-0[1-6]:Rate_Filtered$
+Item: Cumulative Dose
+Pattern: 2403-0[1-6]:Dose$
+Item: Dose Sum (Gamma + Neutron)
+Pattern: 2403-0[1-6]:DoseSum$
+Item: Alarm Levels
+Pattern: 2403-0[1-6]:Dose_Alarm$|2403-0[1-6]:Rate_Alarm_High$|2403-0[1-6]:Rate_Alarm_Warn$
+End: IOC2403-310
+
+Item: IOC2404-110
+Menu: IOC2404-110
+Item: Dose Rate
+Pattern: 2404-09:Rate_Filtered$|2404-1[1-4]:Rate_Filtered$|1611-301:Rate_Filtered$
+Item: Cumulative Dose
+Pattern: 2404-09:Dose$|2404-1[1-4]:Dose$|611-301:Dose$
+Item: Dose Sum (Gamma + Neutron)
+Pattern: 2404-09:DoseSum$|2404-1[1-4]:DoseSum$|1611-301:DoseSum$
+Item: Alarm Levels
+Pattern: 2404-09:Dose_Alarm$|2404-09:Rate_Alarm_High$|2404-09:Rate_Alarm_Warn$|2404-1[1-4]:Dose_Alarm$|2404-1[1-4]:Rate_Alarm_High$|2404-1[1-4]:Rate_Alarm_Warn$|1611-301:Dose_Alarm$|1611-301:Rate_Alarm_High$|1611-301:Rate_Alarm_Warn$
+End: IOC2404-110
+
+Item: IOC2405-120
+Menu: IOC2405-120
+Item: Dose Rate
+Pattern: 2404-10:Rate_Filtered$|2405-0[1-6]:Rate_Filtered$
+Item: Cumulative Dose
+Pattern: 2404-10:Dose$|2405-0[1-6]:Dose$
+Item: Dose Sum (Gamma + Neutron)
+Pattern: 2404-10:DoseSum$|2405-0[1-6]:DoseSum$
+Item: Alarm Levels
+Pattern: 2404-10:Dose_Alarm$|2404-10:Rate_Alarm_High$|2404-10:Rate_Alarm_Warn$|2405-0[1-6]:Dose_Alarm$|2405-0[1-6]:Rate_Alarm_High$|2405-0[1-6]:Rate_Alarm_Warn$
+End: IOC2405-120
+
+Item: IOC2406-116
+Menu: IOC2406-116
+Item: Dose Rate
+Pattern: 2406-1[3-6]:Rate_Filtered$
+Item: Cumulative Dose
+Pattern: 2406-1[3-6]:Dose$
+Item: Dose Sum (Gamma + Neutron)
+Pattern: 2406-1[3-6]:DoseSum$
+Item: Alarm Levels
+Pattern: 2406-1[3-6]:Dose_Alarm$|2406-1[3-6]:Rate_Alarm_High$|2406-1[3-6]:Rate_Alarm_Warn$
+End: IOC2406-116
+
+Item: IOC2406-307
+Menu: IOC2406-307
+Item: Dose Rate
+Pattern: 2406-1[12789]:Rate_Filtered$|1605-501:Rate_Filtered$|1606-401:Rate_Filtered$
+Item: Cumulative Dose
+Pattern: 2406-1[12789]:Dose$|1605-501:Dose$|1606-401:Dose$
+Item: Dose Sum (Gamma + Neutron)
+Pattern: 2406-1[12789]:DoseSum$|1605-501:DoseSum$|1606-401:DoseSum$
+Item: Alarm Levels
+Pattern: 2406-1[12789]:Dose_Alarm$|2406-1[12789]:Rate_Alarm_High$|2406-1[12789]:Rate_Alarm_Warn$|1605-501:Dose_Alarm$|1605-501:Rate_Alarm_High$|1605-501:Rate_Alarm_Warn$|1606-401:Dose_Alarm$|1606-401:Rate_Alarm_High$|1606-401:Rate_Alarm_Warn$
+End: IOC2406-307
+
+Item: IOC2406-307-DECOM
+Menu: IOC2406-307-DECOM
+Item: Dose Rate
+Pattern: 2406-10:Rate_Filtered$
+Item: Cumulative Dose
+Pattern: 2406-10:Dose$
+Item: Dose Sum (Gamma + Neutron)
+Pattern: 2406-10:DoseSum$
+Item: Alarm Levels
+Pattern: 2406-10:Dose_Alarm$|2406-10:Rate_Alarm_High$|2406-10:Rate_Alarm_Warn$
+End: IOC2406-307-DECOM
+
+Item: IOC2408-112
+Menu: IOC2408-112
+Item: Dose Rate
+Pattern: 2407-01:Rate_Filtered$|2408-0[5-9]:Rate_Filtered$|2408-10:Rate_Filtered$|1608-[14]01:Rate_Filtered$
+Item: Cumulative Dose
+Pattern: 2407-01:Dose$|2408-0[5-9]:Dose$|2408-10:Dose$|1608-[14]01:Dose$
+Item: Dose Sum (Gamma + Neutron)
+Pattern: 2407-01:DoseSum$|2408-0[5-9]:DoseSum$|2408-10:DoseSum$|1608-[14]01:DoseSum$
+Item: Alarm Levels
+Pattern: 2407-01:Dose_Alarm$|2407-01:Rate_Alarm_High$|2407-01:Rate_Alarm_Warn$|2408-0[5-9]:Dose_Alarm$|2408-0[5-9]:Rate_Alarm_High$|2408-0[5-9]:Rate_Alarm_Warn$|2408-10:Dose_Alarm$|2408-10:Rate_Alarm_High$|2408-10:Rate_Alarm_Warn$|1608-[14]01:Dose_Alarm$|1608-[14]01:Rate_Alarm_High$|1608-[14]01:Rate_Alarm_Warn$
+End: IOC2408-112
+
+End: Mobile
+
+End: 2010-11_2018-12
+
+Item: Before Nov 2010
+Menu: pre-2010-11
+
+Item: LINAC1
+Menu: LINAC1
+Item: Dose Rate
+Pattern: 00S1-01:Rate_Filtered$|0102-101:Rate_Filtered$
+Item: Cumulative Dose
+Pattern: 00S1-01:Dose$|0102-101:Dose$
+Item: Alarm Levels
+Pattern: 00S1-01:Dose_Alarm$|00S1-01:Rate_Alarm_High$|00S1-01:Rate_Alarm_Warn$|0102-101:Dose_Alarm$|0102-101:Rate_Alarm_High$|0102-101:Rate_Alarm_Warn$
+End: LINAC1
+
+Item: LTB1
+Menu: LTB1
+Item: Dose Rate
+Pattern: 0104-01:Rate_Filtered$|1603-01:Rate_Filtered$|1502-01:Rate_Filtered$|2400-01:Rate_Filtered$
+Item: Cumulative Dose
+Pattern: 0104-01:Dose$|1603-01:Dose$|1502-01:Dose$|2400-01:Dose$
+Item: Alarm Levels
+Pattern: 0104-01:Dose_Alarm$|0104-01:Rate_Alarm_High$|0104-01:Rate_Alarm_Warn$|1603-01:Dose_Alarm$|1603-01:Rate_Alarm_High$|1603-01:Rate_Alarm_Warn$|1502-01:Dose_Alarm$|1502-01:Rate_Alarm_High$|1502-01:Rate_Alarm_Warn$|2400-01:Dose_Alarm$|2400-01:Rate_Alarm_High$|2400-01:Rate_Alarm_Warn$
+End: LTB1
+
+Item: Booster Injection
+Menu: Booster Injection
+Item: Dose Rate
+Pattern: 1304-01:Rate_Filtered$|1500-01:Rate_Filtered$|1301-01:Rate_Filtered$|1501-01:Rate_Filtered$
+Item: Cumulative Dose
+Pattern: 1304-01:Dose$|1500-01:Dose$|1301-01:Dose$|1501-01:Dose$
+Item: Alarm Levels
+Pattern: 1304-01:Dose_Alarm$|1304-01:Rate_Alarm_High$|1304-01:Rate_Alarm_Warn$|1500-01:Dose_Alarm$|1500-01:Rate_Alarm_High$|1500-01:Rate_Alarm_Warn$|1301-01:Dose_Alarm$|1301-01:Rate_Alarm_High$|1301-01:Rate_Alarm_Warn$|1501-01:Dose_Alarm$|1501-01:Rate_Alarm_High$|1501-01:Rate_Alarm_Warn$
+End: Booster Injection
+
+Item: BTS
+Menu: BTS
+Item: Dose Rate
+Pattern: 1612-01:Rate_Filtered$|1611-01:Rate_Filtered$|1400-01:Rate_Filtered$|2402-01:Rate_Filtered$
+Item: Cumulative Dose
+Pattern: 1612-01:Dose$|1611-01:Dose$|1400-01:Dose$|2402-01:Dose$
+Item: Alarm Levels
+Pattern: 1612-01:Dose_Alarm$|1612-01:Rate_Alarm_High$|1612-01:Rate_Alarm_Warn$|1611-01:Dose_Alarm$|1611-01:Rate_Alarm_High$|1611-01:Rate_Alarm_Warn$|1400-01:Dose_Alarm$|1400-01:Rate_Alarm_High$|1400-01:Rate_Alarm_Warn$|2402-01:Dose_Alarm$|2402-01:Rate_Alarm_High$|2402-01:Rate_Alarm_Warn$
+End: BTS
+
+Item: Storage Ring Current
+Menu: PCT
+Item: Storage Ring Current
+PVnames: PCT1402-01:halfLife PCT1402-01:mA:fbk PCT1402-01:mAChange
+End: PCT
+
+Item: Temporary
+Menu: Temporary
+Item: Rate 2404-01 02 03 04
+Pattern: GP2404-0[1234]:Rate_Filtered$
+Item: Rate 2404-05 06 07 08
+Pattern: GP2404-0[5678]:Rate_Filtered$
+Item: Rate 2406-01  01:3  02 03 04
+Pattern: GP2406-01:Rate_Filtered$|GP2406-01:3:Rate_Filtered$|GP2406-02:Rate_Filtered$|GP2406-0[34]:Rate_Filtered$
+Item: Rate 2406-05 06 07 08
+Pattern: GP2406-0[5678]:Rate_Filtered$
+Item: Rate 2408-01 02 03 04
+Pattern: GP2408-0[1234]:Rate_Filtered$
+Item: Dose 2404-01 02 03 04
+Pattern: GP2404-0[1234]:Dose$
+Item: Dose 2404-05 06 07 08
+Pattern: GP2404-0[5678]:Dose$
+Item: Dose 2406-01 02 03 04
+Pattern: GP2406-0[1234]:Dose$
+Item: Dose 2406-05 06 07 08
+Pattern: GP2406-0[5678]:Dose$
+Item: Dose 2408-01 02 03 04
+Pattern: GP2408-0[1234]:Dose$
+Item: Alarm 2404-01 02 03 04
+Pattern: GP2404-0[1234]:Dose_Alarm$|GP2404-0[1234]:Rate_Alarm
+Item: Alarm 2404-05 06 07 08
+Pattern: GP2404-0[5678]:Dose_Alarm$|GP2404-0[5678]:Rate_Alarm
+Item: Alarm 2406-01 02 03 04
+Pattern: GP2406-0[1234]:Dose_Alarm$|GP2406-0[1234]:Rate_Alarm
+Item: Alarm 2406-05 06 07 08
+Pattern: GP2406-0[5678]:Dose_Alarm$|GP2406-0[5678]:Rate_Alarm
+Item: Alarm 2408-01 02 03 04
+Pattern: GP2408-0[1234]:Dose_Alarm$|GP2408-0[1234]:Rate_Alarm
+End: Temporary
+
+Item: Temporary RDM 1-8
+Menu: Temporary_B
+Item: Temporary RDM 1-4
+PVnames: RDM0000-1:c1:Rate_Filtered, RDM0000-1:c2:Rate_Filtered, RDM0000-1:c3:Rate_Filtered, RDM0000-2:c1:Rate_Filtered, RDM0000-2:c2:Rate_Filtered, RDM0000-2:c3:Rate_Filtered, RDM0000-3:c1:Rate_Filtered, RDM0000-3:c2:Rate_Filtered, RDM0000-3:c3:Rate_Filtered, RDM0000-4:c1:Rate_Filtered, RDM0000-4:c2:Rate_Filtered, RDM0000-4:c3:Rate_Filtered
+Item: Temporary RDM 5-8
+PVnames: RDM0000-5:c1:Rate_Filtered, RDM0000-5:c2:Rate_Filtered, RDM0000-5:c3:Rate_Filtered, RDM0000-6:c1:Rate_Filtered, RDM0000-6:c2:Rate_Filtered, RDM0000-6:c3:Rate_Filtered, RDM0000-7:c1:Rate_Filtered, RDM0000-7:c2:Rate_Filtered, RDM0000-7:c3:Rate_Filtered, RDM0000-8:c1:Rate_Filtered, RDM0000-8:c2:Rate_Filtered, RDM0000-8:c3:Rate_Filtered
+End:  Temporary_B
+
+Item: Old Temporary
+Menu: OTemporary
+Item: Temporary Installation
+PVnames: GP1301-01T:Rate_Unfiltered, GP1301-01T:Dose, GP1304-01T:Rate_Unfiltered, GP1304-01T:Dose
+Item: Health Physics
+PVnames: GAM0000-01:DoseRate, NAM0000-01:RadiationLevel, GAM0000-02:DoseRate, NAM0000-02:RadiationLevel
+End: OTemporary
+
+Item: AARM Summed Dose
+PVnames: AARM1603-01:DoseSum, AARM1502-01:DoseSum, AARM1501-01:DoseSum, AARM2400-01:DoseSum, AARM1612-01:DoseSum, AARM1500-01:DoseSum, AARM1400-01:DoseSum, AARM2402-01:DoseSum, AARM1611-01:DoseSum, AARM0104-01:DoseSum, AARM1301-01:DoseSum, AARM1304-01:DoseSum, AARM2404-01:DoseSum, AARM2404-02:DoseSum, AARM2404-03:DoseSum, AARM2404-04:DoseSum, AARM2404-05:DoseSum, AARM2404-06:DoseSum, AARM2404-07:DoseSum, AARM2404-08:DoseSum, AARM2406-01:DoseSum, AARM2406-02:DoseSum, AARM2406-03:DoseSum, AARM2406-04:DoseSum, AARM2406-05:DoseSum, AARM2406-06:DoseSum, AARM2406-07:DoseSum, AARM2406-08:DoseSum, AARM2408-01:DoseSum, AARM2408-02:DoseSum, AARM2408-03:DoseSum, AARM2408-04:DoseSum, AARM0102-101:DoseSum, AARM00S1-01:DoseSum, AARM1603-01:DoseSum_Alarm, AARM1502-01:DoseSum_Alarm, AARM1501-01:DoseSum_Alarm, AARM2400-01:DoseSum_Alarm, AARM1612-01:DoseSum_Alarm, AARM1500-01:DoseSum_Alarm, AARM1400-01:DoseSum_Alarm, AARM2402-01:DoseSum_Alarm, AARM1611-01:DoseSum_Alarm, AARM0104-01:DoseSum_Alarm, AARM1301-01:DoseSum_Alarm, AARM1304-01:DoseSum_Alarm, AARM2404-01:DoseSum_Alarm, AARM2404-02:DoseSum_Alarm, AARM2404-03:DoseSum_Alarm, AARM2404-04:DoseSum_Alarm, AARM2404-05:DoseSum_Alarm, AARM2404-06:DoseSum_Alarm, AARM2404-07:DoseSum_Alarm, AARM2404-08:DoseSum_Alarm, AARM2406-01:DoseSum_Alarm, AARM2406-02:DoseSum_Alarm, AARM2406-03:DoseSum_Alarm, AARM2406-04:DoseSum_Alarm, AARM2406-05:DoseSum_Alarm, AARM2406-06:DoseSum_Alarm, AARM2406-07:DoseSum_Alarm, AARM2406-08:DoseSum_Alarm, AARM2408-01:DoseSum_Alarm, AARM2408-02:DoseSum_Alarm, AARM2408-03:DoseSum_Alarm, AARM2408-04:DoseSum_Alarm, AARM0102-101:DoseSum_Alarm, AARM00S1-01:DoseSum_Alarm
+
+End: pre-2010-11
+End: Previous Displays
+End: ARMS
+
+Item: Master Alarm System
+Menu: MasterAlarm
+Archive: Archive-MasterAlarm
+Item: SR1 RF Trip
+Pattern: AudibleAlarm:SR1_RF_Trip*
+Item: Booster RF Trip
+Pattern: AudibleAlarm:Booster_RF_Trip*
+Item: Linac RF Trip
+Pattern: AudibleAlarm:Linac_RF_Trip*
+Item: Process Water Temperature
+Pattern: AudibleAlarm:ProcessWaterTemp*
+Item: ACIS
+Pattern: AudibleAlarm:ACIS*
+Item: Cryoplant Level
+Pattern: AudibleAlarm:CryoplantLevel*
+Item: Cryoplant Trip
+Pattern: AudibleAlarm:CryoplantTrip*
+Item: Exhaust Fans
+Pattern: AudibleAlarm:ExhaustFans*
+Item: Radiation Cumulative Dose
+Pattern: AudibleAlarm:RadiationDose*
+Item: Radiation Dose Rate
+Pattern: AudibleAlarm:RadiationRate*
+Item: Radiation Monitor Fail
+Pattern: AudibleAlarm:RadiationFail*
+End: MasterAlarm
+
+Item: Exhaust Fans
+Menu: ExhaustFans
+Archive: Archive-ExhaustFans
+Item: Wet Lab RM1071
+PVnames: F3002-12:Status
+Item: Clean Room RM1072
+PVnames: F3002-13:Status
+Item: SGM/PGM/STXM/Far-IR
+PVnames: F3002-14:Status
+Item: Wet Lab RM1080
+PVnames: F3002-15:Status
+Item: SyLMAND 
+PVnames: VFD3008-03:Status
+Item: Chemical Exhaust RM1056
+PVnames: F6056-01:Status 
+Item: Life Sciences RM1118 and BMIT
+PVnames: VFD3008-07:Status
+Item: SXRMB/HXMA
+PVnames: PLC1606-06:VentFailAlarm
+Item: Industrial Science Lab RM1608.12
+PVnames: VFD3001-08:Status, F3001-12:Status
+End: ExhaustFans
+
+Item: Linac Diagnostics
+Menu: LinacDiagnostics
+Archive: Archive-PCT
+Item: Beam current
+PVnames: ICT0003-01:calVal,ICT0004-01:calVal
+Item: Gun
+Archive: Archive-00
+Pattern: ^GUN0001-01:.*
+Item: Gun - Pressure
+Archive: Archive-Linac-LTB
+PVnames: PT0001-01, PT0001-02
+Item: Gun - Multimeters
+Archive: Archive-Linac-LTB
+Pattern: ^GUN0001-01:.*
+Item: Keithley Multimeter Hall Probe
+Archive: Archive-00
+PVnames: MM0000-03:V:fbk MM0000-04:A:fbk HallProbe-Test:ratio:Ohms
+Item: Keithley Multimeters Electron Gun
+Archive: Archive-Linac-LTB
+PVnames: MM1021-101:V:fbk MM1021-102:V:fbk MM1021-103:V:fbk MM1021-104:V:fbk MM1021-105:V:fbk 
+Item: Cathode Conditioning
+Archive: Archive-TestDevelopment
+PVnames: IOP1023-T-01:pressure, PS1023-T-02:Amp:fbk, PS1023-T-02:V:fbk
+End: LinacDiagnostic
+
+Item: Linac and LTB Vacuum
+Menu: LinacLTBVacuum
+Archive: Archive-Linac-LTB
+Item: Linac Vacuum Reading
+PVnames: CCG0001-01:vac:p, CCG0001-02:vac:p, CCG0001-03:vac:p, CCG0001-04:vac:p, CCG0002-01:vac:p, CCG0009-01:vac:p, IOP0001-01:pressure, IOP0001-02:pressure, IOP0001-03:pressure, IOP0001-04:pressure, IOP0001-05:pressure, IOP0001-06:pressure, IOP0001-07:pressure, IOP0001-08:pressure, IOP0001-09:pressure, IOP0001-12:pressure
+Item: Linac Vacuum Interlock
+PVnames: CCG0001-01:vac, CCG0001-02:vac, CCG0001-03:vac, CCG0001-04:vac, CCG0002-01:vac, CCG0009-01:vac, IOP0001-01, IOP0001-02, IOP0001-03, IOP0001-04, IOP0001-05, IOP0001-06, IOP0001-07, IOP0001-08, IOP0001-09, IOP0001-12
+Item: LTB Vacuum Reading
+PVnames: CCG0004-01:vac:p, CCG0004-02:vac:p, CCG0004-03:vac:p, CCG0108-01:vac:p, CCG0108-02:vac:p, CCG0108-03:vac:p, CCG1300-01:vac:p, CCG1300-02:vac:p,IOP0003-01:pressure,IOP0003-02:pressure,IOP0003-03:pressure,IOP0003-05:pressure,IOP0003-07:pressure,IOP0003-08:pressure, IOP0004-02:pressure, IOP0004-04:pressure,IOP0004-05:pressure, IOP0108-02:pressure, IOP0108-04:pressure, IOP0108-05:pressure, IOP1300-02:pressure, IOP1300-03:pressure
+Item: LTB Vacuum Interlock
+PVnames: CCG0004-01:vac, CCG0004-02:vac, CCG0004-03:vac, CCG0108-01:vac, CCG0108-02:vac, CCG0108-03:vac, CCG1300-01:vac, CCG1300-02:vac,IOP0003-01, IOP0003-02, IOP0003-03, IOP0003-05, IOP0003-07, IOP0003-08, IOP0004-02:vac, IOP0004-04:vac, IOP0004-05:vac, IOP0108-02:vac,IOP0108-04:vac, IOP0108-05:vac, IOP1300-02:vac, IOP1300-03:vac
+Item: Waveguide Vacuum Reading
+PVnames: IOP1032-01:pressure, IOP1032-03:pressure, IOP1032-05:pressure, IOP1032-07:pressure, IOP1032-09:pressure, IOP1032-11:pressure
+End: LinacLTBVacuum
+
+Item: Modulator
+Menu: ModulatorMain
+
+Item: CT/CVD
+Archive: Archive-Modulator
+Pattern: MOD1032.*:CT-PULSE-I$|MOD1032.*:CVD-PULSE-V$|MOD1032.*:CT-ARCS$|MOD1032.*:CVD-ARCS$ 
+
+Item: Vacuum Readings
+Archive: Archive-Modulator
+Pattern: CCG1032.*:vac:p$|IOP1032.*:pressure$|IOP1032.*:vac:p$
+
+Item: Universal Interlocks
+Menu: UniversalInterlock
+Archive: Archive-Modulator
+Item: From External Systems
+PVnames: CntlRoom:EmrgStop KLY:Heater:Contactor KLY:WaterPump:VFD ModRoom:TEMP
+Item: To External Systems
+PVnames: MOD1032_1_TO_6:WG:VAC MOD1032_1_TO_6:RF_Gun:Enable
+End: UniversalInterlock
+
+Item: Modulator #1
+Menu: ModulatorNO1
+Archive: Archive-Modulator
+Item: HVPS
+PVnames: MOD1032-01:HVPSX-VS MOD1032-01:HVPSX-VSG MOD1032-01:HVPSX-V MOD1032-01:HVPSX-I
+Item: Pulse
+PVnames: MOD1032-01:PULSE-WIDTH-SET MOD1032-01:PULSE-WIDG MOD1032-01:PULSE-REP MOD1032-01:PULSE-WIDTH
+Item: Filament
+PVnames: MOD1032-01:FIL-V MOD1032-01:FIL-I MOD1032-01:FIL-HEAT-TIM MOD1032-01:HVPSX-I
+Item: CT/CVD
+PVnames: MOD1032-01:CT-PULSE-I MOD1032-01:CVD-PULSE-V MOD1032-01:CT-ARCS MOD1032-01:CVD-ARCS
+Item: Vacuum Reading 
+PVnames: CCG1032-01:vac:p IOP1032-01:pressure IOP1032-02:vac:p 
+Item: Vacuum Interlock
+PVnames: CCG1032-01:SP1 CCG1032-01:SP2 CCG1032-01 CCG1032-01:vac:p IOP1032-01:SP1 IOP1032-01:SP2 IOP1032-01 IOP1032-02 IOP1032-02:HW IOP1032-02:SW
+Item: Flow
+PVnames: FLT1032-01 FLT1032-01:warn FLT1032-01:lowflow FLT1032-01:status FLT1032-02 FLT1032-02:warn FLT1032-02:lowflow FLT1032-02:status FLT1032-03 FLT1032-03:warn FLT1032-03:lowflow FLT1032-03:status SWF1032-01 SWF1032-02
+Item: Temperature
+PVnames: TM1032-01 TM1032-02 TM1032-03
+Item: Temperature Status
+PVnames: TM1032-01:status TM1032-02:status TM1032-03:status 
+Item: Electromagnet PS
+PVnames: SWT1032-11 MOD1032-01:HWCTR:HV MOD1032-01:SOLENOID1-V MOD1032-01:SOLENOID1-I MOD1032-01:SOLENOID2-V MOD1032-01:SOLENOID2-I MOD1032-01:SOLENOID3-V MOD1032-01:SOLENOID3-I MOD1032-01:SOLENOID4-V MOD1032-01:SOLENOID4-I MOD1032-01:SOLENOID5-V MOD1032-01:SOLENOID5-I MOD1032-01:SOLENOID6-V MOD1032-01:SOLENOID6-I
+Item: Modulator Interlocks
+PVnames: MOD1032-01:Required MOD1032-01:EmrgOff MOD1032-01:VSWR MOD1032-01:HWCTR:SumIntlk MOD1032-01:HWCTR:HV 
+MOD1032-01:HWCTR:TrigInhib MOD1032-01:HWCTR:ExtrIntlk MOD1032-01:HWCTR:VacIntlk MOD1032-01:WG:VAC MOD1032-01:RF_Gun:Enable MOD1032-01
+Item: Runtime
+PVnames: MOD1032-01:HEATER-HOURS MOD1032-01:TRIG-HOURS
+End: ModulatorNO1
+
+Item: Modulator #2
+Menu: ModulatorNO2
+Archive: Archive-Modulator
+Item: HVPS
+PVnames: MOD1032-02:HVPSX-VS MOD1032-02:HVPSX-VSG MOD1032-02:HVPSX-V MOD1032-02:HVPSX-I
+Item: Pulse
+PVnames: MOD1032-02:PULSE-WIDTH-SET MOD1032-02:PULSE-WIDG MOD1032-02:PULSE-REP MOD1032-02:PULSE-WIDTH
+Item: Filament
+PVnames: MOD1032-02:FIL-V MOD1032-02:FIL-I MOD1032-02:FIL-HEAT-TIM MOD1032-02:HVPSX-I
+Item: CT/CVD
+PVnames: MOD1032-02:CT-PULSE-I MOD1032-02:CVD-PULSE-V MOD1032-02:CT-ARCS MOD1032-02:CVD-ARCS
+Item: Vacuum Reading
+PVnames: CCG1032-02:vac:p IOP1032-03:pressure IOP1032-04:vac:p 
+Item: Vacuum Interlock
+PVnames: CCG1032-02:SP1 CCG1032-02:SP2 CCG1032-02 CCG1032-02:vac:p IOP1032-03:SP1 IOP1032-03:SP2 IOP1032-03 IOP1032-04 IOP1032-04:HW IOP1032-04:SW
+Item: Flow
+PVnames: FLT1032-04 FLT1032-04:warn FLT1032-04:lowflow FLT1032-04:status FLT1032-05 FLT1032-05:warn FLT1032-05:lowflow FLT1032-05:status FLT1032-06 FLT1032-06:warn FLT1032-06:lowflow FLT1032-06:status SWF1032-03 SWF1032-04
+Item: Temperature
+PVnames: TM1032-04 TM1032-05 TM1032-06
+Item: Temperature Status
+PVnames: TM1032-04:status TM1032-05:status TM1032-06:status
+Item: Electromagnet PS
+PVnames: SWT1032-12 MOD1032-02:HWCTR:HV MOD1032-02:SOLENOID1-V MOD1032-02:SOLENOID1-I MOD1032-02:SOLENOID2-V MOD1032-02:SOLENOID2-I MOD1032-02:SOLENOID3-V MOD1032-02:SOLENOID3-I MOD1032-02:SOLENOID4-V MOD1032-02:SOLENOID4-I MOD1032-02:SOLENOID5-V MOD1032-02:SOLENOID5-I MOD1032-02:SOLENOID6-V MOD1032-02:SOLENOID6-I
+Item: Modulator Interlocks
+PVnames: MOD1032-02:Required MOD1032-02:EmrgOff MOD1032-02:VSWR MOD1032-02:HWCTR:SumIntlk MOD1032-02:HWCTR:HV
+MOD1032-02:HWCTR:TrigInhib MOD1032-02:HWCTR:ExtrIntlk MOD1032-02:HWCTR:VacIntlk MOD1032-02:WG:VAC MOD1032-02:RF_Gun:Enable MOD1032-02
+Item: Runtime
+PVnames: MOD1032-02:HEATER-HOURS MOD1032-02:TRIG-HOURS
+End: ModulatorNO2
+
+Item: Modulator #3
+Menu: ModulatorNO3
+Archive: Archive-Modulator
+Item: HVPS
+PVnames: MOD1032-03:HVPSX-VS MOD1032-03:HVPSX-VSG MOD1032-03:HVPSX-V MOD1032-03:HVPSX-I
+Item: Pulse
+PVnames: MOD1032-03:PULSE-WIDTH-SET MOD1032-03:PULSE-WIDG MOD1032-03:PULSE-REP MOD1032-03:PULSE-WIDTH
+Item: Filament
+PVnames: MOD1032-03:FIL-V MOD1032-03:FIL-I MOD1032-03:FIL-HEAT-TIM MOD1032-03:HVPSX-I
+Item: CT/CVD
+PVnames: MOD1032-03:CT-PULSE-I MOD1032-03:CVD-PULSE-V MOD1032-03:CT-ARCS MOD1032-03:CVD-ARCS
+Item: Vacuum Reading
+PVnames: CCG1032-03:vac:p IOP1032-05:pressure IOP1032-06:vac:p
+Item: Vacuum Interlock
+PVnames: CCG1032-03:SP1 CCG1032-03:SP2 CCG1032-03 CCG1032-03:vac:p IOP1032-05:SP1 IOP1032-05:SP2 IOP1032-05 IOP1032-06:SP1 IOP1032-06:SP2 IOP1032-06
+Item: Flow
+PVnames: FLT1032-07 FLT1032-07:warn FLT1032-07:lowflow FLT1032-07:status FLT1032-08 FLT1032-08:warn FLT1032-08:lowflow FLT1032-08:status FLT1032-15 FLT1032-15:warn FLT1032-15:lowflow FLT1032-15:status SWF1032-05 SWF1032-09
+Item: Temperature
+PVnames: TM1032-07 TM1032-08 TM1032-15
+Item: Temperature Status
+PVnames: TM1032-07:status TM1032-08:status TM1032-15:status
+Item: Electromagnet PS
+PVnames: SWT1032-13 MOD1032-03:HWCTR:HV MOD1032-03:SOLENOID1-V MOD1032-03:SOLENOID1-I MOD1032-03:SOLENOID2-V MOD1032-03:SOLENOID2-I MOD1032-03:SOLENOID3-V MOD1032-03:SOLENOID3-I MOD1032-03:SOLENOID4-V MOD1032-03:SOLENOID4-I MOD1032-03:SOLENOID5-V MOD1032-03:SOLENOID5-I MOD1032-03:SOLENOID6-V MOD1032-03:SOLENOID6-I
+Item: Modulator Interlocks
+PVnames: MOD1032-03:Required MOD1032-03:EmrgOff MOD1032-03:VSWR MOD1032-03:HWCTR:SumIntlk MOD1032-03:HWCTR:HV
+MOD1032-03:HWCTR:TrigInhib MOD1032-03:HWCTR:ExtrIntlk MOD1032-03:HWCTR:VacIntlk MOD1032-03:WG:VAC MOD1032-03:RF_Gun:Enable MOD1032-03
+Item: Runtime
+PVnames: MOD1032-03:HEATER-HOURS MOD1032-03:TRIG-HOURS
+End: ModulatorNO3
+
+Item: Modulator #4
+Menu: ModulatorNO4
+Archive: Archive-Modulator
+Item: HVPS
+PVnames: MOD1032-04:HVPSX-VS MOD1032-04:HVPSX-VSG MOD1032-04:HVPSX-V MOD1032-04:HVPSX-I
+Item: Pulse
+PVnames: MOD1032-04:PULSE-WIDTH-SET MOD1032-04:PULSE-WIDG MOD1032-04:PULSE-REP MOD1032-04:PULSE-WIDTH
+Item: Filament
+PVnames: MOD1032-04:FIL-V MOD1032-04:FIL-I MOD1032-04:FIL-HEAT-TIM MOD1032-04:HVPSX-I
+Item: CT/CVD
+PVnames: MOD1032-04:CT-PULSE-I MOD1032-04:CVD-PULSE-V MOD1032-04:CT-ARCS MOD1032-04:CVD-ARCS
+Item: Vacuum Reading
+PVnames: CCG1032-04:vac:p IOP1032-07:pressure IOP1032-08:vac:p
+Item: Vacuum Interlock
+PVnames: CCG1032-04:SP1 CCG1032-04:SP2 CCG1032-04 CCG1032-04:vac:p IOP1032-07:SP1 IOP1032-07:SP2 IOP1032-07 IOP1032-08:SP1 IOP1032-08:SP2 IOP1032-08
+Item: Flow
+PVnames: FLT1032-09 FLT1032-09:warn FLT1032-09:lowflow FLT1032-09:status FLT1032-10 FLT1032-10:warn FLT1032-10:lowflow FLT1032-10:status FLT1032-16 FLT1032-16:warn FLT1032-16:lowflow FLT1032-16:status SWF1032-06 SWF1032-10
+Item: Temperature
+PVnames: TM1032-09 TM1032-10 TM1032-16
+Item: Temperature Status
+PVnames: TM1032-09:status TM1032-10:status TM1032-16:status
+Item: Electromagnet PS
+PVnames: SWT1032-14 MOD1032-04:HWCTR:HV MOD1032-04:SOLENOID1-V MOD1032-04:SOLENOID1-I MOD1032-04:SOLENOID2-V MOD1032-04:SOLENOID2-I MOD1032-04:SOLENOID3-V MOD1032-04:SOLENOID3-I MOD1032-04:SOLENOID4-V MOD1032-04:SOLENOID4-I MOD1032-04:SOLENOID5-V MOD1032-04:SOLENOID5-I MOD1032-04:SOLENOID6-V MOD1032-04:SOLENOID6-I
+Item: Modulator Interlocks
+PVnames: MOD1032-04:Required MOD1032-04:EmrgOff MOD1032-04:VSWR MOD1032-04:HWCTR:SumIntlk MOD1032-04:HWCTR:HV
+MOD1032-04:HWCTR:TrigInhib MOD1032-04:HWCTR:ExtrIntlk MOD1032-04:HWCTR:VacIntlk MOD1032-04:WG:VAC MOD1032-04:RF_Gun:Enable MOD1032-04
+Item: Runtime
+PVnames: MOD1032-04:HEATER-HOURS MOD1032-04:TRIG-HOURS
+End: ModulatorNO4
+
+Item: Modulator #5
+Menu: ModulatorNO5
+Archive: Archive-Modulator
+Item: HVPS
+PVnames: MOD1032-05:HVPSX-VS MOD1032-05:HVPSX-VSG MOD1032-05:HVPSX-V MOD1032-05:HVPSX-I
+Item: Pulse
+PVnames: MOD1032-05:PULSE-WIDTH-SET MOD1032-05:PULSE-WIDG MOD1032-05:PULSE-REP MOD1032-05:PULSE-WIDTH
+Item: Filament
+PVnames: MOD1032-05:FIL-V MOD1032-05:FIL-I MOD1032-05:FIL-HEAT-TIM MOD1032-05:HVPSX-I
+Item: CT/CVD
+PVnames: MOD1032-05:CT-PULSE-I MOD1032-05:CVD-PULSE-V MOD1032-05:CT-ARCS MOD1032-05:CVD-ARCS
+Item: Vacuum Reading
+PVnames: CCG1032-05:vac:p IOP1032-09:pressure IOP1032-10:vac:p
+Item: Vacuum Interlock
+PVnames: CCG1032-05:SP1 CCG1032-05:SP2 CCG1032-05 CCG1032-05:vac:p IOP1032-09:SP1 IOP1032-09:SP2 IOP1032-09 IOP1032-10:SP1 IOP1032-10:SP2 IOP1032-10
+Item: Flow
+PVnames: FLT1032-11 FLT1032-11:warn FLT1032-11:lowflow FLT1032-11:status FLT1032-12 FLT1032-12:warn FLT1032-12:lowflow FLT1032-12:status FLT1032-17 FLT1032-17:warn FLT1032-17:lowflow FLT1032-17:status SWF1032-07 SWF1032-11
+Item: Temperature
+PVnames: TM1032-11 TM1032-12 TM1032-17
+Item: Temperature Status
+PVnames: TM1032-11:status TM1032-12:status TM1032-17:status
+Item: Electromagnet PS
+PVnames: SWT1032-15 MOD1032-05:HWCTR:HV MOD1032-05:SOLENOID1-V MOD1032-05:SOLENOID1-I MOD1032-05:SOLENOID2-V MOD1032-05:SOLENOID2-I MOD1032-05:SOLENOID3-V MOD1032-05:SOLENOID3-I MOD1032-05:SOLENOID4-V MOD1032-05:SOLENOID4-I MOD1032-05:SOLENOID5-V MOD1032-05:SOLENOID5-I MOD1032-05:SOLENOID6-V MOD1032-05:SOLENOID6-I
+Item: Modulator Interlocks
+PVnames: MOD1032-05:Required MOD1032-05:EmrgOff MOD1032-05:VSWR MOD1032-05:HWCTR:SumIntlk MOD1032-05:HWCTR:HV
+MOD1032-05:HWCTR:TrigInhib MOD1032-05:HWCTR:ExtrIntlk MOD1032-05:HWCTR:VacIntlk MOD1032-05:WG:VAC MOD1032-05:RF_Gun:Enable MOD1032-05
+Item: Runtime
+PVnames: MOD1032-05:HEATER-HOURS MOD1032-05:TRIG-HOURS
+End: ModulatorNO5
+
+Item: Modulator #6
+Menu: ModulatorNO6
+Archive: Archive-Modulator
+Item: HVPS
+PVnames: MOD1032-06:HVPSX-VS MOD1032-06:HVPSX-VSG MOD1032-06:HVPSX-V MOD1032-06:HVPSX-I
+Item: Pulse
+PVnames: MOD1032-06:PULSE-WIDTH-SET MOD1032-06:PULSE-WIDG MOD1032-06:PULSE-REP MOD1032-06:PULSE-WIDTH
+Item: Filament
+PVnames: MOD1032-06:FIL-V MOD1032-06:FIL-I MOD1032-06:FIL-HEAT-TIM MOD1032-06:HVPSX-I
+Item: CT/CVD
+PVnames: MOD1032-06:CT-PULSE-I MOD1032-06:CVD-PULSE-V MOD1032-06:CT-ARCS MOD1032-06:CVD-ARCS
+Item: Vacuum Reading
+PVnames: CCG1032-06:vac:p IOP1032-11:pressure IOP1032-12:vac:p
+Item: Vacuum Interlock
+PVnames: CCG1032-06:SP1 CCG1032-06:SP2 CCG1032-06 CCG1032-06:vac:p IOP1032-11:SP1 IOP1032-11:SP2 IOP1032-11 IOP1032-12:SP1 IOP1032-12:SP2 IOP1032-12
+Item: Flow
+PVnames: FLT1032-13 FLT1032-13:warn FLT1032-13:lowflow FLT1032-13:status FLT1032-14 FLT1032-14:warn FLT1032-14:lowflow FLT1032-14:status FLT1032-18 FLT1032-18:warn FLT1032-18:lowflow FLT1032-18:status SWF1032-08 SWF1032-12
+Item: Temperature
+PVnames: TM1032-13 TM1032-14 TM1032-18
+Item: Temperature Status
+PVnames: TM1032-13:status TM1032-14:status TM1032-18:status
+Item: Electromagnet PS
+PVnames: SWT1032-16 MOD1032-06:HWCTR:HV MOD1032-06:SOLENOID1-V MOD1032-06:SOLENOID1-I MOD1032-06:SOLENOID2-V MOD1032-06:SOLENOID2-I MOD1032-06:SOLENOID3-V MOD1032-06:SOLENOID3-I MOD1032-06:SOLENOID4-V MOD1032-06:SOLENOID4-I MOD1032-06:SOLENOID5-V MOD1032-06:SOLENOID5-I MOD1032-06:SOLENOID6-V MOD1032-06:SOLENOID6-I
+Item: Modulator Interlocks
+PVnames: MOD1032-06:Required MOD1032-06:EmrgOff MOD1032-06:VSWR MOD1032-06:HWCTR:SumIntlk MOD1032-06:HWCTR:HV
+MOD1032-06:HWCTR:TrigInhib MOD1032-06:HWCTR:ExtrIntlk MOD1032-06:HWCTR:VacIntlk MOD1032-06:WG:VAC MOD1032-06:RF_Gun:Enable MOD1032-06
+Item: Runtime
+PVnames: MOD1032-06:HEATER-HOURS MOD1032-06:TRIG-HOURS
+End: ModulatorNO6
+
+End: ModulatorMain
+
+
+Item: Temporary Linac PS - 00
+Archive: Archive-00
+Menu: TempLnLTBPS0
+Item: PS-1
+Pattern: PS.*101.*adc$
+Item: PS-2
+Pattern: PS.*102.*adc$
+Item: PS-3
+Pattern: PS.*103.*adc$
+Item: ST
+Pattern: ^ST.*adc$
+Item: Q
+Pattern: ^Q.*adc$
+Item: B
+Pattern: ^B.*adc$
+#Item: SW
+#Pattern: ^SW
+Item: TM
+Pattern: ^TM
+#Item: TRM
+#Pattern: ^TRM
+Item: HCS
+Pattern: ^HCS.*HeatPWR|^HCS.*HeatRel|^HCS.*kPa$
+End: TempLnLTBPS0
+
+Item: LTB1 (ECS) PS
+Archive: Archive-LTB1
+Menu: LTB1ECSPS
+Item: B0002-01
+Pattern: B0002-01.*
+Item: B0002-02
+Pattern: B0002-02.*
+Item: B0002-03
+Pattern: B0002-03.*
+End: LTB1ECSPS
+
+Item: Temporary Linac and LTB PS - 01
+Menu: TempLnLTBPS1
+Archive: Archive-01
+Item: PS-302
+Pattern: ^PS0102-302.*adc$
+Item: PS-303
+Pattern: ^PS0102-303.*adc$
+Item: PS-304
+Pattern: ^PS0102-304.*adc$
+Item: PS-401
+Pattern: ^PS0102-401.*adc$
+Item: B
+Pattern: ^B.*adc$
+Item: Q
+Pattern: ^Q.*adc$
+#Item: SOL
+#Pattern: ^SOL
+Item: ST
+Pattern: ^ST.*adc$
+#Item: WP
+#Pattern: ^WP.*
+Item: TM
+Pattern: ^TM.*:Y$
+#Item: SW
+#Pattern: ^SW.*
+Item: PT
+Pattern: ^PT
+#Item: Misc
+#Pattern: ^K|^BRK|^MSOL|^MSC|^DCN|^X
+END: TempLnLTBPS1
+
+Item: Heating Cooling System
+Archive: Archive-01
+Menu: HCS
+Item: Primary Heating Cooling System
+PVnames: PT0105-201, TM0105-204, TM0105-201, PT0105-202, PT0105-201, PT0105-205, PT0105-208, PT0105-209, SWL0105-201, SWT0105-201, XT0105-201 
+Item: BR1/SR1 RF Heating Cooling System
+Menu: BR1/SR1 RF Heating Cooling System
+Item: Booster RF Cavity LCW System
+Archive: Archive-10
+PVnames: TM1304-04:temp, TM1304-05:temp, PT1304-04:press, PT1304-05:press, FLT1304-04:rate
+Item: Booster RF LCW System
+Archive: Archive-10
+PVnames: TM1500-01:temp, TM1500-02:temp, PT1500-01:press, PT1500-02:press, FLT1500-01:rate, FLT1500-02, FLT1500-03, FLT1500-04, FLT1500-05, PT1500-03, PT1500-04, PT1500-05, PT1500-06, PT1500-07, PT1500-08, PT1500-09, PT1500-10, PT1500-11, SWF1500-01, SWF1500-03, SWF1500-04, TM1500-03, TM1500-04, TM1500-05, TM1500-06, TM1500-07, TM1500-08, TM1500-09, TM1500-10
+Item: Storage Ring RF LCW System
+Archive: Archive-Cryo
+PVnames: CRYOSTAT:water:cond, CRYOSTAT:waterin:press, CRYOSTAT:waterin:temp, CRYOSTAT:HVPS:flow, CRYOSTAT:HVPS:tout, CRYOSTAT:RFload:tout, CRYOSTAT:RFload:flow, CRYOSTAT:RFload:tin, CRYOSTAT:circulator:flow, CRYOSTAT:circulator:tout, CRYOSTAT:testLoad:flow, CRYOSTAT:testLoad:tout, CRYOSTAT:testLoad:tin, CRYOSTAT:body:tin, CRYOSTAT:body:tout, CRYOSTAT:outCav:tin, CRYOSTAT:outCav:tout, CRYOSTAT:outCav:flow, CRYOSTAT:collector:tin, CRYOSTAT:collector:tout, CRYOSTAT:collector:flow
+Item: RF LCW Operations Main
+Archive: Archive-01
+PVnames: PHT0105-605, DOT0105-605, FLT0105-402, PT0105-402, TM0105-402, TM0105-401, FLT0105-401, PT0105-401, PT0105-403, SWL0105-401, SWT0105-401, XT0105-401, DP1502-01
+End: BR1/SR1 RF Heating Cooling System
+Item: Beam Line #1 Heating Cooling System
+PVnames: DP0105-401, DP2408-01, FLT0105-405, PT0105-406, TM0105-410, TM0105-409, FLT0105-404, PT0105-405, WP0105-408:Speed, WP0105-407:Speed, SWL0105-405, SWT0105-403, XT0105-403
+Item: Beam Line #2 Heating Cooling System
+PVnames: DP0105-402, DP2407-01, FLT0105-408, PT0105-410, TM0105-418, TM0105-417, FLT0105-407, PT0105-409, WP0105-409:Speed, WP0105-410:Speed, SWL0105-409, SWT0105-405, XT0105-405
+Item: Power Supply and BR1 Magnet heating Cooling System
+PVnames: DP0105-501, FLT0105-509, PT0105-516, TM0105-523, FLT0105-510, TM0105-524, PT0105-511, TM0105-518, TM0105-517, FLT1601-01, PT0105-514, PT0105-510, SWL0105-505, SWT0105-506, SWT0105-507, XT0105-503
+Item: Trim Heating Cooling System
+PVnames: PT0105-504, FLT0105-501, TM0105-501, PT0105-502, TM0105-502, FLT0105-502, PT0105-503
+Item: SR1/BTS1 Heating Cooling System
+PVnames: FLT0105-506, PT0105-507, TM0105-510, TM0105-509, FLT1601-02, PT0105-506, DP1501-01, WP0105-517:Speed, WP0105-518:Speed, WP0105-519:Speed, DPT1408-01, SWL0105-501, SWT0105-504, XT0105-501
+Item: SR1 Cell 1 
+PVnames: FLT1401-04,FLT1401-05,FLT1401-06,FLT1401-07,FLT1401-08,FLT1401-09,FLT1401-10,FLT1401-11,FLT1401-12,FLT1401-13,FLT1401-14,FLT1401-15,FLT1401-16, PT1401-01, PT1401-02, PT1401-03, TM1401-01, TM1401-02, TM1401-03, TM1401-04, TM1401-05, TM1401-06, TM1401-07, TM1401-08, TM1401-09, TM1401-10, TM1401-11, TM1401-12, TM1401-13, TM1401-14, TM1401-15, TM1401-16
+Item: SR1 Cell 2 
+PVnames: FLT1402-04,FLT1402-05,FLT1402-06,FLT1402-07,FLT1402-08,FLT1402-09,FLT1402-10,FLT1402-11,FLT1402-12,FLT1402-13,FLT1402-14,FLT1402-15,FLT1402-16, PT1402-01, PT1402-02, PT1402-03, TM1402-01, TM1402-02, TM1402-03, TM1402-04, TM1402-05, TM1402-06, TM1402-07, TM1402-08, TM1402-09, TM1402-10, TM1402-11, TM1402-12, TM1402-13, TM1402-14, TM1402-15, TM1402-16
+Item: SR1 Cell 3 
+PVnames: FLT1403-03, FLT1403-04,FLT1403-05,FLT1403-06,FLT1403-07,FLT1403-08,FLT1403-09,FLT1403-10,FLT1403-11,FLT1403-12,FLT1403-13,FLT1403-14,FLT1403-15, PT1403-01, PT1403-02, PT1403-03, TM1403-01, TM1403-02, TM1403-03, TM1403-04, TM1403-05, TM1403-06, TM1403-07, TM1403-08, TM1403-09, TM1403-10, TM1403-11, TM1403-12, TM1403-13, TM1403-14, TM1403-15, TM1403-16
+Item: SR1 Cell 4 
+PVnames: FLT1404-04,FLT1404-05,FLT1404-06,FLT1404-07,FLT1404-08,FLT1404-09,FLT1404-10,FLT1404-11,FLT1404-12,FLT1404-13,FLT1404-14,FLT1404-15,FLT1404-16, PT1404-01, PT1404-02, PT1404-03, TM1404-01, TM1404-02, TM1404-03, TM1404-04, TM1404-05, TM1404-06, TM1404-07, TM1404-08, TM1404-09, TM1404-10, TM1404-11, TM1404-12, TM1404-13, TM1404-14, TM1404-15, TM1404-16
+Item: SR1 Cell 5 
+PVnames: FLT1405-04,FLT1405-05,FLT1405-06,FLT1405-07,FLT1405-08,FLT1405-09,FLT1405-10,FLT1405-11,FLT1405-12,FLT1405-13,FLT1405-14,FLT1405-15,FLT1405-16, PT1405-01, PT1405-02, PT1405-03, TM1405-01, TM1405-02, TM1405-03, TM1405-04, TM1405-05, TM1405-06, TM1405-07, TM1405-08, TM1405-09, TM1405-10, TM1405-11, TM1405-12, TM1405-13, TM1405-14, TM1405-15, TM1405-16
+Item: SR1 Cell 6
+PVnames: FLT1406-04,FLT1406-05,FLT1406-06,FLT1406-07,FLT1406-08,FLT1406-09,FLT1406-10,FLT1406-11,FLT1406-12,FLT1406-13,FLT1406-14,FLT1406-15,FLT1406-16, PT1406-01, PT1406-02, PT1406-03 TM1406-01, TM1406-02, TM1406-03, TM1406-20, TM1406-21, TM1406-22, TM1406-23, TM1406-24, TM1406-25, TM1406-26, TM1406-27, TM1406-28, TM1406-29, TM1406-30, TM1406-31, TM1406-32 
+Item: SR1 Cell 7
+PVnames: FLT1407-04,FLT1407-05,FLT1407-06,FLT1407-07,FLT1407-08,FLT1407-09,FLT1407-10,FLT1407-11,FLT1407-12,FLT1407-13,FLT1407-14,FLT1407-15,FLT1407-16, PT1407-01, PT1407-02, PT1407-03, TM1407-01, TM1407-02, TM1407-03, TM1407-04, TM1407-05, TM1407-06, TM1407-07, TM1407-08, TM1407-09, TM1407-10, TM1407-11, TM1407-12, TM1407-13, TM1407-14, TM1407-15, TM1407-16
+Item: SR1 Cell 8
+PVnames: FLT1408-04,FLT1408-05,FLT1408-06,FLT1408-07,FLT1408-08,FLT1408-09,FLT1408-10,FLT1408-11,FLT1408-12,FLT1408-13,FLT1408-14,FLT1408-15,FLT1408-16, PT1408-01, PT1408-02, PT1408-03, TM1408-01, TM1408-02, TM1408-03, TM1408-20, TM1408-21, TM1408-22, TM1408-23, TM1408-24, TM1408-25, TM1408-26, TM1408-27, TM1408-12, TM1408-13, TM1408-14, TM1408-15, TM1408-16
+Item: SR1 Cell 9
+PVnames: FLT1409-04,FLT1409-05,FLT1409-06,FLT1409-07,FLT1409-08,FLT1409-09,FLT1409-10,FLT1409-11,FLT1409-12,FLT1409-13,FLT1409-14,FLT1409-15,FLT1409-16,FLT1409-17,FLT1409-18, PT1409-01, PT1409-02, PT1409-03, TM1409-01, TM1409-02, TM1409-03, TM1409-04, TM1409-05, TM1409-06, TM1409-07, TM1409-08, TM1409-09, TM1409-10, TM1409-11, TM1409-12, TM1409-13, TM1409-14, TM1409-15, TM1409-16, TM1409-17, TM1409-18, TM1409-19, TM1409-20, TM1409-21, TM1409-22, TM1409-23, XT2408-01:Mohm-cm
+Item: SR1 Cell 10 
+PVnames: FLT1410-04,FLT1410-05,FLT1410-06,FLT1410-07,FLT1410-08,FLT1410-09,FLT1410-10,FLT1410-11,FLT1410-12,FLT1410-13,FLT1410-14,FLT1410-15,FLT1410-16, PT1410-01, PT1410-02, PT1410-03, TM1410-01, TM1410-02, TM1410-03, TM1410-04, TM1410-05, TM1410-06, TM1410-07, TM1410-08, TM1410-09, TM1410-10, TM1410-11, TM1410-12, TM1410-13, TM1410-14, TM1410-15, TM1410-16
+Item: SR1 Cell 11 
+PVnames: FLT1411-04,FLT1411-05,FLT1411-06,FLT1411-07,FLT1411-08,FLT1411-09,FLT1411-10,FLT1411-11,FLT1411-12,FLT1411-13,FLT1411-14,FLT1411-15,FLT1411-16, PT1411-01, PT1411-02, PT1411-03, TM1411-01, TM1411-02, TM1411-03, TM1411-04, TM1411-05, TM1411-06, TM1411-07, TM1411-08, TM1411-09, TM1411-10, TM1411-11, TM1411-12, TM1411-13, TM1411-14, TM1411-15, TM1411-16
+Item: SR1 Cell 12 
+PVnames: FLT1412-04,FLT1412-05,FLT1412-06,FLT1412-07,FLT1412-08,FLT1412-09,FLT1412-10,FLT1412-11,FLT1412-12,FLT1412-13,FLT1412-14,FLT1412-15,FLT1412-16, PT1412-01, PT1412-02, PT1412-03, TM1412-04, TM1412-05, TM1412-06, TM1412-07, TM1412-08, TM1412-09, TM1412-10, TM1412-11, TM1412-12, TM1412-13, TM1412-14, TM1412-15, TM1412-16
+Item: Industrial Science Lab 
+Archive: Archive-AHU
+PVnames:  ACT3001-12, ACT3001-13, CV2608-1201, DP2608-1201, DP2608-1202, DP2608-1203, F3001-12:Status, FLT1608-1201, FLT1608-1202, FLT1608-1203, FLT1608-1204, FLT2608-1203, FLT2608-1203:LPS, FLT2608-1204, FLT2608-1204:LPS, HM1608-1201, HYDT1608-10, HYDT1608-11, HYDT1608-12, TM1608-1201, TM2608-1201, TM1608-1203, TM1608-1204, TM2608-1202, VFD2608-1201:Speed, VFD2608-1201:Status, VFD3001-08:Speed, VFD3001-08:Status
+Item: Klystron and Modulator
+Archive: Archive-AHU
+Menu: KlystronAndModulator
+Item: HCS1023-02
+Pattern: ^PT1023-.*|^TM1023-0.*|VFD1023-01:Speed:fbk|^FLT1023-0.*|HCS1023-02:OutputValve
+Item: HCS2001-01
+Pattern: ^PT2001-0.*|^TM2001-0.*|WP2001-01:Speed:fbk|^FLT2001-0.*|HCS2001-01:OutputValve
+End : KlystronAndModulator
+End: HCS
+
+Item: Building Cooling System
+Archive: Archive-Glycol
+Menu: GLYCOL
+Item: Chilled Water Overview
+Menu: Chilled Water Overview
+Item: Temperature
+PVnames: TM1061-202, TM1061-20, TM1061-21, TM1061-2-10, TM1061-2-11, TM1061-2-13, TM1061-401, TM1061-411, TM1061-413, TM1061-416, TM1061-4-20, TM1061-4-21, TM1061-4-22, TM6001-50
+Item: Pressure
+PVnames: PT0105-208, PT0105-209, PT0105-210, PT0105-211, PT1061-2-07, PT1061-2-08, PT1061-209, PT1061-2-12, DP0105-2-01, DP3008-07, DP3001-01, DP3001-03
+Item: Fluid Cooler Fan Status
+PVnames: F6001-05-06:Status, F6001-07-08:Status, F6001-09-10:Status, F6001-11-12:Status, F6001-13-14:Status, F6001-15-16:Status
+item: Flow
+PVnames: SWF1061-207, SWF1061-4-08, FLT1061-4-01
+item: Pump Status
+PVnames: VFD1061-301, VFD1061-302, VFD1061-303, VFD1061-304, WP0105-1-01:Speed:fbk, WP0105-1-02:Speed:fbk, WP1061-409:Speed, WP1061-410:Speed, WP219:Speed, WP220:Speed
+item: Valve Conditions
+PVnames: I2P1061-4-01:ctrl, I2P1061-2-01:ctrl, CV1061-4-06, VPN0105-501
+item: Chiller and Free Cooling Load
+PVnames: CH1061-2-01:load, CH1061-4-01:load, CT1061-4-01
+End: Chilled Water Overview
+Item: Chilled Water for Isotope Modulator
+Menu: Chilled Water for Isotope Modulator
+Item: Temperature
+PVnames: TM0102-10, TM0102-11, TM0102-12, TM0102-13, TM0102-14, TM0102-51, TM0102-52
+Item: Pressure
+PVnames: PT0102-03, PT0102-04, PT0102-05, PT0102-06, PT0102-51, PT0102-52, DP0102-01
+Item: Humidity
+PVnames: HM0102-01
+Item: Flow
+PVnames: FLT0102-01, FLT0102-02, FLT0102-03
+End: Chilled Water for Isotope Modulator
+Item: Current Transformers
+PVnames: CT0105-501, CT0105-502, CT0105-503, CT1061-2-01, CT1061-4-01
+Item: Fluid Cooler Fan Status
+PVnames: F6001-01:Status, F6001-02:Status, F6001-03:Status, F6001-04:Status, F6001-05-06:Status, F6001-07-08:Status, F6001-09-10:Status, F6001-11-12:Status, F6001-13-14:Status, F6001-15-16:Status
+Item: Flow Transmitters
+PVnames: FLT0105-201, FLT1061-201, FLT1061-4-01
+Item: Pressure
+PVnames: PT1061-201, PT1061-202, PT1061-203, PT1061-204, PT1061-205, PT1061-206, DPT1061-401, PT1061-2-07, PT1061-2-08, PLC0105-1-01:PressSetPt, PLC0105-1-01:SysDiffPress
+Item: Pump Boolean Signals
+Pattern: ^WP.*:Plc_Run|^WP.*:Power|^WP.*:Selector_Auto|^WP.*:Selector_Hand|^WP.*:Selector_Off|^WP.*:Status|^WP1061-201:HOA|^WP1061-218:Auto
+Item: Pump Speeds
+Pattern: ^WP.*:Speed|^WP.*:Speed:fbk
+Item: Switches
+Pattern: ^SW
+Item: Temperatures
+Pattern: ^TM
+Item: Variable Frequency Drive pump motors
+Pattern: ^VFD
+Item: Water Meters
+PVnames: FLM1061-201, FLM1061-202, FLM1061-203, FLM1061-204, FLM1061-205, FLM1061-206, FLM1061-207, FLM1061-208, FLM1061-401
+Item: Other
+PVNames: CH250:mode, CH56:EvapPumpLowFlow, CH56:mode, PLC1061-2-02:FCRequest, I2P1061-2-01:ctrl, I2P1061-4-01:ctrl
+Item: Air Compressors 0105
+Archive: Archive-CMP
+PVNames: HM0105-101, PT0105-111:psi, DEW0105-101:cel, DEW0105-102:cel, FLT0105-101:cfm, CMP0105-101:running, CMP0105-102:running, CMP0105-101:failure, CMP0105-102:failure
+Item: Server Room Temps
+Archive: Archive-ServerRoom
+PVnames: TM1043-01, TM1043-02, TM1043-03, TM1061-215, TM1061-216
+Item: AHU3008-06 and AHU3008-07 on PLC3008-02
+Archive: Archive-AHU
+PVnames: DP3008-08, DP3008-09, DP3008-10, DP3008-11, HM3008-11, HM3008-12, HM3008-07, I2P3008-09:pct, I2P3008-10:pct, I2P3008-11:pct, I2P3008-12:pct, I2P3008-12:pct:rtn, I2P3008-13:pct, I2P3008-14:pct, I2P3008-15:pct, I2P3008-15:pct:rtn, I2P3008-16:pct, I2P3008-17:pct, I2P3008-18:pct, TM3008-17, TM3008-20, TM3008-21, AHU3008-06:FreeCooling, AHU3008-07:FreeCooling, DP3008-05, VFD3001-07:Auto, VFD3001-07:Hand, VFD3001-07:Off, VFD3001-07:PlcStart, VFD3001-07:Status, VFD3001-07:Speed, VFD3001-06:Auto, VFD3001-06:Hand, VFD3001-06:Off, VFD3001-06:PlcStart, VFD3001-06:Status, VFD3001-06:Speed, HM3008-03:SP, HM3008-03:Der, HM3008-03:Int, HM3008-03:Lag, HM3008-03:ManOP, HM3008-03:Mode, HM3008-03:Pro, HM3008-03, HM3008-05:SP, HM3008-05:Der, HM3008-05:Int, HM3008-05:Lag, HM3008-05:ManOP, HM3008-05:Mode, HM3008-05:Pro, HM3008-05, PT3008-11:SP, PT3008-11:Der, PT3008-11:Int, PT3008-11:Lag, PT3008-11:ManOP, PT3008-11:Mode, PT3008-11:Pro, PT3008-11, TM3008-15:SP, TM3008-15:Der, TM3008-15:Int, TM3008-15:Lag, TM3008-15:ManOP, TM3008-15:Mode, TM3008-15:Pro, TM3008-15, TM3008-16:SP, TM3008-16:Der, TM3008-16:Int, TM3008-16:Lag, TM3008-16:ManOP, TM3008-16:Mode, TM3008-16:Pro, TM3008-16, TM3008-18:SP, TM3008-18:Der, TM3008-18:Int, TM3008-18:Lag, TM3008-18:ManOP, TM3008-18:Mode, TM3008-18:Pro, TM3008-18,TM3008-19:SP, TM3008-19:Der, TM3008-19:Int, TM3008-19:Lag, TM3008-19:ManOP, TM3008-19:Mode, TM3008-19:Pro, TM3008-19
+Item: AHU2001-01 and AHU2001-02 (1) on PLC2001-02
+Archive: Archive-AHU
+PVnames: CV2001-51, CV2001-55, CV2001-56, DMP2001-01, DMP2001-02, DMP2001-03, DMP2001-07, DMP2001-08, DMP2001-09, DMP2001-10, DMP2001-11, DMP2001-12, DP2001-51, DP2001-54, HM2001-50, HM2001-52, HM2001-53, I2P2001-51, I2P2001-52, I2P2001-53, I2P2001-54, PT2001-51, PT2001-52, PT2001-53, PT2001-54, PT2001-55, TM1032-51, TM2001-51, TM2001-52, TM2001-56, TM2001-61, TM2001-62, TM2001-63, TM2001-64, VFD2001-01:Auto, VFD2001-01:Hand, VFD2001-01:Off, VFD2001-01:PlcStart, VFD2001-01:Status, VFD2001-01:Speed, FAN2001-02:Auto, FAN2001-02:Hand, FAN2001-02:Off, FAN2001-02:PlcStart, FAN2001-02:Status, FAN2001-02:Speed, DP2001-52:SP, DP2001-52:Der, DP2001-52:Int, DP2001-52:Lag, DP2001-52:Mode, DP2001-52:Pro, DP2001-52, HM2001-51:SP, HM2001-51:Der, HM2001-51:Int, HM2001-51:Lag, HM2001-51:Mode, HM2001-51:Pro, HM2001-51, HM2001-54:SP, HM2001-54:Der, HM2001-54:Int, HM2001-54:Lag, HM2001-54:Mode, HM2001-54:Pro, HM2001-54, HM2001-55:SP, HM2001-55:Der, HM2001-55:Int, HM2001-55:Lag, HM2001-55:Mode, HM2001-55:Pro, HM2001-55, TM1021-50:SP, TM1021-50:Der, TM1021-50:Int, TM1021-50:Lag, TM1021-50:Mode, TM1021-50:Pro, TM1021-50, TM1022-50:SP, TM1022-50:Der, TM1022-50:Int, TM1022-50:Lag, TM1022-50:Mode, TM1022-50:Pro, TM1022-50
+Item: AHU2001-01 and AHU2001-02 (2) on PLC2001-02
+Archive: Archive-AHU
+PVnames: TM1023-50:SP, TM1023-50:Der, TM1023-50:Int, TM1023-50:Lag, TM1023-50:Mode, TM1023-50:Pro, TM1023-50, TM2001-51:SP, TM2001-51:Der, TM2001-51:Int, TM2001-51:Lag, TM2001-51:Mode, TM2001-51:Pro, TM2001-51, TM2001-58:SP, TM2001-58:Der, TM2001-58:Int, TM2001-58:Lag, TM2001-58:Mode, TM2001-58:Pro, TM2001-58, TM2001-59:SP, TM2001-59:Der, TM2001-59:Int, TM2001-59:Lag, TM2001-59:Mode, TM2001-59:Pro, TM2001-59, DP2001-53:SP, DP2001-53:Der, DP2001-53:Int, DP2001-53:Lag, DP2001-53:Mode, DP2001-53:Pro, DP2001-53, TM2001-54:SP, TM2001-54:Der, TM2001-54:Int, TM2001-54:Lag, TM2001-54:Mode, TM2001-54:Pro, TM2001-54, TM2001-53:SP, TM2001-53:Der, TM2001-53:Int, TM2001-53:Lag, TM2001-53:Mode, TM2001-53:Pro, TM2001-53, TM2001-57:SP, TM2001-57:Der, TM2001-57:Int, TM2001-57:Lag, TM2001-57:Mode, TM2001-57:Pro, TM2001-57, TM2001-60:SP, TM2001-60:Der, TM2001-60:Int, TM2001-60:Lag, TM2001-60:Mode, TM2001-60:Pro, TM2001-60, SWP2001-51, SWP2001-52, AHU2001-01:Dehumidify, AHU2001-01:Normal, AHU2001-01:FreeCooling
+
+Item: AHU2004-01 (1) on PLC2004-01
+Archive: Archive-AHU
+PVnames: HM2004-02, CV2004-01, CV2004-02, CV2004-03, CV2004-05, I2P2004-04, TM2004-02, TM2004-05, F2004-01:SP:h, F2004-01:SP:l, F2004-01:SP:ch, TM2004-03, SWL2004-01, SWL2004-02, SWP2004-01, SWP2004-02, F2004-01:Auto, F2004-02:Auto, F2004-01:clg, F2004-01:Status, F2004-02:Status, F2004-01:clgalarm, F2004-01:intlk, F2004-01:Plcstart, F2004-02:Plcstart, F2004-01:pwr, F2004-02:pwr, F2004-01:RDY, F2004-02:RDY, F2004-01:epicssp, F2004-01:epicsst, F2004-02:epicssp, F2004-02:epicsst, HM2004-01:SP, HM2004-01:Der, HM2004-01:Int, HM2004-01:Lag, HM2004-01:ManOP, HM2004-01:Mode, HM2004-01:Pro, HM2004-01, PT2004-01:SP, PT2004-01:Der, PT2004-01:Int, PT2004-01:Lag, PT2004-01:ManOP, PT2004-01:Mode, PT2004-01:Pro, PT2004-01, TM2004-01:SP, TM2004-01:Der, TM2004-01:Int, TM2004-01:Lag, TM2004-01:ManOP, TM2004-01:Mode, TM2004-01:Pro, TM2004-01, TM2004-04:SP, TM2004-04:Der, TM2004-04:Int, TM2004-04:Lag, TM2004-04:ManOP, TM2004-04:Mode, TM2004-04:Pro, TM2004-04, TM2004-06:SP, TM2004-06:Der, TM2004-06:Int, TM2004-06:Lag, TM2004-06:ManOP, TM2004-06:Mode, TM2004-06:Pro, TM2004-06 
+
+Item: AHU2004-01 (2 WP) on PLC2004-01
+Archive: Archive-AHU
+PVnames:  WP2004-01:Auto, WP2004-01:AutoST, WP2004-01:CT, WP2004-01:CTintlk, WP2004-01:EpicsSP, WP2004-01:EpicsST, WP2004-01:Intlk, WP2004-01:Plcstart, WP2004-01:PWR, WP2004-01:RDY, WP2004-01:Status, WP2004-02:Auto, WP2004-02:AutoST, WP2004-02:CT, WP2004-02:CTintlk, WP2004-02:EpicsSP, WP2004-02:EpicsST, WP2004-02:Intlk, WP2004-02:Plcstart, WP2004-02:PWR, WP2004-02:RDY, WP2004-02:Status, WP2004-03:Auto, WP2004-03:AutoST, WP2004-03:CT, WP2004-03:CTintlk, WP2004-03:EpicsSP, WP2004-03:EpicsST, WP2004-03:Intlk, WP2004-03:Plcstart, WP2004-03:PWR, WP2004-03:RDY, WP2004-03:Status
+
+Item: AHU2605-01 (1) on PLC1606-02
+Archive: Archive-AHU
+PVnames: DP1124-02, DP1125-02, DP2605-02, DP2605-03, HM1605-101, HM2605-01, HM2605-02, CV1115-01, CV1115-02, CV1115-03, CV1115-04, CV1115-05, CV1115-06, CV1115-07, CV1115-08, CV1115-09, CV1115-10, CV1115-11, CV1115-201, CV1605-501, CV2605-01, CV2605-02, CV2605-04, I2P1104-301, I2P1104-302, I2P2605-01, DMP1113-01, DMP1113-02, DMP1124-01, DMP1125-01, DMP1605-201, DMP1605-401, TM1104-301, TM2605-01, TM2605-02, TM2605-03, SV2605-01, VFD1606-01:Auto, VFD1606-01:Hand, VFD1606-01:Off, VFD1606-01:PlcStart, VFD1606-01:Status, VFD1606-01:Speed, HM1104-301:SP, HM1104-301:Der, HM1104-301:Int, HM1104-301:Lag, HM1104-301:ManOP, HM1104-301:Mode, HM1104-301:Pro, HM1104-301, HM1605-101:SP, HM1605-101:Der, HM1605-101:Int, HM1605-101:Lag, HM1605-101:ManOP, HM1605-101:Mode, HM1605-101:Pro, HM1605-101, TM1104-301-01:SP, TM1104-301-01:Der, TM1104-301-01:Int, TM1104-301-01:Lag, TM1104-301-01:ManOP, TM1104-301-01:Mode, TM1104-301-01:Pro, TM1104-301-01, TM1104-301-02:SP, TM1104-301-02:Der, TM1104-301-02:Int, TM1104-301-02:Lag, TM1104-301-02:ManOP, TM1104-301-02:Mode, TM1104-301-02:Pro, TM1104-301-02
+Item: AHU2605-01 (2) on PLC1606-02
+Archive: Archive-AHU
+PVnames: TM1605-501:SP, TM1605-501:Der, TM1605-501:Int, TM1605-501:Lag, TM1605-501:ManOP, TM1605-501:Mode, TM1605-501:Pro, TM1605-501, TM1115-01:SP, TM1115-01:Der, TM1115-01:Int, TM1115-01:Lag, TM1115-01:ManOP, TM1115-01:Mode, TM1115-01:Pro, TM1115-01, TM1115-02:SP, TM1115-02:Der, TM1115-02:Int, TM1115-02:Lag, TM1115-02:ManOP, TM1115-02:Mode, TM1115-02:Pro, TM1115-02, TM1115-03:SP, TM1115-03:Der, TM1115-03:Int, TM1115-03:Lag, TM1115-03:ManOP, TM1115-03:Mode, TM1115-03:Pro, TM1115-03, TM1115-04:SP, TM1115-04:Der, TM1115-04:Int, TM1115-04:Lag, TM1115-04:ManOP, TM1115-04:Mode, TM1115-04:Pro, TM1115-04, TM1115-05:SP, TM1115-05:Der, TM1115-05:Int, TM1115-05:Lag, TM1115-05:ManOP, TM1115-05:Mode, TM1115-05:Pro, TM1115-05, TM1115-06:SP, TM1115-06:Der, TM1115-06:Int, TM1115-06:Lag, TM1115-06:ManOP, TM1115-06:Mode, TM1115-06:Pro, TM1115-06, TM1115-07:SP, TM1115-07:Der, TM1115-07:Int, TM1115-07:Lag, TM1115-07:ManOP, TM1115-07:Mode, TM1115-07:Pro, TM1115-07, TM1115-08:SP, TM1115-08:Der, TM1115-08:Int, TM1115-08:Lag, TM1115-08:ManOP, TM1115-08:Mode, TM1115-08:Pro, TM1115-08, TM1115-201:SP, TM1115-201:Der, TM1115-201:Int, TM1115-201:Lag, TM1115-201:ManOP, TM1115-201:Mode, TM1115-201:Pro, TM1115-201
+Item: AHU2605-01 (3) on PLC1606-02
+Archive: Archive-AHU
+PVnames: PT2605-01:SP, PT2605-01:Der, PT2605-01:Int, PT2605-01:Lag, PT2605-01:ManOP, PT2605-01:Mode, PT2605-01:Pro, PT2605-01, DP1113-01:SP, DP1113-01:Der, DP1113-01:Int, DP1113-01:Lag, DP1113-01:ManOP, DP1113-01:Mode, DP1113-01:Pro, DP1113-01, DP1124-01:SP, DP1124-01:Der, DP1124-01:Int, DP1124-01:Lag, DP1124-01:ManOP, DP1124-01:Mode, DP1124-01:Pro, DP1124-01, DP1125-01:SP, DP1125-01:Der, DP1125-01:Int, DP1125-01:Lag, DP1125-01:ManOP, DP1125-01:Mode, DP1125-01:Pro, DP1125-01, DP1605-201:SP, DP1605-201:Der, DP1605-201:Int, DP1605-201:Lag, DP1605-201:ManOP, DP1605-201:Mode, DP1605-201:Pro, DP1605-201, DP1605-401:SP, DP1605-401:Der, DP1605-401:Int, DP1605-401:Lag, DP1605-401:ManOP, DP1605-401:Mode, DP1605-401:Pro, DP1605-401, FLT1104-301:SP, FLT1104-301:Der, FLT1104-301:Int, FLT1104-301:Lag, FLT1104-301:ManOP, FLT1104-301:Mode, FLT1104-301:Pro, FLT1104-301, FLT1104-302:SP, FLT1104-302:Der, FLT1104-302:Int, FLT1104-302:Lag, FLT1104-302:ManOP, FLT1104-302:Mode, FLT1104-302:Pro, FLT1104-302, FLT1113-01:SP, FLT1113-01:Der, FLT1113-01:Int, FLT1113-01:Lag, FLT1113-01:ManOP, FLT1113-01:Mode, FLT1113-01:Pro, FLT1113-01
+
+Item: AHU3001-04 and AHU3001-05 on PLC3001-04
+Archive: Archive-AHU
+PVnames: DP3001-07, DP3001-08, HM3001-56, HM3001-57, I2P3001-06:pct, I2P3001-10:pct, I2P3001-11:pct, I2P3001-12:pct, I2P3001-12:pct:rtn, TM3001-65, TM3001-66, DP3001-05, DP3001-06, HM3001-54, I2P3001-05:pct, I2P3001-07:pct, I2P3001-08:pct, I2P3001-09:pct, I2P3001-08:pct:rtn, TM3001-62, AHU3001-04:Winter, AHU3001-04:FreeCooling, AHU3001-05:Winter, AHU3001-05:FreeCooling, VFD3001-04:Auto, VFD3001-04:Hand, VFD3001-04:Off, VFD3001-04:PlcStart, VFD3001-04:Status, VFD3001-04:Speed, VFD3001-03:Auto, VFD3001-03:Hand, VFD3001-03:Off, VFD3001-03:PlcStart, VFD3001-03:Status, VFD3001-03:Speed, HM3001-55:SP, HM3001-55:Der, HM3001-55:Int, HM3001-55:Lag, HM3001-55:ManOP, HM3001-55:Mode, HM3001-55:Pro, HM3001-55, PT3001-54:SP, PT3001-54:Der, PT3001-54:Int, PT3001-54:Lag, PT3001-54:ManOP, PT3001-54:Mode, PT3001-54:Pro, PT3001-54, TM3001-63:SP, TM3001-63:Der, TM3001-63:Int, TM3001-63:Lag, TM3001-63:ManOP, TM3001-63:Mode, TM3001-63:Pro, TM3001-63, TM3001-64:SP, TM3001-64:Der, TM3001-64:Int, TM3001-64:Lag, TM3001-64:ManOP, TM3001-64:Mode, TM3001-64:Pro, TM3001-64, HM3001-53:SP, HM3001-53:Der, HM3001-53:Int, HM3001-53:Lag, HM3001-53:ManOP, HM3001-53:Mode, HM3001-53:Pro, HM3001-53, PT3001-53:SP, PT3001-53:Der, PT3001-53:Int, PT3001-53:Lag, PT3001-53:ManOP, PT3001-53:Mode, PT3001-53:Pro, PT3001-53, TM3001-60:SP, TM3001-60:Der, TM3001-60:Int, TM3001-60:Lag, TM3001-60:ManOP, TM3001-60:Mode, TM3001-60:Pro, TM3001-60, TM3001-61:SP, TM3001-61:Der, TM3001-61:Int, TM3001-61:Lag, TM3001-61:ManOP, TM3001-61:Mode, TM3001-61:Pro, TM3001-61
+
+Item: AHU3001-74 on PLC3001-03
+Archive: Archive-AHU
+PVnames: HM3001-50, HM3001-51, DMP3001-56, DMP3001-57, DMP3001-58, CV3001-60, CV3001-61, PT3001-52, TM3001-56, TM3001-57, SWP3001-56, VFD3001-01:Auto, VFD3001-01:Hand, VFD3001-01:Off, VFD3001-01:PlcStart, VFD3001-01:Status, VFD3001-01:Speed, VFD3001-01:Speed:fbk, HM3001-52:SP, HM3001-52:Der, HM3001-52:Int, HM3001-52:Lag, HM3001-52:ManOP, HM3001-52:Mode, HM3001-52:Pro, HM3001-52, PT3001-51:SP, PT3001-51:Der, PT3001-51:Int, PT3001-51:Lag, PT3001-51:ManOP, PT3001-51:Mode, PT3001-51:Pro, PT3001-51, TM3001-58:SP, TM3001-58:Der, TM3001-58:Int, TM3001-58:Lag, TM3001-58:ManOP, TM3001-58:Mode, TM3001-58:Pro, TM3001-58, TM3001-59:SP, TM3001-59:Der, TM3001-59:Int, TM3001-59:Lag, TM3001-59:ManOP, TM3001-59:Mode, TM3001-59:Pro, TM3001-59
+
+Item: AHU3008-01 AHU3008-02 AHU3008-08 (1) on PLC3008-01
+Archive: Archive-AHU
+PVnames: CV3008-01, CV3008-02, CV3008-03, CV3008-04, CV3008-05-01-02, CV3008-07, CV3008-08, CV3008-09, DMP3008-02, DMP3008-03, DP2100-01, DP2200-101, DP2200-102, DP3008-01, DP3008-02, DP3008-03, DP3008-12, DP3008-13, DP3008-15, DP3008-16, DP3008-17, FLT2200-101, FLT2200-102, FLT2200-103, FLT3008-01, FLT3008-02, FLT3008-05, HM3008-01, HM3008-02, HM3008-03, HM3008-09, I2P3008-01, I2P3008-02, I2P3008-03, I2P3008-04, I2P3008-05:pct, I2P3008-06:pct, I2P3008-07:pct, I2P3008-08:pct, I2P3008-06:pct:rtn, PT3008-03, PT3008-04, PT3008-05, PT3008-06, PT3008-07, PT3008-08, PT3008-09, TM2100-02, TM3008-01, TM3008-04, TM3008-05, TM3008-06, TM3008-07, TM3008-08, TM3008-10, TM3008-12, TM3008-23, TLL3008-04, AHU3008-08:Winter, AHU3008-08:FreeCooling, SV3008-01, SV3008-02, SV3008-03, SV3008-04, SV3008-05, SV3008-06, SV3008-07-08, SV3008-09, SV3008-10, SW3008-01, SWF3008-01, SWF3008-05, SWL3008-01, SWL3008-02, SWL3008-03, SWL3008-04, SWL3008-05, SWL3008-07, SWP3008-01, SWP3008-02  
+Item: AHU3008-01 AHU3008-02 AHU3008-08 (2 VFD WP) on PLC3008-01
+Archive: Archive-AHU
+PVnames: VFD3001-05:Auto, VFD3001-05:Hand, VFD3001-05:Off, VFD3001-05:On, VFD3001-05:PlcStart, VFD3001-05:Power, VFD3001-05:Status, VFD3001-05:Speed, VFD3008-01:Auto, VFD3008-01:Hand, VFD3008-01:Off, VFD3008-01:On, VFD3008-01:PlcStart, VFD3008-01:Power, VFD3008-01:Status, VFD3008-01:Speed, VFD3008-02:Auto, VFD3008-02:Hand, VFD3008-02:Off, VFD3008-02:On, VFD3008-02:PlcStart, VFD3008-02:Power, VFD3008-02:Status, VFD3008-02:Speed, VFD3008-03:Auto, VFD3008-03:Hand, VFD3008-03:Off, VFD3008-03:On, VFD3008-03:PlcStart, VFD3008-03:Power, VFD3008-03:Status, VFD3008-03:Speed, VFD3008-04:Auto, VFD3008-04:Hand, VFD3008-04:Off, VFD3008-04:On, VFD3008-04:PlcStart, VFD3008-04:Power, VFD3008-04:Status, VFD3008-04:Speed, VFD3008-05:Auto, VFD3008-05:Hand, VFD3008-05:Off, VFD3008-05:On, VFD3008-05:PlcStart, VFD3008-05:Power, VFD3008-05:Status, VFD3008-05:Speed, WP3008-01:Auto, WP3008-01:Hand, WP3008-01:Plcstart, WP3008-01:PWR, WP3008-01:Status, WP3008-02:Auto, WP3008-02:Hand, WP3008-02:Plcstart, WP3008-02:PWR, WP3008-02:Status, WP3008-03:Auto, WP3008-03:Hand, WP3008-03:Plcstart, WP3008-03:PWR, WP3008-03:Status, WP3008-04:Auto, WP3008-04:Hand, WP3008-04:Plcstart, WP3008-04:PWR, WP3008-04:Status
+Item: AHU3008-01 AHU3008-02 AHU3008-08 (3 PID) on PLC3008-01
+Archive: Archive-AHU
+PVnames: HM3008-04:SP, HM3008-04:Der, HM3008-04:Int, HM3008-04:Lag, HM3008-04:ManOP, HM3008-04:Mode, HM3008-04:Pro, HM3008-04, PT3008-12:SP, PT3008-12:Der, PT3008-12:Int, PT3008-12:Lag, PT3008-12:ManOP, PT3008-12:Mode, PT3008-12:Pro, PT3008-12, TM3008-13:SP, TM3008-13:Der, TM3008-13:Int, TM3008-13:Lag, TM3008-13:ManOP, TM3008-13:Mode, TM3008-13:Pro, TM3008-13, TM3008-14:SP, TM3008-14:Der, TM3008-14:Int, TM3008-14:Lag, TM3008-14:ManOP, TM3008-14:Mode, TM3008-14:Pro, TM3008-14, PT2100-01:SP, PT2100-01:Der, PT2100-01:Int, PT2100-01:Lag, PT2100-01:ManOP, PT2100-01:Mode, PT2100-01:Pro, PT2100-01,  PT2100-02:SP, PT2100-02:Der, PT2100-02:Int, PT2100-02:Lag, PT2100-02:ManOP, PT2100-02:Mode, PT2100-02:Pro, PT2100-02,DP2200-103:SP, DP2200-103:Der, DP2200-103:Int, DP2200-103:Lag, DP2200-103:ManOP, DP2200-103:Mode, DP2200-103:Pro, DP2200-103, DP3008-04:SP, DP3008-04:Der, DP3008-04:Int, DP3008-04:Lag, DP3008-04:ManOP, DP3008-04:Mode, DP3008-04:Pro, DP3008-04,DP3008-18:SP, DP3008-18:Der, DP3008-18:Int, DP3008-18:Lag, DP3008-18:ManOP, DP3008-18:Mode, DP3008-18:Pro, DP3008-18
+Item: AHU3008-01 AHU3008-02 AHU3008-08 (4 PID) on PLC3008-01
+Archive: Archive-AHU
+PVnames: HM2100-01:SP, HM2100-01:Der, HM2100-01:Int, HM2100-01:Lag, HM2100-01:ManOP, HM2100-01:Mode, HM2100-01:Pro, HM2100-01, HM3008-10:SP, HM3008-10:Der, HM3008-10:Int, HM3008-10:Lag, HM3008-10:ManOP, HM3008-10:Mode, HM3008-10:Pro, HM3008-10, TM2100-01:SP, TM2100-01:Der, TM2100-01:Int, TM2100-01:Lag, TM2100-01:ManOP, TM2100-01:Mode, TM2100-01:Pro, TM2100-01, TM3008-02:SP, TM3008-02:Der, TM3008-02:Int, TM3008-02:Lag, TM3008-02:ManOP, TM3008-02:Mode, TM3008-02:Pro, TM3008-02, TM3008-03:SP, TM3008-03:Der, TM3008-03:Int, TM3008-03:Lag, TM3008-03:ManOP, TM3008-03:Mode, TM3008-03:Pro, TM3008-03, TM3008-24:SP, TM3008-24:Der, TM3008-24:Int, TM3008-24:Lag, TM3008-24:Mode, TM3008-24:Pro, TM3008-24, TM3008-11:SP, TM3008-11:Der, TM3008-11:Int, TM3008-11:Lag, TM3008-11:Mode, TM3008-11:Pro, TM3008-11, TM3008-25:SP, TM3008-25:Der, TM3008-25:Int, TM3008-25:Lag, TM3008-25:Mode, TM3008-25:Pro, TM3008-25, TM3008-26:SP, TM3008-26:Der, TM3008-26:Int, TM3008-26:Lag, TM3008-26:Mode, TM3008-26:Pro, TM3008-26
+
+Item: Storage Ring HVAC (1) on PLC2402-101
+Archive: Archive-AHU
+PVnames: TM1401-50, TM1401-52, TM1401-51, TM1402-50, TM1402-52, TM1402-51, TM1403-50, TM1403-52, TM1403-51, TM1404-50, TM1404-52, TM1404-51, TM1405-50, TM1405-52, TM1405-51, TM1406-50, TM1406-52, TM1406-51, TM1407-50, TM1407-52, TM1407-51, TM1408-50, TM1408-52, TM1408-51, TM1409-50, TM1409-52, TM1409-51, TM1410-50, TM1410-52, TM1410-51, TM1411-50, TM1411-52, TM1411-51, TM1412-50, TM1412-52, TM1412-51, ACIS:lock:Z5, ACIS:lock:Z6:Z7, ACIS:lock:Z8:Z9, F1300-01:RDY, F1300-01:Auto, F1300-01:Plcstart, F1300-01:Status, F1303-01:RDY, F1303-01:Auto, F1303-01:Plcstart, F1303-01:Status, F1303-02:RDY, F1303-02:Auto, F1303-02:Plcstart, F1303-02:Status, F1501-01:RDY, F1501-01:Auto, F1501-01:Plcstart, F1501-01:Status, F1501-02:RDY, F1501-02:Auto, F1501-02:Plcstart, F1501-02:Status, F1300-01:epicssp, F1300-01:epicsst, F1300-01:rem, F1303-01:epicssp, F1303-01:epicsst, F1303-01:rem, F1303-02:epicssp, F1303-02:epicsst, F1303-02:rem, F1501-01:epicssp, F1501-01:epicsst, F1501-01:rem, F1501-02:epicssp, F1501-02:epicsst, F1501-02:rem, TMSRCELL01:SP, TMSRCELL01:Der, TMSRCELL01:Int, TMSRCELL01:Lag, TMSRCELL01:ManOP, TMSRCELL01:Mode, TMSRCELL01:Pro, TMSRCELL01, TMSRCELL01:AutoOP
+
+Item: Storage Ring HVAC (2 PID) on PLC2402-101
+Archive: Archive-AHU
+PVnames: TMSRCELL02:SP, TMSRCELL02:Der, TMSRCELL02:Int, TMSRCELL02:Lag, TMSRCELL02:ManOP, TMSRCELL02:Mode, TMSRCELL02:Pro, TMSRCELL02, TMSRCELL02:AutoOP, TMSRCELL03:SP, TMSRCELL03:Der, TMSRCELL03:Int, TMSRCELL03:Lag, TMSRCELL03:ManOP, TMSRCELL03:Mode, TMSRCELL03:Pro, TMSRCELL03, TMSRCELL03:AutoOP, TMSRCELL04:SP, TMSRCELL04:Der, TMSRCELL04:Int, TMSRCELL04:Lag, TMSRCELL04:ManOP, TMSRCELL04:Mode, TMSRCELL04:Pro, TMSRCELL04, TMSRCELL04:AutoOP, TMSRCELL05:SP, TMSRCELL05:Der, TMSRCELL05:Int, TMSRCELL05:Lag, TMSRCELL05:ManOP, TMSRCELL05:Mode, TMSRCELL05:Pro, TMSRCELL05, TMSRCELL05:AutoOP, TMSRCELL06:SP, TMSRCELL06:Der, TMSRCELL06:Int, TMSRCELL06:Lag, TMSRCELL06:ManOP, TMSRCELL06:Mode, TMSRCELL06:Pro, TMSRCELL06, TMSRCELL06:AutoOP, TMSRCELL07:SP, TMSRCELL07:Der, TMSRCELL07:Int, TMSRCELL07:Lag, TMSRCELL07:ManOP, TMSRCELL07:Mode, TMSRCELL07:Pro, TMSRCELL07, TMSRCELL07:AutoOP, TMSRCELL08:SP, TMSRCELL08:Der, TMSRCELL08:Int, TMSRCELL08:Lag, TMSRCELL08:ManOP, TMSRCELL08:Mode, TMSRCELL08:Pro, TMSRCELL08, TMSRCELL08:AutoOP, TMSRCELL09:SP, TMSRCELL09:Der, TMSRCELL09:Int, TMSRCELL09:Lag, TMSRCELL09:ManOP, TMSRCELL09:Mode, TMSRCELL09:Pro, TMSRCELL09, TMSRCELL09:AutoOP, TMSRCELL10:SP, TMSRCELL10:Der, TMSRCELL10:Int, TMSRCELL10:Lag, TMSRCELL10:ManOP, TMSRCELL10:Mode, TMSRCELL10:Pro, TMSRCELL10, TMSRCELL10:AutoOP, TMSRCELL11:SP, TMSRCELL11:Der, TMSRCELL11:Int, TMSRCELL11:Lag, TMSRCELL11:ManOP, TMSRCELL11:Mode, TMSRCELL11:Pro, TMSRCELL11, TMSRCELL11:AutoOP, TMSRCELL12:SP, TMSRCELL12:Der, TMSRCELL12:Int, TMSRCELL12:Lag, TMSRCELL12:ManOP, TMSRCELL12:Mode, TMSRCELL12:Pro, TMSRCELL12, TMSRCELL12:AutoOP
+
+Item: AHU2610-401 on PLC1609-01
+Archive: Archive-AHU
+PVnames: DP2610-401, DP2610-402, DP2610-403, DP2610-404, HM1609-01, CV1608-301, CV2608-801, CV2608-1101, CV2610-401, VFD1609-01:Auto, VFD1609-01:Hand, VFD1609-01:Power, VFD1609-01:PlcStart, VFD1609-01:Speed, VFD1609-01:Status, DP2608-1102:SP, DP2608-1102:Der, DP2608-1102:Int, DP2608-1102:Lag, DP2608-1102:ManOP, DP2608-1102:Mode, DP2608-1102:Pro, DP2608-1102, DP2610-405:SP, DP2610-405:Der, DP2610-405:Int, DP2610-405:Lag, DP2610-405:ManOP, DP2610-405:Mode, DP2610-405:Pro, DP2610-405, DP2608-802:SP, DP2608-802:Der, DP2608-802:Int, DP2608-802:Lag, DP2608-802:ManOP, DP2608-802:Mode, DP2608-802:Pro, DP2608-802, TM1609-01:SP, TM1609-01:Der, TM1609-01:Int, TM1609-01:Lag, TM1609-01:ManOP, TM1609-01:Mode, TM1609-01:Pro, TM1609-01, TM1608-1101:SP, TM1608-1101:Der, TM1608-1101:Int, TM1608-1101:Lag, TM1608-1101:ManOP, TM1608-1101:Mode, TM1608-1101:Pro, TM1608-1101, TM1608-302:SP, TM1608-302:Der, TM1608-302:Int, TM1608-302:Lag, TM1608-302:ManOP, TM1608-302:Mode, TM1608-302:Pro, TM1608-302, TM2608-801:SP, TM2608-801:Der, TM2608-801:Int, TM2608-801:Lag, TM2608-801:ManOP, TM2608-801:Mode, TM2608-801:Pro, TM2608-801                           
+
+Item: Primary Heating, VAV Reheat, Air Compressor on PLC0105-101
+Archive: Archive-AHU
+PVnames: WP204:speed, WP205:speed, CV0105-102, CV295, CV296, CV301, HM0105-101, PT0105-101, PT0105-102, PT0105-111:psi, PT0105-111:kpa, TM0105-101, TM0105-102, TM0105-103, TM0105-104, TM0105-107, TM6001-60, DEW0105-101:cel, DEW0105-101:fah, DEW0105-102:cel, DEW0105-102:fah, FLT0105-101:cfm, FLT0105-101:lpm, DP3001-03:PID:out, SWP0105-102, SWP0105-103, SWL0105-101, SWL0105-102, SWL0105-104, SWL0105-105, CMP0105-101:ctrl:on, CMP0105-102:ctrl:on, CMP0105-101:failure, CMP0105-102:failure, CMP0105-101:running, CMP0105-102:running, SW0105-119:hand, SW0105-119:auto, SW0105-119:off, SW0105-120:hand, SW0105-120:auto, SW0105-120:off, SW0105-101:normal, SW0105-102:normal, DR0105-101:high:HM, DR0105-102:high:HM, DR0105-101:failtoshift, DR0105-102:failtoshift, SV0105-119, SV0105-120, DP3001-03:SP, DP3001-03:Der, DP3001-03:Int, DP3001-03:Lag, DP3001-03:ManOP, DP3001-03:Mode, DP3001-03:Pro, DP3001-03, TM0105-105:SP, TM0105-105:Der, TM0105-105:Int, TM0105-105:Lag, TM0105-105:ManOP, TM0105-105:Mode, TM0105-105:Pro, TM0105-105, TM0105-106:SP, TM0105-106:Der, TM0105-106:Int, TM0105-106:Lag, TM0105-106:ManOP, TM0105-106:Mode, TM0105-106:Pro, TM0105-106, WP201:Auto, WP201:Plcstart, WP201:PWR, WP201:HAND, WP201:Status, WP202:Auto, WP202:Plcstart, WP202:PWR, WP202:HAND, WP202:Status, WP204:Auto, WP204:Plcstart, WP204:PWR, WP204:HAND, WP204:Status, WP205:Auto, WP205:Plcstart, WP205:PWR, WP205:HAND, WP205:Status, WP0105-103:Auto, WP0105-103:Plcstart, WP0105-103:PWR, WP0105-103:HAND, WP0105-103:Status
+
+Item: AHU1611-01, Magnet Mapping, OSR, FarIR on PLC1612-01
+Archive: Archive-AHU
+PVnames: HM1067-01, HM1505-01, HM1601-201, HM1602-101, HM1611-201, I2P1612-01, I2P1612-02, I2P1612-03, CV2505-01, CV1602-01, CV1601-01, PT6002-01, PT6002-02, PT6002-02:pct, TM6161-01, TM1067-01:Y, TM1505-01:Y, TM1601-201:Y, TM1602-101:Y, TM1611-201:Y, MSC1070-01, MSC1061-201, MSC1602-01, MSC2409-01, SWP1070-01, SWP1601-201, SWP1602-01, SWP2409-01, SWP3002-12, SWP3002-13, SWP3002-14, SWP3002-15, SWP6056-01, F3002-12:Status, F3002-13:Status, F3002-14:Status, F3002-15:Status, F6056-01:Status, TM1067-01:SP, TM1067-01:Der, TM1067-01:Int, TM1067-01:Lag, TM1067-01:ManOP, TM1067-01:Mode, TM1067-01:Pro, TM1067-01, TM1505-01:SP, TM1505-01:Der, TM1505-01:Int, TM1505-01:Lag, TM1505-01:ManOP, TM1505-01:Mode, TM1505-01:Pro, TM1505-01, TM1601-201:SP, TM1601-201:Der, TM1601-201:Int, TM1601-201:Lag, TM1601-201:ManOP, TM1601-201:Mode, TM1601-201:Pro, TM1601-201, TM1602-101:SP, TM1602-101:Der, TM1602-101:Int, TM1602-101:Lag, TM1602-101:ManOP, TM1602-101:Mode, TM1602-101:Pro, TM1602-101, TM1611-201:SP, TM1611-201:Der, TM1611-201:Int, TM1611-201:Lag, TM1611-201:ManOP, TM1611-201:Mode, TM1611-201:Pro, TM1611-201
+
+Item: AHU3001-69-72 on PLC3001-01
+Archive: Archive-AHU
+PVnames: SWP3001-54, SWDMP3001-58, SWDMP3001-57, SWP3001-53, SWDMP3001-56, SWDMP3001-55, SWP3001-52, SWDMP3001-54, SWDMP3001-53, SWP3001-51, SWDMP3001-52, SWDMP3001-51, F3001-72:RunState, F3001-72:MCCAuto, F3001-72:Perm, F3001-72:PLCStart, F3001-72:RemAuto, F3001-72:Stop, F3001-72:Start, F3001-72:Ready, F3001-72:AutoStart, F3001-71:RunState, F3001-71:MCCAuto, F3001-71:Perm, F3001-71:PLCStart, F3001-71:RemAuto, F3001-71:Stop, F3001-71:Start, F3001-71:Ready, F3001-71:AutoStart, F3001-70:RunState, F3001-70:MCCAuto, F3001-70:Perm, F3001-70:PLCStart, F3001-70:RemAuto, F3001-70:Stop, F3001-70:Start, F3001-70:Ready, F3001-70:AutoStart, F3001-69:RunState, F3001-69:MCCAuto, F3001-69:Perm, F3001-69:PLCStart, F3001-69:RemAuto, F3001-69:Stop, F3001-69:Start, F3001-69:Ready, F3001-69:AutoStart, DMP3001-54, DMP3001-53, DMP3001-52, DMP3001-51, DMP3001-51:Status, DMP3001-52:Status, DMP3001-53:Status, DMP3001-54:Status, TM3001-51, TM3001-52, TM3001-53, TM3001-54, TM3001-67, CV3001-51, CV3001-52, CV3001-53, CV3001-54, CV3001-55, CV3001-56, CV3001-57, CV3001-58, TM3001-51:SP:fbk, TM3001-51:Pro, TM3001-51:Int, TM3001-51:Der, TM3001-51:Lag, TM3001-51:OP, TM3001-51:Man, TM3001-51:ManOP, TM3001-52:SP:fbk, TM3001-52:Pro, TM3001-52:Int, TM3001-52:Der, TM3001-52:Lag, TM3001-52:OP, TM3001-52:Man, TM3001-52:ManOP, TM3001-53:SP:fbk, TM3001-53:Pro, TM3001-53:Int, TM3001-53:Der, TM3001-53:Lag, TM3001-53:OP, TM3001-53:Man, TM3001-54:SP:fbk, TM3001-54:Pro, TM3001-54:Int, TM3001-54:Der, TM3001-54:Lag, TM3001-54:OP, TM3001-54:Man, TM3001-54:ManOP
+
+Item: Relief Air on PLC3001-04
+Archive: Archive-AHU
+PVnames: DP3001-50, DP3001-51, DP3001-52, DP3001-53, I2P3001-01, I2P3001-02, I2P3001-03, I2P3001-04, BldgPress:Output, BldgPress, BldgPress:SP:fbk, BldgPress:G, BldgPress:I:fbk, BldgPress:D:fbk, BldgPress:Mode:fbk, BldgPress:YMan:fbk, F274:Power, F274:Plc_Run, F274:Status, F274:Selector_Hand, F274:Selector_Auto, F274:Selector_Off, F274:Speed, F274:Estop, F276:Power, F276:Plc_Run, F276:Status, F276:Selector_Hand, F276:Selector_Auto, F276:Selector_Off, F276:Speed, F276:Estop, F275:Power, F275:Plc_Run, F275:Status, F275:Selector_Hand, F275:Selector_Auto, F275:Selector_Off, F277:Power, F277:Plc_Run, F277:Status, F277:Selector_Hand, F277:Selector_Auto, F277:Selector_Off
+
+End: GLYCOL
+
+Item: Heat Exchangers
+Menu: HE
+Archive: Archive-00
+Item: Klystron Heat Exchanger
+Archive: Archive-20
+PVnames: HCS2001-01:PumpInkPa, HCS2001-01:PumpOutkPa, HCS2001-01:HEHotOutkPa, HCS2001-01:HeatOutC, HCS2001-01:ValveOutC, HCS2001-01:HEHotInTC
+Item: Section 0 Heat Exchanger
+PVnames: HCS0010-01:PumpkPa, HCS0010-01:ReturnkPa
+Item: Section 1 Heat Exchanger
+PVnames: HCS0010-02:PumpkPa, HCS0010-02:ReturnkPa
+Item: Section 2 Heat Exchanger
+PVnames: HCS0010-03:PumpkPa, HCS0010-03:ReturnkPa
+Item: Section 3 Heat Exchanger
+PVnames: HCS0009-02:PumpkPa, HCS0009-02:ReturnkPa
+Item: Section 4 Heat Exchanger
+PVnames: HCS0009-03:PumpkPa, HCS0009-03:ReturnkPa
+Item: Section 5 Heat Exchanger
+PVnames: HCS0009-04:PumpkPa, HCS0009-04:ReturnkPa
+Item: Section 6 Heat Exchanger
+PVnames: HCS0009-05:PumpkPa, HCS0009-05:ReturnkPa
+Item: Section 7 Heat Exchanger
+PVnames: HCS0009-07:PumpkPa, HCS0009-07:ReturnkPa
+Item: Low Energy Heat Exchanger
+PVnames: HCS0009-01:FilterkPa, HCS0009-01:PumpkPa, HCS0009-01:ReturnkPa
+Item: ECS Heat Exchanger
+PVnames: HCS0009-06:FilterkPa, HCS0009-06:PumpkPa, HCS0009-06:ReturnkPa
+Item: LTB Heat Exchanger
+PVnames: HCS0003-01:FilterkPa, HCS0003-01:PumpkPa, HCS0003-01:ReturnkPa
+Item: RM0102 Heat Exchanger
+Archive: Archive-01
+PVnames: PT0102-401, PT0102-402, PT0102-403, PT0102-404, TM0004-101, TM0102-401, TM0102-402, TM0102-403, TM0102-404, TM0102-405, TM0102-406
+Item: LTB Flow Rates
+Archive: Archive-10
+PVnames: FLT0003-01:rate,FLT0003-02:rate,FLT0003-03:rate,FLT0003-04:rate,FLT0003-05:rate,FLT0003-06:rate,FLT0003-07:rate,FLT0003-08:rate,FLT0003-09:rate
+End: HE
+Item: Booster Subheaders
+Menu: BCS
+Archive: Archive-10
+Item: Booster Cavity LCW system Subheader
+PVnames: TM1304-04:temp, TM1304-05:temp, PT1304-04:press, PT1304-05:press, FLT1304-04:rate
+Item: Booster RF LCW System Subheader
+PVnames: TM1500-01:temp, TM1500-02:temp, PT1500-01:press, PT1500-02:press, FLT1500-01:rate, FLT1500-02, FLT1500-03, FLT1500-04, FLT1500-05, PT1500-03, PT1500-04, PT1500-05, PT1500-06, PT1500-07, PT1500-08, PT1500-09, PT1500-10, PT1500-11, SWF1500-01, SWF1500-03, SWF1500-04, TM1500-03, TM1500-04, TM1500-05, TM1500-06, TM1500-07, TM1500-08, TM1500-09, TM1500-10
+Item: Booster Magnet Subheader
+PVnames: TM1304-03:temp, TM1302-04:temp, PT1304-03:press, PT1302-04:press, FLT1304-03:rate, FLT1302-04:rate, TM1302-02:temp, TM1302-03:temp, PT1302-02:press, PT1302-03:press, FLT1302-02:rate, FLT1302-03:rate, TM1304-01:temp, TM1304-02:temp, PT1304-01:press, PT1304-02:press, FLT1304-01:rate, FLT1304-02:rate, TM1302-01:temp, TM1303-01:temp, PT1302-01:press, PT1303-01:press
+End: BCS
+Item: BR Beam Current
+Menu: BRbeamCurrent
+Archive: Archive-PCT
+Item: Beam current 
+PVnames: PCT2403-01:extrctVal 
+Item: BTS Effiencies
+PVnames: ICT1400-01:PCT1402-01:InjEff:fbk, ICT1400-01:adc1:sig_charge, PCT1304-01:ICT1400-01:InjEff:fbk
+Item: SR Injection Efficiency
+PVnames: PCT2403-01:BRInjEff:fbk, PCT2403-01:MaSRLost:sum:fbk
+Item: SR Avg Injection Efficiency
+PVnames: PCT2403-01:avgInjEff:fbk
+Item: Gun Trigger Permissive
+PVnames: PCT2403-01:avgInjEff:fbk,PCT2403-01:gunEn:enabled,PCT2403-01:gunEn:permisv,PCT2403-01:gunEn:sts,PCT2403-01:gunEn:permisv:fbk,PCT2403-01:gunEn:curLvl,QDC0006-01:chrg:sts,QDC0006-01:chrg:total
+ 
+End: BRbeamCurrent
+Item: Cryoplant and Cryostat
+Menu: CRYO
+Archive: Archive-Cryo
+Item: CryoPlant
+Pattern: CRYOPLANT:
+Item: CryoStat (New Apr 2014)
+PVnames: TCG1412-01:vac:p,TCG1412-02:vac:p,TCG1412-03:vac:p,TCG2404-01:vac:p
+Item: CryoStat 0-9,A-D
+Pattern: CRYOSTAT:[0-9,A-D,a-d]
+Item: CryoStat F-I
+Pattern: CRYOSTAT:[F-I,f-i]
+Item: CryoStat J-O
+Pattern: CRYOSTAT:[J-O,j-o]
+Item: CryoStat P-Q
+Pattern: CRYOSTAT:[P-Q,p-q]
+Item: CryoStat R-U
+Pattern: CRYOSTAT:[R-U,r-u]
+Item: CryoStat V-Z
+Pattern: CRYOSTAT:[V-Z,v-z]
+Item: Varian Dual Controllers
+Pattern: :pressure
+Item: PLC1612-001
+PVnames: TM6161-001,PT6002-01,PT6002-02,PT6002-02:pct
+Item: PLC2404-102
+PVnames: CV2404-06,FLT2404-01
+Item: PLC1061-004
+PVnames: TM1061_01, TM1061_02,TM1061_03, TM1061_04
+Item: Cryo Module Storage Pressure
+Archive: Archive-Cryo
+PVnames: CCG0000-01:vac:p CCG0000-02:vac:p
+Item: Transfer Line Vacuum
+Archive: Archive-SR1vac
+PVnames: TCGC2404-305:pressure:fbk,TCG2404-02:vac:p
+Item: LLRF
+Archive: Archive-Cryo
+PVnames: SR-RF:CFC-Cav:E:NAvg-I,SR-RF:CFC-Cav:Phs:Mean-I,SR-RF:CFC-Fwd:E:NAvg-I,SR-RF:CFC-Fwd:Phs:Mean-I,SR-RF:CFC-Rfl:E:NAvg-I,SR-RF:CFC-Rfl:Phs:Mean-I,SR-RF:CFC-Ref:E:NAvg-I,SR-RF:CFC-Ref:Phs:Mean-I,SR-RF:CFC:Gain:P-SP,SR-RF:CFC:Gain:I-SP,SR-RF:CFC:Sts:FB-RB,SR-RF:CFC:E:Fb-SP,SR-RF:CFC-Drv:E:NAvg-I,SR-RF:CFC-Drv:Phs:Avg-I
+End: CRYO
+
+Item: SR1 RF
+Menu: SR1rf
+Archive: Archive-SR1frequency
+Item: SR1 RF Frequency Counter
+PVnames: FQC1503-001:read, CRYOSTAT:frequency_offset 
+End: SR1rf
+
+Item: SR1 Beam Current
+Menu: SR1beamCurrent
+Archive: Archive-PCT
+Item: Beam current and half life
+PVnames: PCT1402-01:halfLife, PCT1402-01:mA:fbk, PCT1402-01:mAChange
+Item: Other parameters
+PVnames: PCT1402-01:timeConstant, PCT1402-01:zeroOffset, PCT1402-01:meter:mA:fbk, PCT1402-01:timeInterval, PCT1402-01:timeInterval:fbk
+Item: Effiencies
+PVnames: PCT2403-01:mABR:fbk, PCT2403-01:BRInjEff:fbk, PCT1402-01:mA:fbk, ICT1400-01:PCT1402-01:InjEff:fbk, ICT1400-01:adc1:sig_charge, PCT1304-01:ICT1400-01:InjEff:fbk
+Item: Fill Pattern Monitor
+PVnames: FQC1602-101:read:average, FQC1602-102:read:average
+End: SR1beamCurrent
+
+Item: SR1 Tune
+Menu: SR1tune
+Archive: Archive-Rad
+Item: SR1 Tune
+PVnames: Sr1HorizontalTune, Sr1FilteredVerticalTune
+End: Sr1tune
+
+Item: BR1 Vacuum
+Menu: BR1 Vacuum
+Archive: Archive-24
+Item: BR1 Vacuum IOP
+PVnames: IOP1300-05:pressure, IOP1302-01:pressure, IOP1302-02:pressure, IOP1302-03:pressure, IOP1302-04:pressure, IOP1302-05:pressure, IOP1302-06:pressure,IOP1302-07:pressure, IOP1302-08:pressure,IOP1302-09:pressure,IOP1302-10:pressure,IOP1302-11:pressure,IOP1303-01:pressure, IOP1303-02:pressure, IOP1303-03:pressure, IOP1304-01:pressure, IOP1304-02:pressure, IOP1304-03:pressure, IOP1304-04:pressure, IOP1304-05:pressure,IOP1304-06:pressure, IOP1304-07:pressure, IOP1304-08:pressure, IOP1304-09:pressure, IOP1304-10:pressure, IOP1304-11:pressure, IOP1304-16:pressure, IOP1304-17:pressure   
+Item: BR1 Vacuum CCG
+Archive: Archive-10
+PVnames: CCG1302-01:vac:p CCG1302-02:vac:p CCG1302-03:vac:p CCG1302-04:vac:p CCG1302-05:vac:p CCG1302-06:vac:p CCG1303-01:vac:p CCG1303-02:vac:p CCG1304-01:vac:p CCG1304-02:vac:p CCG1304-03:vac:p CCG1304-04:vac:p CCG1304-05:vac:p CCG1304-10:vac:p  
+Item: BR1 Cavity IOP
+Archive: Archive-10
+PVnames: IOP1304-12:pressure, IOP1304-13:pressure, IOP1304-14:pressure, IOP1304-15:pressure
+Item: BR1 Cavity CCG
+Archive: Archive-10
+PVnames: CCG1304-06:pressure:fbk, CCG1304-07:pressure:fbk, CCG1304-08:pressure:fbk, CCG1304-09:pressure:fbk
+End:  BR1 Vacuum
+
+Item: BTS1 Vacuum
+Menu: BTS1Vacuum
+Archive: Archive-24
+Item: BTS1
+PVnames: IOP1305-01:pressure, IOP1305-02:pressure, IOP1305-03:pressure, IOP1305-04:pressure, IOP1400-01:pressure, IOP1400-02:pressure, IOP1400-03:pressure, IOP1400-04:pressure
+End: BTS1Vacuum
+
+Item: BTS1 Magnet
+Menu: BTS1Magnet
+Archive: Archive-BR1Magnet
+Item: SEP1401-01
+PVnames: SEP1401-01:adc
+Item: PS2401-06:0
+PVnames: PS2401-06:0:adc
+End: BTS1Magnet
+
+Item: SR1 Vacuum
+Menu: SR1vacuum
+Archive: Archive-SR1vac
+Item: Pressure feedback
+Pattern: :pressure$
+Item: Section 01
+Pattern: IOP1401.*:pressure$|CCG1401.*:p$
+Item: Section 02
+Pattern: IOP1402.*:pressure$|CCG1402.*:p$
+Item: Section 03
+Pattern: IOP1403.*:pressure$|CCG1403.*:p$
+Item: Section 04
+Pattern: IOP1404.*:pressure$|CCG1404.*:p$|CCG1404.*:fbk$|TCG1404.*:fbk$
+Item: Section 05
+Pattern: IOP1405.*:pressure$|CCG1405.*:p$
+Item: Section 06
+Pattern: IOP1406.*:pressure$|CCG1406.*:p$
+Item: Section 07
+Pattern: IOP1407.*:pressure$|CCG1407.*:p$
+Item: Section 08
+Pattern: IOP1408.*:pressure$|CCG1408.*:p$
+Item: Section 09
+Pattern: IOP1409.*:pressure$|CCG1409.*:p$
+Item: Section 10
+Pattern: IOP1410.*:pressure$|CCG1410.*:p$
+Item: Section 11
+Pattern: IOP1411.*:pressure$|CCG1411.*:p$
+Item: Section 12
+Pattern: IOP1412.*:pressure$|CCG1412.*:p$
+End: SR1vacuum
+
+Item: SR1 BPM's 
+Menu: SR1bpms
+Archive: Archive-SrBPMs
+Item: Beam Size RMS
+PVnames: SR1:BPMXRMSGlobal,SR1:BPMYRMSGlobal
+Item: Sector 1
+PVnames: BPM1401-01:x,BPM1401-01:y,BPM1401-02:x,BPM1401-02:y,BPM1401-03:x,BPM1401-03:y,BPM1401-04:x,BPM1401-04:y,BPM1412-05:x,BPM1412-05:y
+Item: Sector 2
+PVnames: BPM1401-04:x,BPM1401-04:y,BPM1402-07:x,BPM1402-07:y,BPM1402-08:x,BPM1402-08:y,BPM1402-09:x,BPM1402-09:y,BPM1402-10:x,BPM1402-10:y
+Item: Sector 3
+PVnames: BPM1402-10:x,BPM1402-10:y,BPM1403-01:x,BPM1403-01:y,BPM1403-02:x,BPM1403-02:y,BPM1403-03:x,BPM1403-03:y,BPM1403-04:x,BPM1403-04:y,BPM1403-05:x,BPM1403-05:y
+Item: Sector 4
+PVnames: BPM1403-05:x,BPM1403-05:y,BPM1404-01:x,BPM1404-01:y,BPM1404-02:x,BPM1404-02:y,BPM1404-03:x,BPM1404-03:y,BPM1404-04:x,BPM1404-04:y,BPM1404-05:x,BPM1404-05:y
+Item: Sector 5
+PVnames: BPM1404-05:x,BPM1404-05:y,BPM1405-01:x,BPM1405-01:y,BPM1405-02:x,BPM1405-02:y,BPM1405-03:x,BPM1405-03:y,BPM1405-04:x,BPM1405-04:y,BPM1405-05:x,BPM1405-05:y
+Item: Sector 6
+PVnames: BPM1405-05:x,BPM1405-05:y,BPM1406-02:x,BPM1406-02:y,BPM1406-03:x,BPM1406-03:y,BPM1406-04:x,BPM1406-04:y,BPM1406-05:x,BPM1406-05:y
+Item: Sector 7
+PVnames: BPM1406-05:x,BPM1406-05:y,BPM1407-01:x,BPM1407-01:y,BPM1407-02:x,BPM1407-02:y,BPM1407-03:x,BPM1407-03:y,BPM1407-04:x,BPM1407-04:y,BPM1407-05:x,BPM1407-05:y,BPM1407-06:x,BPM1407-06:y
+Item: Sector 8
+PVnames: BPM1407-06:x,BPM1407-06:y,BPM1408-01:x,BPM1408-01:y,BPM1408-02:x,BPM1408-02:y,BPM1408-03:x,BPM1408-03:y,BPM1408-04:x,BPM1408-04:y,BPM1408-05:x,BPM1408-05:y
+Item: Sector 9
+PVnames: BPM1408-05:x,BPM1408-05:y,BPM1409-01:x,BPM1409-01:y,BPM1409-02:x,BPM1409-02:y,BPM1409-03:x,BPM1409-03:y,BPM1409-04:x,BPM1409-04:y,BPM1409-05:x,BPM1409-05:y
+Item: Sector 10
+PVnames: BPM1409-05:x,BPM1409-05:y,BPM1410-02:x,BPM1410-02:y,BPM1410-03:x,BPM1410-03:y,BPM1410-04:x,BPM1410-04:y,BPM1410-05:x,BPM1410-05:y
+Item: Sector 11
+PVnames: BPM1410-05:x,BPM1410-05:y,BPM1411-01:x,BPM1411-01:y,BPM1411-02:x,BPM1411-02:y,BPM1411-03:x,BPM1411-03:y,BPM1411-04:x,BPM1411-04:y,BPM1411-05:x,BPM1411-05:y
+Item: Sector 12
+PVnames: BPM1411-05:x,BPM1411-05:y,BPM1412-02:x,BPM1412-02:y,BPM1412-03:x,BPM1412-03:y,BPM1412-04:x,BPM1412-04:y,BPM1412-05:x,BPM1412-05:y
+Item: All Horizontal Beam Positions 
+# Do NOT use "Pattern:" method here.  It REALLY BOGS DOWN the cgi.
+PVnames: BPM1401-01:x,BPM1401-02:x,BPM1401-03:x,BPM1401-04:x,BPM1402-07:x,BPM1402-08:x,BPM1402-09:x,BPM1402-10:x,BPM1403-01:x,BPM1403-02:x,BPM1403-03:x,BPM1403-04:x,BPM1403-05:x,BPM1404-01:x,BPM1404-02:x,BPM1404-03:x,BPM1404-04:x,BPM1404-05:x,BPM1405-01:x,BPM1405-02:x,BPM1405-03:x,BPM1405-04:x,BPM1405-05:x,BPM1406-02:x,BPM1406-03:x,BPM1406-04:x,BPM1406-05:x,BPM1407-01:x,BPM1407-03:x,BPM1407-04:x,BPM1407-05:x,BPM1407-06:x,BPM1408-02:x,BPM1408-03:x,BPM1408-04:x,BPM1408-05:x,BPM1409-01:x,BPM1409-02:x,BPM1409-03:x,BPM1409-04:x,BPM1409-05:x,BPM1410-02:x,BPM1410-03:x,BPM1410-04:x,BPM1410-05:x,BPM1411-01:x,BPM1411-02:x,BPM1411-03:x,BPM1411-04:x,BPM1411-05:x,BPM1412-02:x,BPM1412-03:x,BPM1412-04:x,BPM1412-05:x
+Item: All Vertical Beam Positions 
+# Do NOT use "Pattern:" method here.  It REALLY BOGS DOWN the cgi.
+PVnames: BPM1401-01:y,BPM1401-02:y,BPM1401-03:y,BPM1401-04:y,BPM1402-07:y,BPM1402-08:y,BPM1402-09:y,BPM1402-10:y,BPM1403-01:y,BPM1403-02:y,BPM1403-03:y,BPM1403-04:y,BPM1403-05:y,BPM1404-01:y,BPM1404-02:y,BPM1404-03:y,BPM1404-04:y,BPM1404-05:y,BPM1405-01:y,BPM1405-02:y,BPM1405-03:y,BPM1405-04:y,BPM1405-05:y,BPM1406-02:y,BPM1406-03:y,BPM1406-04:y,BPM1406-05:y,BPM1407-01:y,BPM1407-03:y,BPM1407-04:y,BPM1407-05:y,BPM1407-06:y,BPM1408-02:y,BPM1408-03:y,BPM1408-04:y,BPM1408-05:y,BPM1409-01:y,BPM1409-02:y,BPM1409-03:y,BPM1409-04:y,BPM1409-05:y,BPM1410-02:y,BPM1410-03:y,BPM1410-04:y,BPM1410-05:y,BPM1411-01:y,BPM1411-02:y,BPM1411-03:y,BPM1411-04:y,BPM1411-05:y,BPM1412-02:y,BPM1412-03:y,BPM1412-04:y,BPM1412-05:y
+Item: Old Horizontal Beam Positions 
+Pattern: 14.*:BPMx:val
+Item: Old Vertical Beam Positions 
+Pattern: 14.*:BPMy:val
+Item: Bpm/RF Testing
+Pattern: JV1406-01:*
+End: SR1bpms
+
+Item: SR1 Topup Current Monitor 
+Menu: SR1TopupCurrent
+Archive: Archive-SR1TopupCurrent
+Item: Topup Parameters
+PVnames: PCT1402-01:mA:fbk, PCT1402-01:timeConstant, PCT2403-01:BRInjEff:fbk, PCT2403-01:MaSRLost:sum:fbk, PCT2403-01:mABR:fbk, SRStatus:injecting, TRG2400-01:interval, TRG2400-02:interval, TRG2400:inject, TRG2400:topup:mode, TRG2400:topup:status, TRG2400:topup:timer:sp, TRG2400:topup:warn, ICT1400-01:PCT1402-01:InjEff:fbk, ICT1400-01:adc1:sig_charge, PCT1304-01:ICT1400-01:InjEff:fbk
+Item: Topup Current Switches
+PVnames: BPM1406-01:Slot1, BPM1406-01:Slot2, BPM1406-01:Slot3, BPM1406-01:Slot4, CavityForward, CavityReverse, KlyForward, RFLoadForward, SR1:Current
+Item: SR-BTS-Dipole Comparator Fault
+PVnames: SR-BTS-DipoleComparator:fault
+End: SR1TopupCurrent 
+
+Item: Optics Clean Room
+Menu: OCR
+Archive: Archive-OCR
+Item: Room Temperature and Humidity
+PVnames: TM2032-150, HM2032-150, TM2032-150:Y, TM3001-55, PT3001-55, FLT3001-50, FLT3001-50:Y, K3001-06, SWP2032-150, SWP3001-55
+End: OCR
+
+Item: Magnet Mapping Room
+Menu: MagnetMappingRoom
+Archive: Archive-MagnetMappingRoom
+Item: Temperature 
+PVnames: TM1505-01, TM1504-1-01, TM1504-1-02, TM1504-1-03, TM1504-1-04, TM1504-1-10
+Item: Humidity
+PVnames: HM1505-01, HM1504-1-01:fbk
+Item: Flow
+PVnames: SWF1504-1-01:Bypass:fbk, SWF1504-1-02:Bypass:fbk, FLT1504-1-01, FLT1504-1-02
+End: MagnetMappingRoom
+
+Item: OSR2508
+Menu: OSR2508
+Archive: blArchive-1602
+Item: Interesting 5 channels
+PVnames: OSR2508:00:Rd_Chan0, OSR2508:00:Rd_Chan1, OSR2508:00:Rd_Chan2, OSR2508:00:Rd_Chan16, OSR2508:00:Rd_Chan17
+End: OSR2508
+
+Item: SR1 temperatures
+Menu: SR1temp
+Archive: Archive-SR1temperatures
+Item: Cell 1
+PVnames: TM1401-01, TM1401-02, TM1401-03, TM1401-60, TM1401-61, TM1401-62, TM1401-63, TM1401-64, TM1401-65, TM1401-66, TM1401-67, TM1401-50, TM1401-51, TM1401-53
+Item: Cell 2
+PVnames: TM1402-01, TM1402-02, TM1402-03, TM1402-60, TM1402-61, TM1402-62, TM1402-63, TM1402-64, TM1402-65, TM1402-66, TM1402-67, TM1402-68, TM1402-69, TM1402-70, TM1402-71, TM1402-72, TM1402-73, TM1402-74, TM1402-75, TM1402-76, TM1402-77, TM1402-78, TM1402-79, TM1402-80, TM1402-81, TM1402-82, TM1402-83, TM1402-50, TM1402-51, TM1402-52
+Item: Cell 2  PCT
+PVnames: TM1402-84, TM1402-85, TM1402-86, TM1402-87
+Item: Cell 3
+PVnames: TM1403-01, TM1403-02, TM1403-03, TM1403-04, TM1403-05, TM1403-06, TM1403-07, TM1403-08, TM1403-09, TM1403-10, TM1403-11, TM1403-12, TM1403-13, TM1403-14, TM1403-15, TM1403-16, TM1403-60, TM1403-61, TM1403-62, TM1403-63, TM1403-64, TM1403-65, TM1403-50, TM1403-51, TM1403-52
+Item: Cell 4
+PVnames: TM1404-01, TM1404-02, TM1404-03, TM1404-17, TM1404-18, TM1404-19, TM1404-20, TM1404-21, TM1404-22, TM1404-23, TM1404-60, TM1404-61, TM1404-62, TM1404-63, TM1404-64, TM1404-65, TM1404-50, TM1404-51, TM1404-52
+Item: Cell 5
+PVnames: TM1405-01, TM1405-02, TM1405-03, TM1405-60, TM1405-61, TM1405-62, TM1405-63, TM1405-64, TM1405-65, TM1405-50, TM1405-51, TM1405-52
+Item: Cell 6
+PVnames: TM1406-01, TM1406-02, TM1406-03, TM1406-60, TM1406-61, TM1406-62, TM1406-63, TM1406-64, TM1406-65, TM1406-50, TM1406-51, TM1406-52
+Item: Cell 7
+PVnames: TM1407-01, TM1407-02, TM1407-03, TM1407-60, TM1407-61, TM1407-62, TM1407-63, TM1407-64, TM1407-65, TM1407-50, TM1407-51, TM1407-52
+Item: Cell 8
+PVnames: TM1408-01, TM1408-02, TM1408-03, TM1408-60, TM1408-61, TM1408-62, TM1408-63, TM1408-64, TM1408-65, TM1408-66, TM1408-50, TM1408-51, TM1408-52
+Item: Cell 9
+PVnames: TM1409-01, TM1409-02, TM1409-03, TM1409-60, TM1409-61, TM1409-62, TM1409-63, TM1409-64, TM1409-65, TM1409-50, TM1409-51, TM1409-52
+Item: Cell 10
+PVnames: TM1410-01, TM1410-02, TM1410-03, TM1410-60, TM1410-61, TM1410-62, TM1410-63, TM1410-64, TM1410-65, TM1410-50, TM1410-51, TM1410-52
+Item: Cell 11
+PVnames: TM1411-01, TM1411-02, TM1411-03, TM1411-60, TM1411-61, TM1411-62, TM1411-63, TM1411-64, TM1411-65, TM1411-50, TM1411-51, TM1411-52
+Item: Cell 12
+PVnames: TM1412-55, TM1412-56, TM1412-57, TM1412-60, TM1412-61, TM1412-62, TM1412-63, TM1412-64, TM1412-65, TM1412-50, TM1412-51, TM1412-52
+Item: Cell 12 Burst Disk
+PVnames: TM2404-11, TM1412-48, TM1412-49
+Item: Cell 8 InVac Und
+PVnames: TM1408-04, TM1408-05, TM1408-06, TM1408-07, TM1408-08, TM1408-09, TM1408-10, TM1408-11
+Item: Half-sine kicker
+PVnames: TM1412-66, TM1412-67, TM1401-68, TM1401-69, TM1401-70, TM1401-71, TM1402-91, TM1402-92
+End: SR1temp
+
+## Timing System enables, disables, and inhibits
+Item: Timing System
+Menu: TimingSystem
+Archive: Archive-24
+Item: Enables
+Pattern: DelayMod.*:disable|TRG2400:enable:.*|TRG2400:triggerMode|TRG2400:inhibits
+Item: Kicker Power
+Pattern: KS14.*:HV
+Item: Delays - Input
+Pattern: ^[^D].*:delay:ns
+Item: Delays - Modules
+Pattern: ^DelayMod.*:delay:ns
+End: TimingSystem
+
+## accumulator total snapshots
+Item: Passage of Time
+Menu: Mtime
+Archive: Archive-system
+Item: Accumulator Hours
+PVnames: SYSTEM:amp:hour, SYSTEM:hours:linac, SYSTEM:hours:br1, SYSTEM:hours:sr1, SYSTEM:hours:total
+Item: Operating Mode Hours
+PVnames: SYSTEM:count:shutdown, SYSTEM:count:maint, SYSTEM:count:mach_studies, SYSTEM:count:sr1_fill, SYSTEM:count:sr1_stored
+Item: Other Counts
+PVnames: SYSTEM:injCount, SYSTEM:injCycleCount, SYSTEM:MOD01:vswr:count, SYSTEM:MOD02:vswr:count, SYSTEM:MOD03:vswr:count, SYSTEM:MOD04:vswr:count, SYSTEM:MOD05:vswr:count, SYSTEM:MOD06:vswr:count
+End: Mtime
+
+Item: Mobile temperatures
+Menu: Mtemp1
+Archive: Archive-mobileTemperatures
+Item: Temperatures 1 - 8
+PVnames: TM0000-01, TM0000-02, TM0000-03, TM0000-04, TM0000-05, TM0000-06, TM0000-07, TM0000-08
+Item: Temperatures 9 - 16
+PVnames: TM0000-09, TM0000-10, TM0000-11, TM0000-12, TM0000-13, TM0000-14, TM0000-15, TM0000-16
+Item: Temperatures 17 -24
+PVnames: TM0000-17, TM0000-18, TM0000-19, TM0000-20, TM0000-21, TM0000-22, TM0000-23, TM0000-24
+Item: Temperatures 25 -32
+PVnames: TM0000-25, TM0000-26, TM0000-27, TM0000-28, TM0000-29, TM0000-30, TM0000-31, TM0000-32
+End: Mtemp1
+
+Item: Insertion devices
+Menu: INSERTION_DEVICES
+Archive: Archive-InsertionDevices
+
+Item: BMIT wiggler
+Menu: ID05
+Item: WIG1405-01 Field
+PVnames: WIG1405-01:T WIG1405-01:T:fbk WIG1405-01:T:sp
+Item: Power
+PVnames: WIG1405-01:output:power WIG1405-01:cryo:power WIG1405-01:PS:power
+Item: Power supply Is1
+PVnames: WIG1405-01:Is1:A WIG1405-01:Is1:A:fbk WIG1405-01:Is1:set:mA WIG1405-01:Is1:mA:fbk WIG1405-01:Is1:mA:sp WIG1405-01:Is1:slewRate WIG1405-01:Is1:slewRate:sp
+Item: Power supply Is2
+PVnames: WIG1405-01:Is2:A WIG1405-01:Is2:A:fbk WIG1405-01:Is2:set:mA WIG1405-01:Is2:mA:fbk WIG1405-01:Is2:mA:sp WIG1405-01:Is2:slewRate WIG1405-01:Is2:slewRate:sp
+Item: Power supply Ic1
+PVnames: WIG1405-01:Ic1:A WIG1405-01:Ic1:A:fbk WIG1405-01:Ic1:set:mA WIG1405-01:Ic1:mA:fbk WIG1405-01:Ic1:mA:sp WIG1405-01:Ic1:slewRate WIG1405-01:Ic1:slewRate:sp
+Item: Power supply Ic2
+PVnames: WIG1405-01:Ic2:A WIG1405-01:Ic2:A:fbk WIG1405-01:Ic2:set:mA WIG1405-01:Ic2:mA:fbk WIG1405-01:Ic2:mA:sp WIG1405-01:Ic2:slewRate WIG1405-01:Ic2:slewRate:sp
+Item: He gas and liquid
+PVnames: WIG1405-01:lHe:level WIG1405-01:lHe:levelWarning PT1405-04 PT1405-05 SWP1405-01 
+Item: Cooling
+PVnames: TM2406-01 TM2406-02 TM2406-03 TM2406-01:rise TM2406-02:rise
+Item: Cryo temperatures
+PVnames: TM1405-04:K TM1405-05:K TM1405-06:K TM1405-07:K TM1405-08:K TM1405-09:K TM1405-10:K TM1405-11:K TM1405-12:K TM1405-13:K TM1405-14:K TM1405-15:K TM1405-16:K TM1405-17:K TM1405-18:K TM1405-19:K TM1405-20:K TM1405-21:K TM1405-22:K TM1405-23:K
+Item: Flows 
+PVnames: FLT2406-01 FLT2406-02
+Item: Vacuum 
+PVnames: WIG1405-01:vacuum IOP1405-12:pressure CCG1405-01:vac:p CCG1405-02:vac:p CCG1405-03:pressure:fbk CCG1405-04:vac:p
+Item: Interlocks 
+PVnames: WIG1405-01:interlock:quench WIG1405-01:Ic1:INTERLOCK WIG1405-01:Ic2:INTERLOCK WIG1405-01:Is1:INTERLOCK WIG1405-01:Is2:INTERLOCK
+Item: CYP2406-15-01
+PVnames: CYP2406-15-01:status:onOff CYP2406-15-01:alarm:pressure CYP2406-15-01:alarm:temperature CYP2406-15-01:INTERLOCK 
+Item: CYP2406-15-02
+PVnames: CYP2406-15-02:status:onOff CYP2406-15-02:alarm:pressure CYP2406-15-02:alarm:temperature CYP2406-15-02:INTERLOCK 
+Item: CYP2406-15-03
+PVnames: CYP2406-15-03:status:onOff CYP2406-15-03:alarm:pressure CYP2406-15-03:alarm:temperature CYP2406-15-03:INTERLOCK 
+Item: CYP2406-15-04
+PVnames: CYP2406-15-04:status:onOff CYP2406-15-04:alarm:pressure CYP2406-15-04:alarm:temperature CYP2406-15-04:INTERLOCK
+Item: Quench Data 
+PVnames: WIG1405-01:interlock:quench WIG1405-01:quench:count WIG1405-01:quench:lastDate
+End: ID05
+
+
+Item: HXMA wiggler
+Menu: ID06
+Item: WIG1406-01 
+PVnames: WIG1406-01:T,WIG1406-01:T:fbk,WIG1406-01:quench:count
+Item: Interlocks
+Pattern: WIG1406.*interlock.*
+Item: Temperatures
+PVNames: TM1406-04:K,TM1406-05:K,TM1406-06:K,TM1406-07:K,TM1406-08:K,TM1406-09:K,TM1406-10:K,TM1406-11:K,TM1406-12:K,TM1406-13:K,TM1406-14:K,TM1406-15:K,TM1406-16:K,TM1406-17:K,TM1406-18:K,TM1406-19:K
+Item: Flow
+Pattern: FLT2406-.*
+Item: liquid/gas Helium
+PVNames: WIG1406-01:lHe:level,WIG1406-01:lHe:flow,WIG1406-01:gasHe:flow,WIG1406-01:gasHe:pressure,PT1406-04:mbar_g,PT1406-04:mbar_a,PT1406-05:mbar_g,PT1406-05:mbar_a
+Item: PS2406-13-01 (Ic)
+PVNames: WIG1406-01:Ic:status:onOff,WIG1406-01:Ic:A,WIG1406-01:Ic:set:mA,WIG1406-01:Ic:mA:sp,WIG1406-01:Ic:mA:fbk,WIG1406-01:Ic:slewRate:sp,WIG1406-01:Ic:ERROR,WIG1406-01:Ic:READY,WIG1406-01:Ic:RAMPREADY
+Item: PS2406-13-02 (Is)
+PVNames: WIG1406-01:Is:status:onOff,WIG1406-01:Is:A,WIG1406-01:Is:set:mA,WIG1406-01:Is:mA:sp,WIG1406-01:Is:mA:fbk,WIG1406-01:Is:slewRate:sp,WIG1406-01:Is:ERROR,WIG1406-01:Is:READY,WIG1406-01:Is:RAMPREADY
+Item: CYP2406-13-01
+Pattern: CYP2406-13-01:(status:onOff|alarm:temperature|alarm:pressure)
+Item: CYP2406-13-02
+Pattern: CYP2406-13-02:(status:onOff|alarm:temperature|alarm:pressure)
+Item: CYP2406-13-03
+Pattern: CYP2406-13-03:(status:onOff|alarm:temperature|alarm:pressure)
+Item: CYP2406-13-04
+Pattern: CYP2406-13-04:(status:onOff|alarm:temperature|alarm:pressure)
+Item: Temperatures
+PVNames: TM2406-05,TM2406-06,TM2406-10,TM1406-66
+Item: Vacuum 
+PVnames: CCG1406-01:vac:p CCG1406-02:vac:p CCG1406-03:vac:p CCG1406-04:vac:p
+End: ID06
+
+Item: CMCF Undulator 
+Menu: ID08-01
+Item: UND1408-01 Gap 
+PVnames: UND1408-01:gap:mm,UND1408-01:gap:mm:fbk,ENC1408-01:mm:fbk,ENC1408-02:mm:fbk,UND1408-01:openID
+Item: Encoder shift
+PVnames: ENC1408-01:shift,ENC1408-01:shift:fbk,ENC1408-02:shift,ENC1408-02:shift:fbk
+End: ID08-01
+
+Item: SM EPU 
+Menu: ID10-01
+Item: UND1410-01 
+PVnames: UND1410-01:gap:mm,UND1410-01:gap:mm:fbk,UND1410-01:openID
+Item: EPU Girders
+PVnames: UND1410-01:girderQ1:mm,UND1410-01:girderQ1:mm:fbk,UND1410-01:girderQ2:mm,UND1410-01:girderQ2:mm:fbk,UND1410-01:girderQ3:mm,UND1410-01:girderQ3:mm:fbk,UND1410-01:girderQ4:mm,UND1410-01:girderQ4:mm:fbk
+End: ID10-01
+
+Item: REIXS EPU 
+Menu: ID10-02
+Item: UND1410-02 
+PVnames: UND1410-02:gap:mm,UND1410-02:gap:mm:fbk,UND1410-02:openID
+Item: EPU Girders
+PVnames: UND1410-02:girderQ1:mm,UND1410-02:girderQ1:mm:fbk,UND1410-02:girderQ2:mm,UND1410-02:girderQ2:mm:fbk,UND1410-02:girderQ3:mm,UND1410-02:girderQ3:mm:fbk,UND1410-02:girderQ4:mm,UND1410-02:girderQ4:mm:fbk
+End: ID10-02
+
+Item: SGM Undulator 
+Menu: ID11-01
+Item: UND1411-01 
+PVnames: UND1411-01:gap:mm,UND1411-01:gap:mm:fbk,ENC1411-01:mm:fbk,ENC1411-02:mm:fbk,UND1411-01:openID
+Item: Encoder shift
+PVnames: ENC1411-01:shift,ENC1411-01:shift:fbk,ENC1411-02:shift,ENC1411-02:shift:fbk
+End: ID11-01
+
+Item: PGM Undulator 
+Menu: ID11-02
+Item: UND1411-02 
+PVnames: UND1411-02:gap:mm,UND1411-02:gap:mm:fbk,ENC1411-03:mm:fbk,ENC1411-04:mm:fbk,UND1411-02:openID
+Item: Encoder shift
+PVnames: ENC1411-03:shifk,ENC1411-03:shift:fbk,ENC1411-04:shift,ENC1411-04:shift:fbk
+End: ID11-02
+
+Item: BioXAS Undulator
+Menu: ID07-01
+Item: Temperatures
+PVnames: TM1407-66,TM1407-67,TM1407-68,TM1407-69,TM1407-70,TM1407-71,TM1407-72,TM1407-73,TM1407-74,TM1407-75,TM1407-76,UND1407-01:Girder:HighTemp,UND1407-01:Taper:HighTemp
+Item: UND1407-01
+PVnames: UND1407-01:gap:mm:fbk,UND1407-01:Gap:Overtravel,UND1407-01:emergOff,UND1407-01:Gap:Open,UND1407-01:gap:enc:switch,SMTR1407-01:mm:fbk,SMTR1407-02:mm:fbk,UND1407-01:gap:linear:aver:mm:fbk,ENC1407-03:mm:fbk,ENC1407-04:mm:fbk,UND1407-01:gap:rotary:aver:mm:fbk
+End: ID07-01
+
+Item: BioXAS Wiggler
+Menu: ID07-02
+Item: WIG1407-01
+PVnames: WIG1407-01:gap:mm:fbk,WIG1407-01:Gap:Overtravel,WIG1407-01:emergOff,WIG1407-01:gap:open,WIG1407-01:gap:enc:switch,ENC1407-06:mm:fbk,ENC1407-05:mm:fbk,WIG1407-01:gap:linear:aver:mm:fbk,ENC1407-07:mm:fbk,ENC1407-08:mm:fbk,WIG1407-01:gap:rotary:aver:mm:fbk
+End: ID07-02
+
+Item: BXDS Undulator
+Menu: ID04-01
+Item: Temperatures
+PVnames: TM1404-67,TM1404-68,TM1404-69,TM1404-70,TM1404-71,TM1404-72,TM1404-75, TM1404-76, TM1404-77, TM1404-78, TM1404-78, TM1404-79, TM1404-80, TM1404-100, TM1404-102, TM1404-103, TM1404-104, TM1404-105, TM1404-106, TM1404-107
+Item: UND1404-01
+PVnames: UND1404-01:gap:mm:fbk
+End: ID04-01
+
+Item: BXDS Wiggler
+Menu: ID04-02
+Item: Temperatures
+PVnames: TM1404-83,TM1404-84,TM1404-85,TM1404-86,TM1404-87,TM1404-88, TM1404-91, TM1404-92, TM1404-93, TM1404-94, TM1404-95, TM1404-96, TM1404-97, TM1404-108, TM1404-109, TM1404-110, TM1404-111, TM1404-112, TM1404-113, TM1404-114, TM1404-115
+Item: WIG1404-01
+PVnames: WIG1404-01:gap:mm:fbk
+End: ID04-02
+
+Item: QMSC EPUs
+Menu: ID09-01
+Item: Low Energy
+PVnames: UND1409-01:LE:gap:mm,UND1409-01:LE:gap:mm:fbk,UND1409-01:LE:phase:PhiEliptical:mm:fbk,UND1409-01:LE:phase:PhiLinear:mm:fbk
+Item: High Energy
+PVnames: UND1409-01:HE:gap:mm,UND1409-01:HE:gap:mm:fbk,UND1409-01:HE:phase:PhiEliptical:mm:fbk,UND1409-01:HE:phase:PhiLinear:mm:fbk
+Item: Current Strips
+PVnames: CS1409-13:gndLeakage:A:fbk, CS1409-14:gndLeakage:A:fbk, CS1409-15:gndLeakage:A:fbk, CS1409-16:gndLeakage:A:fbk, CS1409-17:gndLeakage:A:fbk, CS1409-18:gndLeakage:A:fbk, CS1409-19:gndLeakage:A:fbk, CS1409-20:gndLeakage:A:fbk, CS1409-21:gndLeakage:A:fbk, CS1409-22:gndLeakage:A:fbk, CS1409-23:gndLeakage:A:fbk, CS1409-24:gndLeakage:A:fbk, CS1409-01:gndLeakage:A:fbk, CS1409-02:gndLeakage:A:fbk, CS1409-03:gndLeakage:A:fbk, CS1409-04:gndLeakage:A:fbk, CS1409-05:gndLeakage:A:fbk, CS1409-06:gndLeakage:A:fbk, CS1409-07:gndLeakage:A:fbk, CS1409-08:gndLeakage:A:fbk, CS1409-09:gndLeakage:A:fbk, CS1409-10:gndLeakage:A:fbk, CS1409-11:gndLeakage:A:fbk, CS1409-12:gndLeakage:A:fbk 
+End: ID09-01
+
+End: INSERTION_DEVICES
+
+Item: Front End BPMs
+Menu: FrontEnd
+Archive: Archive-FrontEndBPMs
+Item: SyLMAND BPMs
+PVnames: BPM1406-B20-01:Y:asym:pos BPM1406-B20-01:Y:motor:pos BPM1406-B20-01:Y:asym A1406-01:uA:fbk A1406-02:uA:fbk
+Item: HXMA BPMs
+PVnames: BPM1406-I00-01:Y:asym:pos BPM1406-I00-01:Y:motor:pos BPM1406-I00-01:Y:asym A1406-03:uA:fbk A1406-04:uA:fbk
+Item: SXRMB BPMs
+PVnames: BPM1406-B10-01:Y:asym:pos BPM1406-B10-01:Y:motor:pos BPM1406-B10-01:Y:asym A1406-05:uA:fbk A1406-06:uA:fbk
+Item: VESPERS BPMs
+PVnames: BPM1408-B20-01:Y:asym:pos BPM1408-B20-01:Y:motor:pos BPM1408-B20-02:Y:asym:pos BPM1408-B20-02:Y:motor:pos BPM1408-B20-01:Y:asym BPM1408-B20-02:Y:asym A1408-01:uA:fbk A1408-02:uA:fbk A1408-03:uA:fbk A1408-04:uA:fbk
+Item: CMCF BPMs
+PVnames: BPM1408-I00-01:X:asym:pos BPM1408-I00-01:X:motor:pos BPM1408-I00-01:Y:asym:pos BPM1408-I00-01:Y:motor:pos BPM1408-I00-01:X:asym BPM1408-I00-01:Y:asym A1408-05:uA:fbk A1408-06:uA:fbk A1408-07:uA:fbk A1408-08:uA:fbk
+Item: CMCF2 BPMs
+PVnames: BPM1408-B10-01:Y:asym:pos BPM1408-B10-01:Y:motor:pos BPM1408-B10-01:Y:asym A1408-09:uA:fbk A1408-10:uA:fbk
+Item: Old XSR Front End BPMs
+PVnames: BPM1402-I00-01:Y:mm:fbk, A1402-01:uA:fbk, A1402-02:uA:fbk
+Item: Old HXMA Front End BPMs
+PVnames: BPM1406-I00-01:Y:mm:fbk, A1406-01:uA:fbk, A1406-02:uA:fbk
+Item: Old CMCF Front End BPMs
+PVnames: BPM1408-I00-01:X:mm:fbk, BPM1408-I00-01:Y:mm:fbk, A1408-01:uA:fbk, A1408-02:uA:fbk, A1408-03:uA:fbk, A1408-04:uA:fbk
+End: FrontEnd
+
+Item: 01B1-1 MidIR
+Menu: 01B1
+Archive: Archive-01B1-1-midIR
+Item: Temperatures
+PVnames: TM1401-R10-01, TM1401-R10-02, TM1401-R10-03
+Item: Pressures 
+PVnames: CCG1401-R10-01:vac:p, CCG1401-R10-02:vac:p, CCG1401-01:vac:p, CCG1612-R10-01:vac:p, TCG1401-R10-01, TCG1612-R10-01, TCG1612-R10-02, TCGC2405-106:pressure:fbk, TCGC2405-107:pressure:fbk, TCGC2405-108:pressure:fbk, TCGC2405-109:pressure:fbk, TCGC1611-1-01:pressure:fbk, TCGC1611-1-02:pressure:fbk, TCGC1611-1-03:pressure:fbk
+Item: Room Temperatures
+PVnames: TM1611-201, HM1611-201, TM1067-01, HM1067-01
+Item: Beam Position
+PVnames: PSD1611-1-R10-01:X, PSD1611-1-R10-01:Y, PSD1611-1-R10-01:I, PSD1611-1-R10-01:drvX, PSD1611-1-R10-01:drvY, PSD1611-1-R10-02:X, PSD1611-1-R10-02:Y, PSD1611-1-R10-02:I, PSD1611-1-R10-02:drvX, PSD1611-1-R10-02:drvY 
+
+Item: Mirrors
+PVnames: EDM1401-R10-01:Pitch,EDM1401-R10-01:Roll, EDM1401-R10-01:Yaw, EDM1401-R10-01:Translate:X, EDM1401-R10-01:Translate:Y, EDM1401-R10-01:Translate:Z, M1612-R10-01:Pitch, M1612-R10-01:Roll, M1612-R10-01:Yaw, M1612-R10-01:Translate:X, M1612-R10-01:Translate:Y, M1612-R10-01:Translate:Z, EDM1612-R10-01:Pitch, EDM1612-R10-01:Roll, EDM1612-R10-01:Yaw, EDM1612-R10-01:Translate:X, EDM1612-R10-01:Translate:Y, EDM1612-R10-01:Translate:Z, M1612-R10-02:Pitch, M1612-R10-02:Roll, M1612-R10-02:Yaw, M1612-R10-02:Translate:X, M1612-R10-02:Translate:Y, M1612-R10-02:Translate:Z, SCM1612-R10-01:Pitch, SCM1612-R10-01:Roll, SCM1612-R10-01:Yaw, SCM1612-R10-01:Translate:X, SCM1612-R10-01:Translate:Y, SCM1612-R10-01:Translate:Z, SCM1612-R10-02:Pitch, SCM1612-R10-02:Roll, SCM1612-R10-02:Yaw, SCM1612-R10-02:Translate:X, SCM1612-R10-02:Translate:Y, SCM1612-R10-02:Translate:Z
+Item: Horizontal BPM's
+Archive: Archive-SrBPMs
+PVnames: BPM1401-01:x, BPM1401-02:x, BPM1401-03:x, BPM1401-04:x
+Item: Vertical BPM's
+Archive: Archive-SrBPMs
+PVnames: BPM1401-01:y, BPM1401-02:y, BPM1401-03:y, BPM1401-04:y
+Item: Water Pumps
+Archive: Archive-01
+PVnames: WP0105-517:Speed, WP0105-518:Speed, WP0105-519:Speed
+Item: Zaber Motors
+Pattern: SMTR1611-R10-[0|1].:position:fbk
+End: 01B1
+
+Item: 02B1-1 FarIR
+Menu: 02B1
+Archive: Archive-02B1-1-farIR
+Item: Temperatures
+PVnames: TM1402-R10-01, TM1402-R10-02, TM1402-R10-03
+Item: Pressures
+PVnames: CCG1402-01:vac:p, CCG1402-R10-01:vac:p, CCG1402-R10-02:vac:p, CCG1601-1-R10-01:vac:p, TCG1402-R10-01, TCG1601-1-R10-01, TCG1601-1-R10-02, TCG1601-1-R10-03, TCGC1601-101:pressure:fbk, TCGC1601-102:pressure:fbk, TCGC1601-103:pressure:fbk, TCGC2405-102:pressure:fbk, TCGC2405-103:pressure:fbk, TCGC2405-104:pressure:fbk, TCGC2405-105:pressure:fbk
+Item: Mirrors (Old)
+PVnames: EDM1402-R10-01:Pitch, EDM1402-R10-01:Roll, EDM1402-R10-01:Yaw, EDM1402-R10-01:Translate:X, EDM1402-R10-01:Translate:Y, EDM1402-R10-01:Translate:Z, M1601-1-R10-01:Pitch, M1601-1-R10-01:Roll, M1601-1-R10-01:Yaw, M1601-1-R10-01:Translate:X, M1601-1-R10-01:Translate:Y, M1601-1-R10-01:Translate:Z, EDM1601-1-R10-01:Pitch, EDM1601-1-R10-01:Roll, EDM1601-1-R10-01:Yaw, EDM1601-1-R10-01:Translate:X, EDM1601-1-R10-01:Translate:Y, EDM1601-1-R10-01:Translate:Z, M1601-1-R10-02:Pitch, M1601-1-R10-02:Roll, M1601-1-R10-02:Yaw, M1601-1-R10-02:Translate:X, M1601-1-R10-02:Translate:Y, M1601-1-R10-02:Translate:Z, EDM1601-1-R10-02:Pitch, EDM1601-1-R10-02:Roll, EDM1601-1-R10-02:Yaw, EDM1601-1-R10-02:Translate:X, EDM1601-1-R10-02:Translate:Y, EDM1601-1-R10-02:Translate:Z, M1601-1-R10-03:Pitch, M1601-1-R10-03:Roll, M1601-1-R10-03:Yaw, M1601-1-R10-03:Translate:X, M1601-1-R10-03:Translate:Y, M1601-1-R10-03:Translate:Z
+Item: Mirrors (New)
+Pattern: EDM1601-1-R10-03.*|EDM1601-1-R10-04.*|EDM1601-1-R10-05.*|EDM1601-1-R10-07.*|M1601-1-R10-04.*|M1601-1-R10-05.*|M1601-1-R10-06.*|VSC1601-1-R10-01.* 
+Item: 2M Gas Cell
+PVnames: TCGC1601-103:pressure:fbk, TCGC1601-101:pressure:fbk, TCGC1601-102:pressure:fbk, TCMC1601-101:Channel1:Pressure, TCMC1601-101:Channel2:Pressure, TCMC1601-102:Channel1:Pressure, TM1601-1-R10-01:K
+Item: Horizontal BPM's
+Archive: Archive-SrBPMs
+PVnames: BPM1402-07:x, BPM1402-08:x, BPM1402-09:x, BPM1402-10:x
+Item: Vertical BPM's
+Archive: Archive-SrBPMs
+PVnames: BPM1402-07:y, BPM1402-08:y, BPM1402-09:y, BPM1402-10:y
+Item: Water Pumps
+Archive: Archive-01
+PVnames: WP0105-517:Speed, WP0105-518:Speed, WP0105-519:Speed
+End: 02B1
+
+Item: 02B2-2 XSR
+Menu: 02B2
+Archive: Archive-02B2-2-BL
+Item: Flow Transducers
+Archive: Archive-02B2-2-FE
+Pattern: FLT1402-B20.*[0-9]$
+Item: Vacuum
+Pattern: CCG1402-B20-.*
+Item: Temp. Vacuum
+Pattern: IOP1402B2.*:pressure
+Item: Temp. Valves and Shutters
+Pattern: (SSH|PSH|VVR)1402-B20-.*:state
+Item: Temp. Vacuum status
+Pattern: IOP1402B2.*:(error|state)
+Item: Temp. VVF status
+Pattern: VVF.*
+Item: Beam Profiler (stability)
+Pattern: BPROF1602-01:beamStab.*
+Item: Beam Profiler (divergence)
+Pattern: BPROF1602-01:divergence.*
+Item: Beam Profiler (gaussian)
+Pattern: BPROF1602-01:gauss.*
+Item: Beam Profiler (powerEnergy)
+Pattern: BPROF1602-01:powerEnergy.*
+Item: Beam Profiler (spatial)
+Pattern: BPROF1602-01:spatial.*
+Item: Beam Profiler (tophat)
+Pattern: BPROF1602-01:tophat.*
+End: 02B2
+
+Item: 02B1-2 OSR Front End
+Menu: 02B1_2_OSR_FE
+Archive: Archive-01B1-1-FrontEnd
+Item: Temperatures
+PVnames: TM1402-B10-01,TM1402-B10-02,TM1402-B10-03,TM1402-B10-04,TM1402-B10-05,TM1402-B10-06,TM1402-B10-07
+Item: Vacuum
+PVnames: CCG1402-B10-01:vac:p, IOP1402-B10-01:pressure, IOP1402-B10-02:pressure
+Item: Vacuum Status
+PVnames: CCG1402-B10-01:vac, TCG1402-B10-01
+Item: Valves
+PVnames: VVR1402-B10-01:state, VVR1402-B10-01:vacstat, VVR1402-B10-01:opened, VVR1402-B10-01:closed
+Item: Shutters
+PVnames: PSH1402-B10-01:opened, PSH1402-B10-01:closed
+Item: Flows
+Pattern: FLT.*[0-9]$
+Item: Flow Switches
+Pattern: SWF.*[0-9]$
+Item: IOPs
+Pattern: IOP.*[0-9]$
+Item: IOP Pressures
+Pattern: IOP.*[0-9]:pressure$
+End: 02B1_2_OSR_FE
+
+Item: 04ID BXDS FE
+Menu: 04ID BXDS FE
+Archive: Archive-04ID-1-FE
+Item: Valves
+PVnames: VVR1404-I00-01:opened VVR1404-I00-01:closed VVR1604-1-I00-01:opened VVR1604-1-I00-01:closed VVR1604-1-I00-02:opened VVR1604-1-I00-02:closed 
+Item: Shutters
+PVnames: IPSH1404-I00-01:opened IPSH1404-I00-01:closed IPSH1404-I00-02:opened IPSH1404-I00-02:closed
+Item: CCGs
+Pattern: CCG.*:vac:p$|CCG.*:Pressure:fbk$|CCG.*:Status
+Item: TCGs
+Pattern: TCG.*:Pressure:fbk$|TCG.*:Status
+Item: CCG Relays
+Pattern: CCG.*:RelayStatus:1:fbk$|CCG.*:RelayStatus:2:fbk$|CCG.*:RelaySPStatus:1:fbk$|CCG.*:RelaySPStatus:2:fbk
+Item: TCG Relays
+Pattern: TCG.*:RelayStatus:1:fbk$|TCG.*:RelayStatus:2:fbk$|TCG.*:RelaySPStatus:1:fbk$|TCG.*:RelaySPStatus:2:fbk
+Item: TMs
+Pattern: TM.*[0-9]$
+Item: Flows
+Pattern: FLT.*[0-9]$
+Item: Flow Switches
+Pattern: SWF.*[0-9]$
+Item: IOPs
+Pattern: IOP.*[0-9]$
+Item: IOP Pressures 
+Pattern: IOP.*[0-9]:pressure$
+
+End: 04ID BXDS FE
+
+Item: 04ID BXDS BL
+Menu: 04ID BXDS BL
+Archive: Archive-04ID-1-BL
+Item: Valves
+Pattern: VVR1604-[145]-I[012].*:opened|VVR1604-[145]-I[012].*:closed
+Item: CCGs
+Pattern: CCG1604-[1-5]-.*:vac:p
+Item: Flows
+Pattern: FLT1604-[1-5]-I[012].*[0-9]$
+Item: Flow Switches
+Pattern: SWF1604-[1-5]-I[012].*[0-9]$
+Item: IOPs
+Pattern: IOP1604.*[0-9]:pressure
+Item: TCGs
+Pattern: TCG1604-[1-5]-.*:pressure:fbk 
+Item: Temperatures
+Pattern: TM1604-[1-5].*[0-9]$
+Item: Motors
+Pattern: SMTR1604-[1-5]-I[012].*
+Item: Newport
+Pattern: LS1604-5.*|SW1604-.*|PSD1604-5-01.|KEOS1604-5-01.*|SVMC1604-5.*
+Item: Cryo
+Pattern: CRYC1604-01.*
+End: 04ID BXDS BL
+
+Item: 05B1-1 BMIT BM
+Menu: 05B1_1
+Archive: Archive-05B1-1-FE
+Item: Pressures
+Pattern: CCG.*:vac:p$|CCG.*:pressure:fbk$|TCG.*:pressure.fbk
+Item: IOP Status
+Pattern: IOP1[4,6]05-1-B10-[0-9][0-9]$
+Item: IOP Pressures 
+Pattern: IOP.*[0-9]:pressure$
+Item: Valves
+Pattern: VVR.*:state
+Item: Shutters
+PVnames: PSH1405-B10-01:state, PSH1405-B10-02:state, SSH1405-B10-01:state, SSH1405-B10-02:state, PSH1605-1-B10-01:state, SSH1605-1-B10:state:new, PSH1405-B10-02:opr:open, PSH1405-B10-02:opr:close, SSH1405-B10-01:opr:open, SSH1405-B10-01:opr:close, PSH1605-1-B10-01:opr:open, PSH1605-1-B10-01:opr:close, SSH1605-1-B10-01:open:req:inp, SSH1605-1-B10-01:close:req:inp    
+Item: Flows
+Pattern: FLT.*[0-9]$
+Item: Flow Switches
+Pattern: SWF.*[0-9]$
+Item: Temperature
+Pattern: TM.*[0-9]$
+Item: Compressed Air 
+PVnames: SWP1405-B10-01 PT2605-1-I20-70 
+Item: Hutch Conditions 
+PVnames: TM1605-1-01 HM1605-1-01:fbk TM1605-2-01 TM1605-2-02:fbk TM1605-2-02:daySetPoint HM1605-2-01:fbk DP1605-201 TM1605-3-01 HM1605-3-01:fbk TM1605-4-01 HM1605-4-01:fbk DP1605-401 DP1113-01 FLT1113-01 CAVB1605-2-01:airflow:fbk Room1113:airflow:calc TM1113-01:fbk TM1113-01:daySetPoint TM1112-01:fbk TM1112-01:daySetPoint TM1112-01:humidity:fbk DP1112-01:fbk CAVB1112-01:airflow:fbk
+Item: Mono Motors 
+PVnames: SMTR1605-1-B10-10:d100:sp SMTR1605-1-B10-10:d100 SMTR1605-1-B10-09:mm:fbk SMTR1605-1-B10-10:step:sp ENC1605-1-B10-10:raw:cnt:fbk 
+End: 05B1_1
+
+Item: 05ID-2 BMIT ID Front End
+Menu: 05ID1_FE
+Archive: Archive-05ID1-FE
+Item: CCG Pressures
+PVnames: CCG1405-I00-01:vac:p, CCG1405-I00-02:vac:p, CCG1605-1-I00-02:vac:p, CCG1605-1-I00-03:vac:p, CCG1605-1-I00-04:vac:p, CCG1405-I00-01:pressure:fbk, CCG1405-I00-02:pressure:fbk, CCG1605-1-I00-02:pressure:fbk, CCG1605-1-I00-03:pressure:fbk, CCG1605-1-I00-04:pressure:fbk 
+Item: TCG Pressures
+PVnames: TCG1605-1-I00-03:vac:p
+Item: Flows
+Pattern: FLT.*[0-9]$
+Item: Flow Switches
+Pattern: SWF.*[0-9]$
+Item: Temperature
+Pattern: TM.*[0-9]$
+Item: IOP Pressures 
+Pattern: IOP.*[0-9]:pressure$
+Item: IOP Status
+Pattern: IOP.*[0-9]$
+Item: Valves
+PVnames: VVF1405-I00-01:state, VVR1405-I00-01:state, VVR1605-1-I00-01:state, VVR1605-1-I00-02:state
+Item: Shutters
+PVnames: PSH1405-I00-01:state, PSH1405-I00-02:state, SSH1405-I00-01:state
+End 05ID1_FE
+
+Item: 05ID-2 BMIT ID Beamline
+Menu: 05ID_2
+Archive: Archive-05ID-2-BL
+Item: Pressures (CCG)
+Pattern: CCG.*:vac:p$
+Item: TCG Pressures 
+Pattern: TCG.*:vac:p$
+Item: IOP Status
+Pattern: IOP.*[0-9]$
+Item: Valves
+Pattern: VVR.*:state
+Item: Shutters
+PVnames: PSH1405-I00-01:state, PSH1405-I00-02:state, SSH1405-I00-01:state, PSH1605-1-I20-01:state, SSH1605-1-I20:state:new, SSH1605-3-I20:state:new, PSH1405-I00-02:opr:open, PSH1405-I00-02:opr:close, SSH1405-I00-01:opr:open, SSH1405-I00-01:opr:close, SSH1605-1-I20:open:req:inp,SSH1605-1-I20:close:req:inp, PSH1605-1-I20-01:opr:open, PSH1605-1-I20-01:opr:close, SSH1605-3-I20:open:req:inp,SSH1605-3-I20:close:req:inp 
+Item: Flows
+Pattern: FLT.*[0-9]$
+Item: Flow Switches
+Pattern: SWF.*[0-9]$
+Item: Temperature
+Pattern: TM.*[0-9]$
+Item: Compressed Air 
+PVnames: PT2605-1-I20-70 SWP1405-B10-01
+Item: Hutch Conditions 
+PVnames: TM1605-1-01 HM1605-1-01:fbk TM1605-2-02:fbk HM1605-2-01:fbk DP1605-201 TM1605-3-01 HM1605-3-01:fbk TM1605-4-02:fbk HM1605-4-01:fbk DP1605-401 DP1113-01 FLT1113-01 TM1113-01:fbk  CAVB1605-2-01:airflow:fbk CAVB1605-4-01:airflow:fbk Room1113:airflow:calc TM1605-2-01 TM1605-4-01 TM1605-2-02:daySetPoint TM1605-4-02:daySetPoint TM1113-01:daySetPoint TM1112-01:fbk TM1112-01:daySetPoint TM1112-01:humidity:fbk TM1113-01:humidity:fbk DP1112-01:fbk CAVB1112-01:airflow:fbk
+Item: Thermocouples
+PVnames: TM1605-1-I20-16 TM1605-1-I20-17 TM1605-1-I20-18 TM1605-1-I20-19 TM1605-1-I20-20 TM1605-1-I20-21 TM1605-1-I20-22 TM1605-1-I20-23 TM1605-1-I20-28 TM1605-3-I20-18 TM1605-3-I20-19 TM1605-3-I20-20 TM1605-3-I20-21 TM1605-3-I20-22 TM1605-3-I20-23 TM1605-3-I20-24 TM1605-3-I20-25 TM1605-3-I20-26 TM1605-3-I20-27 
+Item: Mono Motors 
+PVnames: SMTR1605-3-I20-10:deg:sp SMTR1605-3-I20-11:deg:sp SMTR1605-3-I20-13:deg:sp SMTR1605-3-I20-14:deg:sp SMTR1605-3-I20-09:mm:sp SMTR1605-3-I20-12:mm:sp SMTR1605-3-I20-15:mm:sp SMTR1605-3-I20-16:mm:sp SMTR1605-3-I20-17:mm:sp SMTR1605-3-I20-18:mm:sp SMTR1605-3-I20-19:mm:sp SMTR1605-3-I20-10:d100 SMTR1605-3-I20-11:d100 SMTR1605-3-I20-13:d100 SMTR1605-3-I20-14:d100 SMTR1605-3-I20-09:mm SMTR1605-3-I20-12:mm SMTR1605-3-I20-15:mm SMTR1605-3-I20-16:mm SMTR1605-3-I20-17:mm SMTR1605-3-I20-18:mm SMTR1605-3-I20-19:mm SMTR1605-4-I20-01:mm:fbk SMTR1605-1-I20-07:step:sp SMTR1605-1-I20-07:ccw PFIL1605-1-I20-05:position5 
+End: 05ID_2
+
+Item: 05B2-1 SyLMAND Front End
+Menu: 05B2_1_FE
+Archive: Archive-05B2-1-FE
+Item: Pressures
+PVnames: CCG1406-B20-01:vac:p, CCG1406-B20-02:vac:p 
+Item: Flows
+PVnames: FLT1406-B20-01, FLT1406-B20-02, FLT1406-B20-03, FLT1406-B20-04, FLT1406-B20-05
+Item: Temperature
+PVnames: TM1406-B20-01, TM1406-B20-02, TM1406-B20-03, TM1406-B20-04, TM1406-B20-05, TM1406-B20-06, TM1406-B20-07
+End: 05B2_1_FE
+
+Item: 05B2-1 SyLMAND Beamline
+Menu: 05B2_1_BL
+Archive: Archive-05B2-1-BL
+Item: Vacuum Pressures
+PVnames: CCG1605-5-B20-07:vac:p, CCG1605-5-B20-02:vac:p, CCG1605-5-B20-03:vac:p, CCG1605-5-B20-06:vac:p
+Item: Flows
+PVnames: FLT1605-5-B20-01, FLT1605-5-B20-02, FLT1605-5-B20-03, FLT1605-5-B20-04, FLT1605-5-B20-05, FLT1605-5-B20-06, FLT1605-5-B20-07
+Item: Temperature
+PVnames: TM1605-5-B20-01, TM1605-5-B20-02, TM1605-5-B20-05, TM1605-5-B20-06, TM1605-5-B20-07, TM1605-5-B20-08, TM1605-5-B20-09, TM1605-5-B20-10
+Item: Scanner Beamline Data
+PVnames: 05B2_Scanner_M1_Angle:mrad, 05B2_Scanner_M2_Angle:mrad, 05B2_Scanner_Chp_Aperture, 05B2_Scanner_Chp_RPM_US, 05B2_Scanner_Chp_RPM_DS, 05B2_Scanner_Chp_FBK 
+Item: Scanner Temperatures
+PVnames: 05B2_Scanner_Appr1_Temp, 05B2_Scanner_Appr2_Temp, 05B2_Scanner_Chamber_Temp, 05B2_Scanner_Substrate_Temp, 05B2_Scanner_Mask_Temp, 05B2_Scanner_Tilt_Stage_Temp, 05B2_Scanner_End_Window_Temp
+Item: Scanner Vacuum
+PVnames: 05B2_Scanner_WorkCh_Vac, 05B2_Scanner_EndWind_Vac, 05B2_Scanner_FiltCh_Vac, 05B2_Scanner_FiltChRough_Vac 
+Item: Scanner Dose
+PVnames: 05B2_Scanner_Targ_Dose, 05B2_Scanner_Dose,
+Item: Scanner Positions
+PVnames: 05B2_Scanner_Scan_Pos, 05B2_Scanner_Scan_Width, 05B2_Scanner_Tilt_Pos, 05B2_Scanner_Rot_Pos, 05B2_Scanner_X_Pos, 05B2_Scanner_X_Width, 05B2_Scanner_Y_Pos, 05B2_Scanner_Y_Width
+Item: Scanner States
+PVnames: 05B2_Scanner_State_Standby, 05B2_Scanner_State_ExpRun, 05B2_Scanner_State_ExpWait, 05B2_Scanner_State_ExpFin, 05B2_Scanner_State_Error, 05B2_Scanner_Exp_Step, 05B2_Scanner_Lock_B0, 05B2_Scanner_Lock_B1, 05B2_Scanner_Lock_B2, 05B2_Scanner_Lock_B3, 05B2_Scanner_Valves_B0, 05B2_Scanner_Valves_B1, 05B2_Scanner_Valves_B2, 05B2_Scanner_Valves_B3, 05B2_Scanner_Valves_B4, 05B2_Scanner_Valves_B5, 05B2_Scanner_Valves_B6, 05B2_Scanner_Filters_B0, 05B2_Scanner_Filters_B1, 05B2_Scanner_Filters_B2, 05B2_Scanner_Filters_B3, 05B2_Scanner_Filters_B4, 05B2_Scanner_Filters_B5, 05B2_Scanner_Filters_B6, 05B2_Scanner_Filters_B7, 05B2_Scanner_Filters_B8, 05B2_Scanner_Filters_B9, 05B2_Scanner_Filters_B10
+Item: Scanner Interface
+PVnames: 05B2_Scanner_BeamlineIntk1, 05B2_Scanner_BeamlineIntk2, 05B2_Scanner_BeamlineIntk3, 05B2_Scanner_BeamlineIntk4, 05B2_Scanner_Open_EndValve, 05B2_Scanner_Close_EndValve, 05B2_Scanner_Open_Shutters, 05B2_Scanner_Close_Shutters, 05B2_Scanner_EndValves_OPEN, 05B2_Scanner_EndVals_CLOSED, 05B2_Scanner_Shutter_OPEN, 05B2_Scanner_Shutter_CLOSED, 05B2_Scanner_HV1_OK, 05B2_Scanner_Pump1_ON, 05B2_Scanner_Pump2_ON, 05B2_Scanner_Pump3_ON, 05B2_Scanner_Pump4_ON, 05B2_Scanner_Pump5_ON, 05B2_Scanner_ChillerFlowOK 
+Item: Mirror Latches
+PVnames: 05B2_M_J1:enc:StepCloseL, 05B2_M_J2:enc:StepCloseL, 05B2_M_J3:enc:StepCloseL, 05B2_M_J4:enc:StepCloseL, 05B2_M_J1:pot:StepCloseL, 05B2_M_J2:pot:StepCloseL, 05B2_M_J3:pot:StepCloseL, 05B2_M_J4:pot:StepCloseL, 05B2_M_J1GTJ2OverPitch:encL, 05B2_M_J2GTJ1OverPitch:encL, 05B2_M_J3GTJ4OverPitch:encL, 05B2_M_J4GTJ3OverPitch:encL, 05B2_M_J1GTJ2OverPitch:potL, 05B2_M_J2GTJ1OverPitch:potL, 05B2_M_J3GTJ4OverPitch:potL, 05B2_M_J4GTJ3OverPitch:potL, 05B2_M_Jacks:enc:ClashL, 05B2_M_Jacks:pot:ClashL, 05B2_M_J1:enc:LimCWL, 05B2_M_J2:enc:LimCWL, 05B2_M_J3:enc:LimCWL, 05B2_M_J4:enc:LimCWL, 05B2_M_J1:enc:LimCCWL, 05B2_M_J2:enc:LimCCWL, 05B2_M_J3:enc:LimCCWL, 05B2_M_J4:enc:LimCCWL, 05B2_M_J1:pot:LimCWL, 05B2_M_J2:pot:LimCWL, 05B2_M_J3:pot:LimCWL, 05B2_M_J4:pot:LimCWL, 05B2_M_J1:pot:LimCCWL, 05B2_M_J2:pot:LimCCWL, 05B2_M_J3:pot:LimCCWL, 05B2_M_J4:pot:LimCCWL, 05B2_M_J1:enc:StRtCloseL, 05B2_M_J2:enc:StRtCloseL, 05B2_M_J3:enc:StRtCloseL, 05B2_M_J4:enc:StRtCloseL, 05B2_M_J1:pot:StRtCloseL, 05B2_M_J2:pot:StRtCloseL, 05B2_M_J3:pot:StRtCloseL, 05B2_M_J4:pot:StRtCloseL, 05B2_M_J1:EncRateIntkL, 05B2_M_J2:EncRateIntkL, 05B2_M_J3:EncRateIntkL, 05B2_M_J4:EncRateIntkL, 05B2_M_J1:PotRateIntkL, 05B2_M_J2:PotRateIntkL, 05B2_M_J3:PotRateIntkL, 05B2_M_J4:PotRateIntkL
+Item: Mirror Protection PLC Latches
+PVnames: 05B2_MPLC_J1_Vel_IntlkL, 05B2_MPLC_J2_Vel_IntlkL, 05B2_MPLC_J3_Vel_IntlkL, 05B2_MPLC_J4_Vel_IntlkL, 05B2_MPLC_J1_Pitch_IntlkL, 05B2_MPLC_J2_Pitch_IntlkL, 05B2_MPLC_J3_Pitch_IntlkL, 05B2_MPLC_J4_Pitch_IntlkL, 05B2_MPLC_Clash_InterlockL, 05B2_MPLC_J1_POT_Lim_CWL, 05B2_MPLC_J2_POT_Lim_CWL, 05B2_MPLC_J3_POT_Lim_CWL, 05B2_MPLC_J4_POT_Lim_CWL, 05B2_MPLC_J1_POT_Lim_CCWL, 05B2_MPLC_J2_POT_Lim_CCWL, 05B2_MPLC_J3_POT_Lim_CCWL, 05B2_MPLC_J4_POT_Lim_CCWL, 05B2_MPLC_J1_Main_Lim_CWL, 05B2_MPLC_J2_Main_Lim_CWL, 05B2_MPLC_J3_Main_Lim_CWL, 05B2_MPLC_J4_Main_Lim_CWL, 05B2_MPLC_J1_Main_Lim_CCWL, 05B2_MPLC_J2_Main_Lim_CCWL, 05B2_MPLC_J3_Main_Lim_CCWL, 05B2_MPLC_J4_Main_Lim_CCWL
+Item: Mirror Motor Encoders
+PVnames: SMTR1605-5-B20-09:enc:fbk, SMTR1605-5-B20-10:enc:fbk, SMTR1605-5-B20-11:enc:fbk, SMTR1605-5-B20-12:enc:fbk 
+Item: Mirror Positions
+PVnames: 05B2_M_J1:pot, 05B2_M_J2:pot, 05B2_M_J3:pot, 05B2_M_J4:pot, 05B2_M_J1:st:FF, 05B2_M_J2:st:FF, 05B2_M_J3:st:FF, 05B2_M_J4:st:FF, 05B2_M_J1:enc:FF, 05B2_M_J2:enc:FF, 05B2_M_J3:enc:FF, 05B2_M_J4:enc:FF, 05B2_M_J1:pot:FF, 05B2_M_J2:pot:FF, 05B2_M_J3:pot:FF, 05B2_M_J4:pot:FF
+Item: Turbo Pump Speed
+PVnames: TMP1605-5-B20-02:speed:fbk
+End: 05B2_1_BL
+
+
+Item: 06B1-1 SXRMB Front End
+Menu: 06B1_1_FE
+Archive: Archive-06B1-1-FE
+Item: Pressures
+PVnames: CCG1406-B10-01:vac:p, CCG1406-B10-02:vac:p, CCG1606-4-B10-02:vac:p, CCG1406-B10-01:pressure:fbk, CCG1406-B10-02:pressure:fbk, CCG1606-4-B10-02:pressure:fbk, TCG1406-B10-01:pressure:fbk, TCG1406-B10-02:pressure:fbk, TCG1606-4-B10-01:pressure:fbk
+Item: Flows
+PVnames: FLT1406-B10-01, FLT1406-B10-02, FLT1406-B10-03, FLT1406-B10-04, FLT1406-B10-05, FLT1606-4-B10-01
+Item: Temperature
+PVnames: TM1406-B10-01, TM1406-B10-02, TM1406-B10-03, TM1406-B10-04, TM1406-B10-05, TM1606-4-B10-01
+Item: IOP Pressures
+PVnames: IOP1406-B10-01:pressure, IOP1406-B10-02:pressure, IOP1406-B10-03:pressure, IOP1406-B10-04:pressure, IOP1406-B10-05:pressure, IOP1606-4-B10-01:pressure, IOP1606-4-B10-02:pressure
+End: 06B1_1_FE
+
+Item:  06B1-1 SXRMB
+Menu: 06B1_1_BL
+Archive: Archive-06B1-1-BL
+Item: Pressures
+PVnames: CCG1606-4-B10-03:vac:p, CCG1606-4-B10-03:pressure:fbk, TCG1606-4-B10-02:pressure:fbk, CCG1606-4-B10-04:pressure:fbk, TCG1606-4-B10-03:pressure:fbk, CCG1606-4-B10-05:pressure:fbk, TCG1606-4-B10-04:pressure:fbk, CCG1606-4-B10-06:pressure:fbk, TCG1606-4-B10-05:pressure:fbk, CCG1606-5-B10-01:pressure:fbk, TCG1606-5-B10-01:pressure:fbk, CCG1606-5-B10-02:pressure:fbk, TCG1606-5-B10-02:pressure:fbk, TCG1606-5-B10-03:pressure:fbk, IOP16064B1003:pressure, IOP16064B1004:pressure, IOP16064B1005:pressure, IOP16064B1006:pressure, IOP16064B1007:pressure, IOP16064B1008:pressure, IOP16064B1009:pressure, IOP16064B1010:pressure, IOP16064B1011:pressure, IOP16064B1012:pressure, IOP1606B1001:pressure, IOP16065B1001:pressure
+Item: Flow
+Pattern: FLT1606-4-B10-.*[0-9]{2}$
+End: 06B1_1_BL
+
+Item: 06ID-1 HXMA
+Menu: ID06
+Archive: Archive-06ID
+Item: Vacuum - CCG
+#PVnames: CCG1606-1-I10-01:vac:p CCG1606-1-I10-02:vac:p CCG1606-1-I10-03:vac:p CCG1606-1-I10-04:vac:p CCG1606-1-I10-05:vac:p
+Pattern: CCG1606.*
+Item: Vacuum - FE CCG
+Pattern: CCG1406.*
+Item: Vacuum - TCG
+Pattern: TCG1606.*
+Item: Vacuum - IOP
+Pattern: IOP1606.*
+Item: Vacuum - FE IOP
+Pattern: IOP1406.*
+Item: Vacuum - IOP (old)
+Pattern: IOP1606B.*
+Item: Flow Transducers - BL
+Pattern: FLT1606-1-I10.*[0-9]$
+Item: Flow Transducers - FE
+Pattern: FLT1406-I00.*
+Item: Temperatures - FE
+Pattern: TM1406-I00.*
+Item: Temperatures, water
+PVnames: TM1606-1-01 TM1606-2-01 TM1606-1-I10-01 TM1606-1-I10-02 TM1606-1-I10-03 TM1606-1-I10-04 TM1606-1-I10-05
+Item: Temperatures, thermocouples 1
+PVnames: TM16061I1061:adc:fbk TM16061I1062:adc:fbk TM16061I1063:adc:fbk TM16061I1064:adc:fbk TM16061I1065:adc:fbk TM16061I1066:adc:fbk TM16061I1067:adc:fbk TM16061I1068:adc:fbk
+Item: Temperatures, thermocouples 2
+PVnames: TM16061I1069:adc:fbk TM16061I1070:adc:fbk TM16061I1071:adc:fbk TM16061I1072:adc:fbk TM16061I1073:adc:fbk TM16061I1074:adc:fbk TM16061I1075:adc:fbk TM16061I1076:adc:fbk
+Item: Mono Motors
+PVnames: SMTR16061I1015:power SMTR16061I1016:power SMTR16061I1017:power SMTR16061I1018:power
+Item: BPM 1
+PVnames: A1606-101:A:fbk A1606-102:A:fbk A1606-103:A:fbk A1606-104:A:fbk
+Item: BPM 2
+PVnames: A1606-105:A:fbk A1606-106:A:fbk A1606-107:A:fbk A1606-108:A:fbk
+Item: XAFS BPM
+PVnames: BPM1606-I10-04:asym BPM1606-I10-04:mm:fbk BL1606-ID1:mcs11:fbk BL1606-ID1:mcs12:fbk
+Item: Detector LN2
+PVnames: BL1606-2-01:LN2:Level BL1606-2-01:LN2:Filling
+End: ID06
+
+Item: 07B2-1 VESPERS Front End
+Menu: 07B2_1_FE
+Archive: Archive-07B2-1-FE
+Item: Pressures
+PVnames: CCG1408-B20-01:vac:p, CCG1408-B20-02:vac:p, CCG1408-B20-03:vac:p, CCG1607-1-B20-02:vac:p, CCG1607-1-B20-03:vac:p
+Item: IOPs
+Pattern: IOP(1408|1607).*:pressure
+Item: Flows
+PVnames: FLT1408-B20-01, FLT1408-B20-02, FLT1408-B20-03, FLT1408-B20-04, FLT1408-B20-05, FLT1408-B20-06, FLT1607-1-B20-01
+Item: Temperature
+PVnames: TM1408-B20-01, TM1408-B20-02, TM1408-B20-03, TM1408-B20-04, TM1408-B20-05, TM1408-B20-06, TM1408-B20-07, TM1408-B20-08, TM1607-1-B20-01
+Item: Valves
+Pattern: VVR(1408|1607).*:state
+End: 07B2_1_FE
+
+Item: 07B2-1 VESPERS Beamline
+Menu: 07B2_1_BL
+Archive: Archive-07B2-1-BL
+Item: Vacuum Pressures
+PVnames: CCG1607-1-B20-04:vac:p, CCG1607-1-B20-05:vac:p, CCG1607-1-B20-06:vac:p, CCG1607-1-B20-07:vac:p, CCG1607-1-B20-08:vac:p, CCG1607-1-B20-09:vac:p, CCG1607-1-B20-10:vac:p, CCG1607-1-B20-11:vac:p, CCG1607-1-B20-12:vac:p, CCG1607-1-B22-01:vac:p, CCG1607-1-B21-01:vac:p, CCG1607-2-B21-01:vac:p, CCG1607-2-B21-02:vac:p, CCG1607-2-B21-03:vac:p
+Item: Flows
+PVnames: FLT1607-1-B20-02, FLT1607-1-B20-03, FLT1607-1-B21-01, FLT1607-1-B22-01, FLT1607-1-B20-04, FLT1607-1-B20-05, FLT1607-1-B21-02, FLT1607-1-B21-03, FLT1607-1-B22-02, FLT1607-1-B21-04, FLT1607-2-B21-01
+Item: Temperature
+PVnames: TM1607-1-B20-02, TM1607-1-B20-02, TM1607-1-B20-03, TM1607-1-B20-07, TM1607-1-B20-08, TM1607-1-B20-09, TM1607-1-B20-10, TM1607-1-B20-11, TM1607-1-B20-12, TM1607-1-B20-13, TM1607-1-B20-14, TM1607-1-B20-15, TM1607-1-B20-16, TM1607-1-B20-17, TM1607-1-B20-18, TM1607-1-B20-19, TM1607-1-B21-01, TM1607-1-B21-02, TM1607-1-B21-03, TM1607-1-B22-01, TM1607-1-B22-02, TM1607-1-B22-03
+Item: Pressures
+PVnames: PT1607-1-B20-70, PT1607-1-B20-01
+Item: Beam Pos
+PVnames: A1408-01:uA:fbk A1408-02:uA:fbk A1408-03:uA:fbk A1408-04:uA:fbk BPM1408-B20-01:Y:asym BPM1408-B20-02:Y:asym BPM1408-B20-01:Y:asym:pos BPM1408-B20-02:Y:asym:pos BL1607-B2-1:mcs07:fbk BPM1407-06:x BPM1407-06:y
+End: 07B2_1_BL
+
+Item: 07ID BioXAS FE
+Menu: 07ID BioXAS FE
+Archive: Archive-07ID-FE
+Item: Valves
+PVnames: VVR1407-I00-01:opened VVR1407-I00-01:closed
+Item: Shutters
+PVnames: IPSH1407-I00-01:opened IPSH1407-I00-01:closed IPSH1407-I00-02:opened IPSH1407-I00-02:closed
+Item: CCGs
+PVnames: CCG1407-I00-01:vac:p CCG1407-I00-02:vac:p CCG1607-5-I00-02:vac:p
+Item: IOPs
+Pattern: IOP1407-[I].*:pressure|IOP1607-5-I00-0[12]:pressure
+Item: Wiggler Vacuum
+PVnames: CCG07ID-TEMP-01:pressure:fbk CCG07ID-TEMP-02:pressure:fbk
+Item: Temperatures
+PVnames: TM1407-I00-01 TM1407-I00-02 TM1407-I00-03 TM1407-I00-04 TM1407-I00-05 TM1607-5-I00-01
+Item: Flows
+Pattern: FLT1407-I00.*[0-9]$
+End: 07ID BioXAS FE
+
+Item: 07ID BioXAS BL
+Menu: 07ID BioXAS BL
+Archive: Archive-07ID-BL
+Item: Valves
+Pattern: VVR1607-5-I[012].*:opened|VVR1607-5-I[012].*:closed
+Item: CCGs
+Pattern: CCG1607-[5-8]-.*:vac:p
+Item: CryoCooler
+Pattern: CRYC1607-*
+Item: Flows
+Pattern: FLT1607-5-I[012].*[0-9]$
+Item: Flow Switches
+Pattern: SWF1607-5-I[012].*[0-9]$
+Item: IOPs
+Pattern: IOP1607.*[0-9]:pressure
+Item: TCGs
+Pattern: TCG1607-[58]-.*:vac:p 
+Item: Temperatures
+Pattern: TM1607-[5-8].*[0-9]$
+Item: FilterFarm Positions
+Pattern: SMTR1607-5-I00.*:mm:fbk
+Item: Main Detector LN2 Positions
+Pattern: PDTR1607-703:LN2:.*|PDTR1607-701:LN2:.*|BL1607-5-I21:FAN:.*
+Item: Side Detector LN2 Positions
+Pattern: PDTR1607-602:LN2:.*|BL1607-5-I22:FAN:.*
+End: 07ID BioXAS BL
+
+Item: 09ID QMSC Front End
+Menu: 09ID QMSC FE
+Archive: Archive-09ID-FE
+Item: Pressures
+PVnames: CCG1409-I00-01:vac:p CCG1409-I00-02:vac:p CCG1409-I00-01:P2VP CCG1409-I00-02:P2VP CCG1409-I00-01:vac CCG1409-I00-02:vac
+Item: Flow Rates
+PVnames: FLT1409-I00-01, FLT1409-I00-01:lowflow, FLT1409-I00-02, FLT1409-I00-02:lowflow, FLT1409-18, FLT1409-18:lowflow, SWF1409-I00-01, SWF1409-I00-02
+Item: Ion Pumps
+PVnames: IOP1409-I00-01, IOP1409-I00-02, IOP1409-I00-03, IOP1409-I00-04, IOP1609-1-I00-01
+Item: Photon Shutters
+Pattern: IPSH1409-I00-.*
+Item: Temperatures
+Pattern: TM1409-I00-0[1234]|TM1409-I00-0[1234]:trip
+Item: Valves
+PVnames: VVR1409-I00-01:opened, VVR1409-I00-01:closed, VVR1609-1-I00-01:opened, VVR1609-1-I00-01:closed, VVF1409-I00-01:CLOSED, VVF1409-I00-01:OPEN, VVF1409-I00-01:CTL_SYS_READY, VVF1409-I00-01:HV_READY, VVF1409-I00-01:READY
+End: 09ID QMSC FE
+
+Item: 09ID QMSC Beamline
+Menu: 09ID BioXAS BL
+Archive: Archive-09ID-BL
+Item: Valves
+Pattern: VVR1609-1-I1.-0[123456]:state|VVR1609-1-I1.-0[123456]:BadOpen|VVR1609-1-I1.-0[123456]BadClose|VVR1609-1-I1.-0[12345]:Protected
+Item: CCGs
+Pattern: CCG1609-1-I1.-0[1-7].*|CCG1609-I1.-0[1-7]
+Item: Temperatures
+Pattern: TM1609-1-I10-0[1-13].*|TM1609-I10-0[1-12].*
+Item: Flows
+Pattern: FLT1609-1-I10-0[12456].*|FLT1609-I10-0[1-5].*
+Item: Flow Switches
+Pattern: SWF1609-1-I10-0[12456].*|SWF1609-I10-0[1-5].*
+Item: IOPs
+Pattern: IOP1609.*:pressure$
+Item: Temperatures
+Pattern: TM1609-1-I10-.*$
+Item: Picoammeters
+Pattern: A1609-1-0.:A:fbk
+End: 09ID QMSC BL
+
+Item: SM REIX Front End
+Menu: SM REIX FE
+Archive: Archive-10ID-SM-REIXS-FE
+Item: CCG Pressures
+PVnames: CCG1410-I00-01:vac:p CCG1410-I00-02:vac:p CCG1610-1-I00-02:vac:p
+Item: Flow
+Pattern: FLT1410-I00-[0-9]{2}$
+End: SM REIX FE
+
+Item: 10ID-1 SM
+Menu: 10ID-1
+Archive: Archive-10ID-SM-REIXS
+Item: Temperatures
+PVnames: TM1610-1-I00-01 TM1610-1-I00-02 TM1610-1-I00-03 TM1610-I10-01 TM1610-I10-02
+Item: Flows
+Pattern: FLT1610-1-I[01]0-[0-9]{2}$
+Item: Shutters
+PVnames:  SSH1410-I00-01:opr:open SSH1410-I00-01:opr:close SSH1410-I00-01:state SSH1410-I00-01:protected SSH1410-I00-02:state SSH1410-I00-02:protected
+Item: CCG Pressures
+PVnames: CCG1610-1-I00-03:vac:p CCG1610-3-I12-01:vac:p CCG1610-I10-01:vac:p CCG1610-I10-02:vac:p CCG1610-I10-03:vac:p CCG1610-I10-04:vac:p CCG1610-I11-01:vac:p CCG1610-I11-02:vac:p CCG1610-I11-03:vac:p CCG1610-I11-04:vac:p CCG1610-I11-05:vac:p CCG1610-I12-01:vac:p CCG1610-I12-02:vac:p
+Item: TCG Pressures
+PVnames: TCG1610-I12-01:pressure TCG1610-I12-02:pressure TCG1610-I11-01:pressure TCG1610-I11-02:pressure TCG1610-I11-04:pressure TCG1610-I11-05:pressure TCG1610-I11-06:pressure TCG1610-I10-01:pressure TCG1610-I10-02:pressure TCG1610-I10-03:pressure TCG1610-I10-04:pressure TCG1610-I10-05:pressure TCG1610-1-I00-02:pressure TCG1610-1-I20-01:pressure TCG1610-3-I12-01:pressure
+Item: Beam Monitors
+Pattern: A1610-.*:nA:fbk|BPM1610-I10-010:Current:Channel[0-9]
+Item: STXM Pressures
+PVnames: FRG1610-3-I12-01:vac:p TCG1610-3-I12-03:vac:p TCG1610-3-I12-04:vac:p TCG1610-3-I12-05:vac:p TCG1610-I00-01:vac:p
+Item: STXM Temperatures
+PVnames: TM1610-3-I12-01 TM1610-3-I12-21 TM1610-3-I12-22 TM1610-3-I12-23 TM1610-3-I12-24 TM1610-3-I12-30 TM1610-3-I12-32
+Item: UHV STXM Cryo
+PVnames: CCTL1610-I10:temp:fbk CCTL1610-I10:current:fbk
+End: 10ID-1
+
+Item: 10ID-2 REIXS
+Menu: 10ID-2
+Archive: Archive-10ID-SM-REIXS
+Item: POE Temperatures
+PVnames: TM1610-1-I20-01 TM1610-1-I20-02 TM1610-1-I20-03 TM1610-1-I20-04 TM1610-1-I20-05 TM1610-1-I20-06 TM1610-1-I20-07
+Item: Beamline Temperatures
+PVnames: TM1610-I20-01 TM1610-I20-02 TM1610-I20-03 TM1610-I20-04 TM1610-I20-05 TM1610-I20-06 TM1610-I20-07 TM1610-I20-08
+Item: SOE Temperatures
+PVnames: TM1610-4-I21-01 TM1610-4-I22-01
+Item: Flows
+Pattern: FLT1610-I20-[0-9]{2}$
+Item: Pressures
+PVnames: HCG1610-1-I00-01:vac:p HCG1610-1-I20-01:vac:p HCG1610-I20-02:vac:p HCG1610-I20-03:vac:p HCG1610-I20-04:vac:p HCG1610-I20-06:vac:p
+Item: SOE Pressures
+PVnames: HCG1610-4-I20-01:vac:p HCG1610-4-I22-01:vac:p
+Item: Photon Shutter 2
+PVnames: PSH1410-I00-02:state IOP1610-1-I10-01 IOP1610-1-I10-02 VVR1610-I10-03:vacstat VVR1610-I11-04:Protected TCG1610-3-I12-01
+End: 10ID-2
+
+Item: 11ID SGM/PGM Front End
+Menu: ID11
+Archive: Archive-11ID
+Item: Pressure
+PVnames: PT1411-I00-01,PT1411-I00-02
+Item: Temperatures
+PVnames: TM1411-I00-01,TM1411-I00-02,TM1411-I00-03,TM1411-I00-04,TM1411-I00-05,TM1411-I00-06,TM1411-I00-07,TM1611-3-I00-01
+Item: Flow Rates
+PVnames: FLT1411-I00-01, FLT1411-I00-02, FLT1411-I00-03, FLT1411-I00-04, FLT1411-I00-05, FLT1611-3-I00-01
+Item: Vacuum
+PVnames: CCG1411-I00-01:vac:p,CCG1411-I00-02:vac:p,CCG1611-3-I00-02:vac:p
+
+End: ID11
+
+Item: 11ID SGM/PGM BL
+Menu: SgmPgm
+Archive: Archive-11ID
+Item: Sgm IOP Pressure
+Pattern: IOP1611[ABD].*:pressure
+Item: Pgm IOP Pressure
+Pattern: IOP1611[ACEFG].*:pressure|IOP1611-4-I2.*:P
+Item: CCG Pressure
+Pattern: CCG1611.*:vac:p
+Item: Temperatures
+Pattern: TM1611-3-I.*
+Item: Flow Rates (SGM)
+Pattern: FLT1611-[34]-I10.*[0-9]$
+Item: Flow Rates (PGM)
+Pattern: FLT1611-[34]-I20.*[0-9]$
+Item: ID11 BPM
+Archive: Archive-SrBPMs
+#PVnames: 1410-05:BPMx:val,1411-01:BPMx:val,1411-02:BPMx:val,1410-05:BPMy:val,1411-01:BPMy:val,1411-02:BPMy:val
+PVnames: BPM1410-05:x,BPM1411-01:x,BPM1411-02:x,BPM1410-05:y,BPM1411-01:y,BPM1411-02:y
+Item: ID11 BPM (um)
+Archive: Archive-SrBPMs
+PVnames: BPM1410-05:x:um,BPM1411-01:x:um,BPM1411-02:x:um,BPM1410-05:y:um,BPM1411-01:y:um,BPM1411-02:y:um
+Item: PGM Blade Currents
+Archive: Archive-11ID
+PVnames: A1611-3-03:nA:fbk,A1611-3-04:nA:fbk
+Item: PGM Mono Calibration
+Archive: Archive-11ID
+PVnames: PGM_mono:Recalib:H,PGM_mono:Recalib:M,PGM_mono:Recalib:L
+Item: PGM Mono Motors
+Archive: Archive-11ID
+Pattern: SMTR16114I200[1-3]
+Item: PGM Motors vs Flux
+Archive: Archive-11ID
+Pattern: SMTR1611[34].*:fbk|PSL1611[34].*:fbk|UND1411-02.*:fbk|BL1611-ID-2:Energy:fbk|A1611-4-12:nA:fbk|ENC1611[34]I....:cnt:fbk
+Item: PGM Encoders
+Archive: Archive-11ID
+Pattern: ENC.*[0-9]:cnt:fbk|PZSG1611-4-I22-1[12]
+Item: PGM HV
+Menu: PGM HV
+Archive: Archive-11ID
+Item: 4kV
+Pattern: PS1611401:[12]0[0-5]:.*mon|PS1611401:[12]0[0-5]:status
+Item: 6kV
+Pattern: PS1611401:[56].*mon|PS1611401:[56].*status
+End: PGM HV
+Item: PGM XPS
+Menu: PGM-XPS
+Archive: Archive-11ID
+Item: IOP Pressure
+Pattern: IOP1611-4-E01-0[1-4]:pressure
+End PGM-XPS
+End: SgmPgm
+
+Item: CMCF 08ID-1 BL
+Menu: Cmcf08Id1-BL
+Archive: Archive-08ID1-BL
+Item: Valves
+Pattern: VVR1608-[12].*:open|VVR1608-[12].*:close 
+Item: Temperature
+Pattern: TM1608-2-I10-0[12].*|TM1608-3-01
+Item: CCGs
+Pattern: CCG1608-[1234].*:vac:p 
+Item: Ion Pumps
+Pattern: IOP1608-[123].*
+Item: TCGs
+Pattern: TCG1608-[123].*
+Item: Flow
+Pattern: FLT1608-2-I10-0[12].*
+Item: Service
+Pattern: SWF1608-2-I10-0[13].*
+Item: SOE Humidity
+Pattern: HM1608-3-01:fbk 
+End: Cmcf08Id1-BL
+
+
+Item: CMCF 08ID-1 FE
+Menu: Cmcf08Id1-FE
+Archive: Archive-08ID1-FE
+Item: Valves
+Pattern: VVR1408-[I].*:open|VVR1408-[I].*:close|VVR1608-[1].*:open|VVR1608-[1].*:close 
+Item: Photon Shutters
+Pattern: PSH1408-[I].*:(open|close)
+Item: Safety Shutters
+PVnames:  SSH1408-I00-01:opr:open SSH1408-I00-01:opr:close SSH1408-I00-01:state SSH1408-I00-01:protected
+Item: CCGs
+PVnames: CCG1408-I00-01:vac:p,CCG1408-I00-02:vac:p,CCG1408-I00-03:vac:p,CCG1608-1-I00-02:vac:p  
+Item: Temperatures
+PVnames: TM1408-I00-01,TM1408-I00-02,TM1408-I00-03,TM1408-I00-04,TM1408-I00-05,TM1408-I00-06,TM1408-I00-07,TM1408-I00-08,TM1608-1-I00-01
+Item: Flow
+Pattern: FLT1408-I00-[0-9]{2}$
+End: Cmcf08Id1-FE
+
+
+Item: CMCF 08B1-1 BL
+Menu: Cmcf08B1-BL
+Archive: Archive-08B1-BL
+Item: CCGs
+Pattern: CCG1608-[45]-B.*
+Item: Ion Pumps
+Pattern: IOP1608-[B4]-B.*
+Item: TCGs
+Pattern: TCG1608-[45-]-B.*
+Item: Flow
+Pattern: FLT1608-4-B10-[0-9]{2}$
+Item: Service
+Pattern: SWF1608-4-B10-0[13].*
+Item: SOE Humidity
+Pattern: HM1608-[45].*
+
+End: Cmcf08B1-BL
+
+Item: CMCF 08B1-1 FE
+Menu: Cmcf08B1-FE
+Archive: Archive-08B1-FE
+Item: Valves
+Pattern: VV[F|R]1[4,6]08-[B].*:(open|close)
+Item: Shutters
+Pattern: (SSH|PSH)1[4,6]08-[B].*:opr:(open|close)
+Item: CCGs
+Pattern: (IOP|CCG)1[4,6]08-[B].*
+Item: Flow
+Pattern: FLT1[4,6]08-[B].*
+End: Cmcf08B1-FE
+
+
+
+
+Item: 08B2-1 IDEAS FE
+Menu: 08B2-1-IDEAS-FE
+Archive: Archive-08B2-1-FE
+Item: Flow
+PVnames: FLT1409-B20-01, FLT1409-B20-02, FLT1409-B20-03
+Item: Valves
+PVnames: VVR1409-B20-01:opened, VVR1409-B20-01:closed, VVR1409-B20-02:opened, VVR1409-B20-02:closed, VVR1608-9-B20-01:opened, VVR1608-9-B20-01:closed
+Item: Shutters
+PVnames: PSH1409-B20-01:opened, PSH1409-B20-01:closed, PSH1409-B20-02:opened, PSH1409-B20-02:closed
+Item: CCGs
+PVnames: CCG1408-02:vac:p, CCG1409-B20-02:vac:p 
+Item: Ion Pumps
+Pattern: IOP1409.*:pressure
+End: 08B2-1-IDEAS-FE
+
+
+Item: 08B2-1-IDEAS-BL
+Menu: 08B2-1-IDEAS-BL
+Archive: Archive-08B2-1-BL
+Item: Valves
+PVnames: VVR1608-9-B20-02:opened, VVR1608-9-B20-02:closed, VVR1608-9-B20-03:opened, VVR1608-9-B20-03:closed, VVR1608-9-B20-04:opened, VVR1608-9-B20-04:closed, VVR1608-9-B20-05:opened, VVR1608-9-B20-05:closed
+Item: CCGs
+Pattern: CCG1608-9-B.*
+Item: Ion Pumps
+Pattern: IOP1608-9-B.*
+Item: TCGs
+Pattern: TCG1608-9-B.*
+Item: Flow
+Pattern: FLT1608-9-B.*
+Item: Service
+Pattern: SWF1608-9-B.*
+Item: Hydrogen System
+PVnames: HYDT1608-10-01, HYDT1608-10-02, HYDT2608-6-01, HYDT2608-6-02, FE2608-6-01
+End: 08B2-1-IDEAS-BL
+
+
+Item: Experimental Floor Air
+Menu: EFA
+Archive: Archive-system
+Item: Temperatures
+
+PVnames: TM2004-03, TM2004-02, TM2004-01, TM2004-04, TM2004-01:SP:fbk, TM2004-03:SP:fbk, TM2004-04:SP:fbk, TM3001-56, TM3001-57, TM3001-58, TM3001-59, TM3001-58:SP:fbk, TM3001-59:SP:fbk, TM3001-51, TM3001-52, TM3001-53, TM3001-54, TM3001-55, TM3001-51:SP:fbk, TM3001-52:SP:fbk, TM3001-53:SP:fbk, TM3001-54:SP:fbk
+
+Item: Humidity
+PVnames: HM2004-01, HM2004-02, HM2004-01:SP:fbk, HM3001-50, HM3001-51, HM3001-52, HM3001-51:SP:fbk, HM3001-52:SP:fbk
+
+End: EFA
+
+
+
+
+Item: Bakeout
+Menu: Bakeout
+Archive: Archive-Bakeout
+Item: Controller 1 Temperatures
+PVnames: BOC0000:101:TM0001,BOC0000:101:TM0002,BOC0000:101:TM0003,BOC0000:101:TM0004,BOC0000:101:TM0005,BOC0000:101:TM0006,BOC0000:101:TM0007,BOC0000:101:TM0008,BOC0000:101:TM0009,BOC0000:101:TM0010,BOC0000:101:TM0011,BOC0000:101:TM0012,BOC0000:101:TM0001:SP,BOC0000:101:TM0002:SP,BOC0000:101:TM0003:SP,BOC0000:101:TM0004:SP,BOC0000:101:TM0005:SP,BOC0000:101:TM0006:SP,BOC0000:101:TM0007:SP
+Item: Controller 1 Variables
+Pattern: BOC0000:101:Cycle.*|BOC0000:101:Epics.*|BOC0000:101:Hi.*|BOC0000:101:SSRCont.*|BOC0000:101:Turbo.*
+Item: Controller 2 Temperatures
+PVnames: BOC0000:102:TM0001,BOC0000:102:TM0002,BOC0000:102:TM0003,BOC0000:102:TM0004,BOC0000:102:TM0005,BOC0000:102:TM0006,BOC0000:102:TM0007,BOC0000:102:TM0008,BOC0000:102:TM0009,BOC0000:102:TM0010,BOC0000:102:TM0011,BOC0000:102:TM0012,BOC0000:102:TM0001:SP,BOC0000:102:TM0002:SP,BOC0000:102:TM0003:SP,BOC0000:102:TM0004:SP,BOC0000:102:TM0005:SP,BOC0000:102:TM0006:SP,BOC0000:102:TM0007:SP
+Item: Controller 2 Variables
+Pattern: BOC0000:102:Cycle.*|BOC0000:102:Epics.*|BOC0000:102:Hi.*|BOC0000:102:SSRCont.*|BOC0000:102:Turbo.*
+Item: Controller 3 Temperatures
+PVnames: BOC0000:103:TM0001,BOC0000:103:TM0002,BOC0000:103:TM0003,BOC0000:103:TM0004,BOC0000:103:TM0005,BOC0000:103:TM0006,BOC0000:103:TM0007,BOC0000:103:TM0008,BOC0000:103:TM0009,BOC0000:103:TM0010,BOC0000:103:TM0011,BOC0000:103:TM0012,BOC0000:103:TM0001:SP,BOC0000:103:TM0002:SP,BOC0000:103:TM0003:SP,BOC0000:103:TM0004:SP,BOC0000:103:TM0005:SP,BOC0000:103:TM0006:SP,BOC0000:103:TM0007:SP
+Item: Controller 3 Variables
+Pattern: BOC0000:103:Cycle.*|BOC0000:103:Epics.*|BOC0000:103:Hi.*|BOC0000:103:SSRCont.*|BOC0000:103:Turbo.*
+Item: Controller 4 Temperatures
+PVnames: BOC0000:104:TM0001,BOC0000:104:TM0002,BOC0000:104:TM0003,BOC0000:104:TM0004,BOC0000:104:TM0005,BOC0000:104:TM0006,BOC0000:104:TM0007,BOC0000:104:TM0008,BOC0000:104:TM0009,BOC0000:104:TM0010,BOC0000:104:TM0011,BOC0000:104:TM0012,BOC0000:104:TM0001:SP,BOC0000:104:TM0002:SP,BOC0000:104:TM0003:SP,BOC0000:104:TM0004:SP,BOC0000:104:TM0005:SP,BOC0000:104:TM0006:SP,BOC0000:104:TM0007:SP
+Item: Controller 4 Variables
+Pattern: BOC0000:104:Cycle.*|BOC0000:104:Epics.*|BOC0000:104:Hi.*|BOC0000:104:SSRCont.*|BOC0000:104:Turbo.*
+Item: Controller 5 Temperatures
+PVnames: BOC0000:105:TM0001,BOC0000:105:TM0002,BOC0000:105:TM0003,BOC0000:105:TM0004,BOC0000:105:TM0005,BOC0000:105:TM0006,BOC0000:105:TM0007,BOC0000:105:TM0008,BOC0000:105:TM0009,BOC0000:105:TM0010,BOC0000:105:TM0011,BOC0000:105:TM0012,BOC0000:105:TM0001:SP,BOC0000:105:TM0002:SP,BOC0000:105:TM0003:SP,BOC0000:105:TM0004:SP,BOC0000:105:TM0005:SP,BOC0000:105:TM0006:SP,BOC0000:105:TM0007:SP
+Item: Controller 5 Variables
+Pattern: BOC0000:105:Cycle.*|BOC0000:105:Epics.*|BOC0000:105:Hi.*|BOC0000:105:SSRCont.*|BOC0000:105:Turbo.*
+Item: Controller 6 Temperatures
+PVnames: BOC0000:106:TM0001,BOC0000:106:TM0002,BOC0000:106:TM0003,BOC0000:106:TM0004,BOC0000:106:TM0005,BOC0000:106:TM0006,BOC0000:106:TM0007,BOC0000:106:TM0008,BOC0000:106:TM0009,BOC0000:106:TM0010,BOC0000:106:TM0011,BOC0000:106:TM0012,BOC0000:106:TM0001:SP,BOC0000:106:TM0002:SP,BOC0000:106:TM0003:SP,BOC0000:106:TM0004:SP,BOC0000:106:TM0005:SP,BOC0000:106:TM0006:SP,BOC0000:106:TM0007:SP
+Item: Controller 6 Variables
+Pattern: BOC0000:106:Cycle.*|BOC0000:106:Epics.*|BOC0000:106:Hi.*|BOC0000:106:SSRCont.*|BOC0000:106:Turbo.*
+Item: Controller 7 Temperatures
+PVnames: BOC0000:107:TM0001,BOC0000:107:TM0002,BOC0000:107:TM0003,BOC0000:107:TM0004,BOC0000:107:TM0005,BOC0000:107:TM0006,BOC0000:107:TM0007,BOC0000:107:TM0008,BOC0000:107:TM0009,BOC0000:107:TM0010,BOC0000:107:TM0011,BOC0000:107:TM0012,BOC0000:107:TM0001:SP,BOC0000:107:TM0002:SP,BOC0000:107:TM0003:SP,BOC0000:107:TM0004:SP,BOC0000:107:TM0005:SP,BOC0000:107:TM0006:SP,BOC0000:107:TM0007:SP
+Item: Controller 7 Variables
+Pattern: BOC0000:107:Cycle.*|BOC0000:107:Epics.*|BOC0000:107:Hi.*|BOC0000:107:SSRCont.*|BOC0000:107:Turbo.*
+Item: Controller 8 Temperatures
+PVnames: BOC0000:108:TM0001,BOC0000:108:TM0002,BOC0000:108:TM0003,BOC0000:108:TM0004,BOC0000:108:TM0005,BOC0000:108:TM0006,BOC0000:108:TM0007,BOC0000:108:TM0008,BOC0000:108:TM0009,BOC0000:108:TM0010,BOC0000:108:TM0011,BOC0000:108:TM0012,BOC0000:108:TM0001:SP,BOC0000:108:TM0002:SP,BOC0000:108:TM0003:SP,BOC0000:108:TM0004:SP,BOC0000:108:TM0005:SP,BOC0000:108:TM0006:SP,BOC0000:108:TM0007:SP
+Item: Controller 8 Variables
+Pattern: BOC0000:108:Cycle.*|BOC0000:108:Epics.*|BOC0000:108:Hi.*|BOC0000:108:SSRCont.*|BOC0000:108:Turbo.*
+Item: Controller 9 Temperatures
+PVnames: BOC0000:109:TM0001,BOC0000:109:TM0002,BOC0000:109:TM0003,BOC0000:109:TM0004,BOC0000:109:TM0005,BOC0000:109:TM0006,BOC0000:109:TM0007,BOC0000:109:TM0008,BOC0000:109:TM0009,BOC0000:109:TM0010,BOC0000:109:TM0011,BOC0000:109:TM0012,BOC0000:109:TM0001:SP,BOC0000:109:TM0002:SP,BOC0000:109:TM0003:SP,BOC0000:109:TM0004:SP,BOC0000:109:TM0005:SP,BOC0000:109:TM0006:SP,BOC0000:109:TM0007:SP
+Item: Controller 9 Variables
+Pattern: BOC0000:109:Cycle.*|BOC0000:109:Epics.*|BOC0000:109:Hi.*|BOC0000:109:SSRCont.*|BOC0000:109:Turbo.*
+Item: Controller 10 Temperatures
+PVnames: BOC0000:110:TM0001,BOC0000:110:TM0002,BOC0000:110:TM0003,BOC0000:110:TM0004,BOC0000:110:TM0005,BOC0000:110:TM0006,BOC0000:110:TM0007,BOC0000:110:TM0008,BOC0000:110:TM0009,BOC0000:110:TM0010,BOC0000:110:TM0011,BOC0000:110:TM0012,BOC0000:110:TM0001:SP,BOC0000:110:TM0002:SP,BOC0000:110:TM0003:SP,BOC0000:110:TM0004:SP,BOC0000:110:TM0005:SP,BOC0000:110:TM0006:SP,BOC0000:110:TM0007:SP
+Item: Controller 10 Variables
+Pattern: BOC0000:110:Cycle.*|BOC0000:110:Epics.*|BOC0000:110:Hi.*|BOC0000:110:SSRCont.*|BOC0000:110:Turbo.*
+End: Bakeout
+
+Item: Machine Protection
+Menu: MachProt
+Archive: Archive-machProtect
+Item: Cells
+PVnames: Cell-1, Cell-2, Cell-3, Cell-4, Cell-5, Cell-6, Cell-7, Cell-8, Cell-9, Cell-10, Cell-11, Cell-12
+End: MachProt
+
+Item: Test Modulator
+Menu: ModulatorMPS
+Archive: Archive-TestModulatorMPS
+Item: HVPS 
+PVnames: MOD1023-01:HVPSX-VS MOD1023-01:HVPSX-VSG MOD1023-01:HVPSX-V MOD1023-01:HVPSX-I
+Item: Pulse
+PVnames: MOD1023-01:PULSE-WIDTH-SET MOD1023-01:PULSE-WIDG MOD1023-01:PULSE-REP MOD1023-01:PULSE-WIDTH
+Item: Filament
+PVnames: MOD1023-01:FIL-V MOD1023-01:FIL-I MOD1023-01:FIL-HEAT-TIM MOD1023-01:HVPSX-I
+Item: CT/CVD
+PVnames: MOD1023-01:CT-PULSE-I MOD1023-01:CVD-PULSE-V MOD1023-01:CT-ARCS MOD1023-01:CVD-ARCS
+Item: Vacuum Reading
+PVnames: CCG1023-01:vac:p IOP1023-01:vac:p IOP1023-02:pressure
+Item: Vacuum Interlock
+PVnames: CCG1023-01:vac CCG1023-01:SP2 IOP1023-01 IOP1023-01:P2VP
+Item: Interlocks
+PVnames: SWF1023-01 SWF1023-02 SWF1023-03 SWF1023-04 TM1023-03 TM1023-04 TM1023-05 TM1023-03:trip TM1023-04:trip TM1023-05:trip MOD1023-01:VSWR_ITLK MOD1023-01:EXT_ITLK MOD1023-01:TRIG_INHIBIT MOD1023-01:VAC_ITLK MOD1023-01:SUM_ITLK MOD1023-01:HV MOD1023-01:RF:COAX_ON
+Item: Flow [l/m]
+Archive: Archive-AHU
+PVnames: FLT1023-01 FLT1023-02 FLT1023-03
+Item: Flow [USgpm]
+Archive: Archive-AHU
+PVnames: FLT1023-01:USgpm FLT1023-02:USgpm FLT1023-03:USgpm
+Item: Flow Switch
+PVnames: SWF1023-01 SWF1023-02 SWF1023-03 SWF1023-04
+Item: Temperature
+PVnames: TM1023-03 TM1023-04 TM1023-05
+Item: Temperature Trip
+PVnames: TM1023-03:trip TM1023-04:trip TM1023-05:trip
+Item: Electromagnet PS
+PVnames: SWT1023-02 MOD1023-01:SOLENOID1-V MOD1023-01:SOLENOID1-I MOD1023-01:SOLENOID2-V MOD1023-01:SOLENOID2-I MOD1023-01:SOLENOID3-V MOD1023-01:SOLENOID3-I MOD1023-01:SOLENOID4-V MOD1023-01:SOLENOID4-I MOD1023-01:SOLENOID5-V MOD1023-01:SOLENOID5-I MOD1023-01:SOLENOID6-V MOD1023-01:SOLENOID6-I
+Item: Delays
+Archive: Archive-24
+PVnames: MOD-test:delay:ns
+Item: Runtime
+PVnames: MOD1023-01:HEATER-HOURS MOD1023-01:TRIG-HOURS
+End: ModulatorMPS
+
+Item: Magnet Feedback
+Menu: MagFeed
+Archive: manualArchive
+Item: QFC1411-02
+PVnames: QFC1411-02:dac, QFC1411-02:adc
+Item: OCH1406-02
+PVnames: OCH1406-02:dac, OCH1406-02:adc
+Item: MM
+Archive: Archive-MultiMeter
+PVnames: MM1029-001:read, MM1029-002:read, MM2015-007:read, MM2015-008:read, MM2015-01:V:fbk, MM2015-02:V:fbk
+Item: B1400-00
+Archive: Archive-MultiMeter
+PVnames: B1400-00:adc, B1400-00:dac, B1400-00:Amp, B1400-00:state, B1400-00:CirBufferStd
+Item: Temperatures
+Archive: Archive-MultiMeter
+Pattern: TM
+End: MagFeed
+
+Item: SGU Girder Temperatures
+Menu: SGUTemp
+Archive: Archive-SGUtemperatures
+Item: Temperatures
+PVnames: TM1408-04, TM1408-05, TM1408-06, TM1408-07, TM1408-08, TM1408-09, TM1408-10, TM1408-11
+End: SGUTemp
+
+Item: Linux Monitors
+Menu: LinuxMonitor
+Archive: Archive-LinuxMonitor
+Item: OPI2400-101
+PVnames: MON2400-101:LOAD, MON2400-101:LOAD15MIN, MON2400-101:MEMFREE, MON2400-101:SWAPFREE, MON2400-101:PIDFREE
+Item: OPI0000-002
+PVnames: MON0000-002:LOAD, MON0000-002:LOAD15MIN, MON0000-002:MEMFREE, MON0000-002:SWAPFREE, MON0000-002:PIDFREE
+Item: VMIOC2400-105
+PVnames: VMIOC2400-105:LOAD, VMIOC2400-105:LOAD15MIN, VMIOC2400-105:MEMFREE, VMIOC2400-105:SWAPFREE, VMIOC2400-105:PIDFREE
+Item: VMIOC2400-106
+PVnames: VMIOC2400-106:LOAD, VMIOC2400-106:LOAD15MIN, VMIOC2400-106:MEMFREE, VMIOC2400-106:SWAPFREE, VMIOC2400-106:PIDFREE
+Item: VIOC2400-110
+PVnames: VIOC2400-110:LOAD, VIOC2400-110:LOAD15MIN, VIOC2400-110:MEMFREE, VIOC2400-110:SWAPFREE, VIOC2400-110:PIDFREE
+Item: VIOC2400-201
+PVnames: VIOC2400-201:LOAD, VIOC2400-201:LOAD15MIN, VIOC2400-201:MEMFREE, VIOC2400-201:SWAPFREE, VIOC2400-201:PIDFREE
+Item: VMCSS-001
+PVnames: VMCSS-001:LOAD, VMCSS-001:LOAD15MIN, VMCSS-001:MEMFREE, VMCSS-001:SWAPFREE, VMCSS-001:PIDFREE
+Item: VMCSS-002
+PVnames: VMCSS-002:LOAD, VMCSS-002:LOAD15MIN, VMCSS-002:MEMFREE, VMCSS-002:SWAPFREE, VMCSS-002:PIDFREE
+Item: EPICS Gateway
+Menu: EPICSGateway
+Item: Rx Bytes
+Pattern: RxBytes:Med$
+Item: Tx Bytes
+Pattern: TxBytes:Med$
+Item: Rx Packets
+Pattern: RxPackets:Med$
+Item: Tx Packets
+Pattern: TxPackets:Med$
+End: EPICSGateway
+End: LinuxMonitor
+
+Item: Electronic Shop
+Menu: Multimeters
+Archive: Archive-TestDevelopment
+Item: Multimeters
+PVnames: MM2015-01:V:fbk, MM2015-02:V:fbk, MM2015-03:V:fbk, A2015-01:mA:fbk, CCS2015-01:A:sp
+End: Multimeters
+
+Item: Cameras
+Menu: Cameras
+Archive: Archive-Cameras
+Item: MUX0102-101
+PVnames: MUX0102-101:sto1:v0, MUX0102-101:sto2:v0, MUX0102-101:sto3:v0, MUX0102-101:sto4:v0, MUX0102-101:sto5:v0, MUX0102-101:sto6:v0, MUX0102-101:sto7:v0, MUX0102-101:sto8:v0,MUX0102-101:sto1:v1, MUX0102-101:sto2:v1, MUX0102-101:sto3:v1, MUX0102-101:sto4:v1, MUX0102-101:sto5:v1, MUX0102-101:sto6:v1, MUX0102-101:sto7:v1, MUX0102-101:sto8:v1, MUX0102-101:sto1:h0, MUX0102-101:sto2:h0, MUX0102-101:sto3:h0, MUX0102-101:sto4:h0, MUX0102-101:sto5:h0, MUX0102-101:sto6:h0, MUX0102-101:sto7:h0, MUX0102-101:sto8:h0, MUX0102-101:sto1:h1, MUX0102-101:sto2:h1, MUX0102-101:sto3:h1, MUX0102-101:sto4:h1, MUX0102-101:sto5:h1, MUX0102-101:sto6:h1, MUX0102-101:sto7:h1, MUX0102-101:sto8:h1
+Item: MUX0102-102
+PVnames: MUX0102-102:sto1:v0, MUX0102-102:sto2:v0, MUX0102-102:sto3:v0, MUX0102-102:sto4:v0, MUX0102-102:sto5:v0, MUX0102-102:sto6:v0, MUX0102-102:sto7:v0, MUX0102-102:sto8:v0,MUX0102-102:sto1:v1, MUX0102-102:sto2:v1, MUX0102-102:sto3:v1, MUX0102-102:sto4:v1, MUX0102-102:sto5:v1, MUX0102-102:sto6:v1, MUX0102-102:sto7:v1, MUX0102-102:sto8:v1, MUX0102-102:sto1:h0, MUX0102-102:sto2:h0, MUX0102-102:sto3:h0, MUX0102-102:sto4:h0, MUX0102-102:sto5:h0, MUX0102-102:sto6:h0, MUX0102-102:sto7:h0, MUX0102-102:sto8:h0, MUX0102-102:sto1:h1, MUX0102-102:sto2:h1, MUX0102-102:sto3:h1, MUX0102-102:sto4:h1, MUX0102-102:sto5:h1, MUX0102-102:sto6:h1, MUX0102-102:sto7:h1, MUX0102-102:sto8:h1
+Item: MUX0102-103
+PVnames: MUX0102-103:sto1:v0, MUX0102-103:sto2:v0, MUX0102-103:sto3:v0, MUX0102-103:sto4:v0, MUX0102-103:sto5:v0, MUX0102-103:sto6:v0, MUX0102-103:sto7:v0, MUX0102-103:sto8:v0,MUX0102-103:sto1:v1, MUX0102-103:sto2:v1, MUX0102-103:sto3:v1, MUX0102-103:sto4:v1, MUX0102-103:sto5:v1, MUX0102-103:sto6:v1, MUX0102-103:sto7:v1, MUX0102-103:sto8:v1, MUX0102-103:sto1:h0, MUX0102-103:sto2:h0, MUX0102-103:sto3:h0, MUX0102-103:sto4:h0, MUX0102-103:sto5:h0, MUX0102-103:sto6:h0, MUX0102-103:sto7:h0, MUX0102-103:sto8:h0, MUX0102-103:sto1:h1, MUX0102-103:sto2:h1, MUX0102-103:sto3:h1, MUX0102-103:sto4:h1, MUX0102-103:sto5:h1, MUX0102-103:sto6:h1, MUX0102-103:sto7:h1, MUX0102-103:sto8:h1
+Item: MUX2403-202
+PVnames: MUX2403-202:sto1:v0, MUX2403-202:sto2:v0, MUX2403-202:sto3:v0, MUX2403-202:sto4:v0, MUX2403-202:sto5:v0, MUX2403-202:sto6:v0, MUX2403-202:sto7:v0, MUX2403-202:sto8:v0,MUX2403-202:sto1:v1, MUX2403-202:sto2:v1, MUX2403-202:sto3:v1, MUX2403-202:sto4:v1, MUX2403-202:sto5:v1, MUX2403-202:sto6:v1, MUX2403-202:sto7:v1, MUX2403-202:sto8:v1, MUX2403-202:sto1:h0, MUX2403-202:sto2:h0, MUX2403-202:sto3:h0, MUX2403-202:sto4:h0, MUX2403-202:sto5:h0, MUX2403-202:sto6:h0, MUX2403-202:sto7:h0, MUX2403-202:sto8:h0, MUX2403-202:sto1:h1, MUX2403-202:sto2:h1, MUX2403-202:sto3:h1, MUX2403-202:sto4:h1, MUX2403-202:sto5:h1, MUX2403-202:sto6:h1, MUX2403-202:sto7:h1, MUX2403-202:sto8:h1
+Item: MUX2403-203
+PVnames: MUX2403-203:sto1:v0, MUX2403-203:sto2:v0, MUX2403-203:sto3:v0, MUX2403-203:sto4:v0, MUX2403-203:sto5:v0, MUX2403-203:sto6:v0, MUX2403-203:sto7:v0, MUX2403-203:sto8:v0,MUX2403-203:sto1:v1, MUX2403-203:sto2:v1, MUX2403-203:sto3:v1, MUX2403-203:sto4:v1, MUX2403-203:sto5:v1, MUX2403-203:sto6:v1, MUX2403-203:sto7:v1, MUX2403-203:sto8:v1, MUX2403-203:sto1:h0, MUX2403-203:sto2:h0, MUX2403-203:sto3:h0, MUX2403-203:sto4:h0, MUX2403-203:sto5:h0, MUX2403-203:sto6:h0, MUX2403-203:sto7:h0, MUX2403-203:sto8:h0, MUX2403-203:sto1:h1, MUX2403-203:sto2:h1, MUX2403-203:sto3:h1, MUX2403-203:sto4:h1, MUX2403-203:sto5:h1, MUX2403-203:sto6:h1, MUX2403-203:sto7:h1, MUX2403-203:sto8:h1
+Item: MUX2403-204
+PVnames: MUX2403-204:sto1:v0, MUX2403-204:sto2:v0, MUX2403-204:sto3:v0, MUX2403-204:sto4:v0, MUX2403-204:sto5:v0, MUX2403-204:sto6:v0, MUX2403-204:sto7:v0, MUX2403-204:sto8:v0,MUX2403-204:sto1:v1, MUX2403-204:sto2:v1, MUX2403-204:sto3:v1, MUX2403-204:sto4:v1, MUX2403-204:sto5:v1, MUX2403-204:sto6:v1, MUX2403-204:sto7:v1, MUX2403-204:sto8:v1, MUX2403-204:sto1:h0, MUX2403-204:sto2:h0, MUX2403-204:sto3:h0, MUX2403-204:sto4:h0, MUX2403-204:sto5:h0, MUX2403-204:sto6:h0, MUX2403-204:sto7:h0, MUX2403-204:sto8:h0, MUX2403-204:sto1:h1, MUX2403-204:sto2:h1, MUX2403-204:sto3:h1, MUX2403-204:sto4:h1, MUX2403-204:sto5:h1, MUX2403-204:sto6:h1, MUX2403-204:sto7:h1, MUX2403-204:sto8:h1
+End: Cameras
+
+Item: LTB1 Temperatures
+Menu: LTB1 Temperatures
+Archive: Archive-00
+Item: Temperature
+PVnames: TM0003-03,TM0003-04,TM0003-05,TM0003-06,TM0003-07,TM0003-08,TM0003-09,TM0004-01,TM0004-02,TM0004-03,TM0108-01,TM0108-02,TM0108-03,TM1300-01,TM1300-02,TM1300-03,TM1300-04
+End: LTB1 Temperatures
+
+Item: BR1 Temperatures
+Menu: BR1 Temperatures
+Archive: Archive-00
+Item: Temperature
+PVnames: TM1300-50,TM1302-50,TM1302-51,TM1302-51,TM1303-50,TM1303-51,TM1304-50
+End: BR1 Temperatures
+
+
+Item: MIP Monitor
+Menu: MIP Monitor
+Archive: Archive-MIP
+Item: MIP Linac
+PVnames: MIP:Linac:State, MIP:Linac:Vacuum
+End: MIP Monitor
+
+Item: Weather
+Menu: Weather
+Archive: Archive-Weather
+Item: Temperatures
+PVnames: WTHR2400-103:Temp, WTHR2400-103:inTemp, WTHR2400-103:Windchill, WTHR2400-103:HeatIndex, WTHR2400-103:Humidex, WTHR2400-103:DewPoint
+Item: Wind
+PVnames: WTHR2400-103:Wind, WTHR2400-103:Wind:Mean, WTHR2400-103:Wind:Gust
+Item: Pressure
+PVnames: WTHR2400-103:Press
+Item: Precip
+PVnames: WTHR2400-103:Rain:Rate, WTHR2400-103:Rain:Hour, WTHR2400-103:Rain:Today, WTHR2400-103:Rain:Yest, WTHR2400-103:Rain:Month
+End: Weather
+
+End: INDEX
+

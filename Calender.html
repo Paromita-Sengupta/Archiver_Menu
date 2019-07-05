@@ -1,0 +1,26 @@
+<HTML>
+<META Creator: EPICS CA menu.cgi>
+<head>
+<title>CA Archive Menu</title>
+<base target="display">
+<script>
+// this function toggles the status of a list
+function toggle(image,list){
+var listElementStyle=document.getElementById(list).style;
+if (listElementStyle.display=="none"){
+listElementStyle.display="block";
+document.getElementById(image).src="open.png";
+document.getElementById(image).alt="Close list"; }
+else{ listElementStyle.display="none";
+document.getElementById(image).src="closed.png";
+document.getElementById(image).alt="Open list";
+ }
+} </script>
+</head>
+<body>
+<IMG SRC="index.png">
+<p>Click on a menu name to view that menu</p><div id="menu">
+
+</div>
+</body>
+</html>
