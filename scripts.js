@@ -4,7 +4,7 @@ let currentYear = today.getFullYear();
 let selectYear = document.getElementById("year");
 let selectMonth = document.getElementById("month");
 
-let months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+let months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
 
 let monthAndYear = document.getElementById("monthAndYear");
 showCalendar(currentMonth, currentYear);
@@ -55,116 +55,57 @@ function getPatt(pv) {
 
 function showCalendar(month, year) {
 
+    var show_pvs = document.getElementById("pv");
 
-
-
+    //get the url
     var urlParam = new URLSearchParams(window.location.search);
 
-    console.log(urlParam.get("PATTERN"));
+    //console.log(urlParam.get("PATTERN"));
 
     var header = urlParam.get('H1');
     document.getElementById("h1").innerHTML = header;
 
-    //let params = new URLSearchParams(url.search.slice("PATTERN"));
-
-    //var p = urlParam.toString();
-
-    //console.log(p);
-
-
-
+    //get pattern from urlf
     var patt = encodeURI(urlParam.get('PATTERN'));
+    console.log("pattern: " + patt);
 
-    console.log("pattern: " +patt);
-
-
-
+    //get list of pvs from urlf
     var pv = []
     pv = urlParam.getAll('pv');
 
-    //console.log(pv);
+    //if pvLists then getdata from the server directly
     if (pv.length != 0) {
 
         console.log("pv:" + pv);
-        //    var url = "http://vm-archiver-02.clsi.ca:17668/retrieval/bpl/getMatchingPVs?limit=10000&pv=;
-        //
-        //    var header = urlParam.get('h1');
-        //    document.getElementById("h1").innerHTML =header;
-        //
-        //    get_pvs(url, urlParam, function (pvs2) {
+        var s = pv.toString().replace(/,/g, '<br>');
+        show_pvs.innerHTML= s;
+	console.log(s);
 
         var pvs = getData(pv);
 
+
+
         var str = pvs.toString().replace(/,/g, '');
         console.log(str);
-
-
-        let firstDay = (new Date(year, month)).getDay();
-        let daysInMonth = 32 - new Date(year, month, 32).getDate();
-
-        let tbl = document.getElementById("calendar-body"); // body of the calendar
-
-        // clearing all previous cells
-        tbl.innerHTML = "";
-
-        // filing data about month and in the page via DOM.
-        monthAndYear.innerHTML = months[month] + " " + year;
-        selectYear.value = year;
-        selectMonth.value = month;
-
-        // creating all cells
-        let date = 1;
-        for (let i = 0; i < 6; i++) {
-            // creates a table row
-            let row = document.createElement("tr");
-
-            //creating individual cells, filing them up with data.
-            for (let j = 0; j < 7; j++) {
-                if (i === 0 && j < firstDay) {
-                    let cell = document.createElement("td");
-                    let cellText = document.createTextNode("");
-                    cell.appendChild(cellText);
-                    row.appendChild(cell);
-                } else if (date > daysInMonth) {
-                    break;
-                } else {
-                    let cell = document.createElement("td");
-                    var a = document.createElement("a");
-                    let cellText = document.createTextNode(date);
-                    if (date === today.getDate() && year === today.getFullYear() && month === today.getMonth()) {
-                        cell.classList.add("bg-info");
-                    } // color today's date
-                    cell.appendChild(cellText);
-                    a.appendChild(cellText);
-                    //
-                    let selectYear = document.getElementById("year");
-                    let selectMonth = document.getElementById("month");
-                    let val = selectMonth.value;
-                    num = 1;
-                    let v = Number(val) + 1;
-                    let d = date - 1;
+        //a.href = "http://vm-archiver-02.clsi.ca:17668/retrieval/ui/viewer/archViewer.html?pv=" + str + "&from=" + selectYear.value + "-" + v + "-" + d + "T23:59:59&to=" + selectYear.value + "-" + v + "-" + date + "T23:59:59";
 
 
 
-                    a.href = "http://vm-archiver-02.clsi.ca:17668/retrieval/ui/viewer/archViewer.html?pv=" + str + "&from=" + selectYear.value + "-" + v + "-" + d + "T23:59:59&to=" + selectYear.value + "-" + v + "-" + date + "T23:59:59";
-                    cell.appendChild(a);
-                    row.appendChild(cell);
-                    date++;
 
-                }
+            /////////////////
 
 
-            }
-
-            tbl.appendChild(row);
+            //               console.log(pvs);
 
 
-        }
+
+
+
     } else {
+        //if patterns then split with "|" and get data by requesting from the server seperately in loops
         var pattList = [];
 
-
-
+        //const patternList = [];
 
 
         if (patt.indexOf('%7C') > -1) {
@@ -172,17 +113,15 @@ function showCalendar(month, year) {
             var pattern = patt.split("%7C");
             pattList.push(pattern);
 
-
-
             console.log(pattList[0]);
 
             var test = pattList[0];
 
-            //console.log(pr);
+            //for patterns
+	    //var s = test.toString().replace(/,/g, '<br>');
+            //show_pvs.innerHTML= s;
 
-            //var str  = test.toString().replace(/,/g, '')
 
-            //console.log("pattern:"+str);
 
 
             var patternList = [];
@@ -193,110 +132,59 @@ function showCalendar(month, year) {
                 var url1 = "http://vm-archiver-02.clsi.ca:17668/retrieval/bpl/getMatchingPVs?limit=10000&regex=" + test[m];
 
                 var url2 = "http://vm-archiver-02.clsi.ca:17668/retrieval/bpl/getMatchingPVs?limit=10000&pv=" + test[m];
+                i = 0;
 
 
 
-                get_pvs(url1, url2, urlParam, function(pvs2) {
+                get_pvs(url1, url2, test[m], urlParam, function(pvs2) {
+                    i += 1;
 
                     pvs2.forEach(p => patternList.push(p));
-
-		//});
-		//}
+                    var test = pattList[0];
 
 
-                    //console.log(patternList);
+                        var s = patternList.toString().replace(/,/g, '<br>');
+                                  show_pvs.innerHTML= s;
+                                  console.log(s);
 
-
-                    let firstDay = (new Date(year, month)).getDay();
-                    let daysInMonth = 32 - new Date(year, month, 32).getDate();
-
-                    let tbl = document.getElementById("calendar-body"); // body of the calendar
-
-                    // clearing all previous cells
-                    tbl.innerHTML = "";
-
-                    // filing data about month and in the page via DOM.
-                    monthAndYear.innerHTML = months[month] + " " + year;
-                    selectYear.value = year;
-                    selectMonth.value = month;
-
-                    // creating all cells
-                    let date = 1;
-                    for (let i = 0; i < 6; i++) {
-                        // creates a table row
-                        let row = document.createElement("tr");
-
-                        //creating individual cells, filing them up with data.
-                        for (let j = 0; j < 7; j++) {
-                            if (i === 0 && j < firstDay) {
-                                let cell = document.createElement("td");
-                                let cellText = document.createTextNode("");
-                                cell.appendChild(cellText);
-                                row.appendChild(cell);
-                            } else if (date > daysInMonth) {
-                                break;
-                            } else {
-                                let cell = document.createElement("td");
-                                var a = document.createElement("a");
-                                let cellText = document.createTextNode(date);
-                                if (date === today.getDate() && year === today.getFullYear() && month === today.getMonth()) {
-                                    cell.classList.add("bg-info");
-                                } // color today's date
-                                cell.appendChild(cellText);
-                                a.appendChild(cellText);
-                                //
-                                let selectYear = document.getElementById("year");
-                                let selectMonth = document.getElementById("month");
-                                let val = selectMonth.value;
-                                num = 1;
-                                let v = Number(val) + 1;
-
-                                //var pt = get_patterns;
-
-                                //patternList.push(pvs2);
-
-                                var test = patternList.join("&pv=");
-
-                                var str = test.toString().replace(/,/g, '');
-
-                                var d = date - 1;
-
-
-
-
-                                a.href = "http://vm-archiver-02.clsi.ca:17668/retrieval/ui/viewer/archViewer.html?pv=" + str + "&from=" + selectYear.value + "-" + v + "-" + d + "T23:59:59&to=" + selectYear.value + "-" + v + "-" + date + "T23:59:59";
-                                cell.appendChild(a);
-                                row.appendChild(cell);
-                                date++;
-
-                            }
-
-
+                    if (pvs2.length == -1) {
+                        if (patternList.length == 0) {
+                            console.log("chain loop");
+                            alert("The requested item is empty.\nPlease confirm by trying to look this up in the old archiver.");
                         }
 
-                        tbl.appendChild(row);
-
-                        /////////////////
-
-
-                        //               console.log(pvs);
-
-
-
-
-                        // appending each row into calendar body.
                     }
 
 
+                    //console.log(patternList)
 
-               });
 
-           }
+
+                                    //show_pvs.innerHTML= str;
+                                    //a.href = "http://vm-archiver-02.clsi.ca:17668/retrieval/ui/viewer/archViewer.html?pv=" + str + "&from=" + selectYear.value + "-" + v + "-" + d + "T23:59:59";
+                                    //cell.appendChild(a);
+                                    //row.appendChild(cell);
+                                    //date++;
+                                    //continue;
+                                // color today's date
+
+
+
+
+
+
+
+
+                });
+
+            }
 
 
         } else {
-
+            //for simple patterns get data from the server directly
             console.log("pattern:" + patt);
+
+            //checking with both "pv=" & "regex="
 
             var url1 = "http://vm-archiver-02.clsi.ca:17668/retrieval/bpl/getMatchingPVs?limit=10000&regex=" + patt;
 
@@ -304,88 +192,15 @@ function showCalendar(month, year) {
 
 
 
-            get_pvs(url1, url2, urlParam, function(pvs2) {
+            get_pvs(url1, url2, patt, urlParam, function(pvs2) {
 
                 //console.log(pvs2);
-
-
-                let firstDay = (new Date(year, month)).getDay();
-                let daysInMonth = 32 - new Date(year, month, 32).getDate();
-
-                let tbl = document.getElementById("calendar-body"); // body of the calendar
-
-                // clearing all previous cells
-                tbl.innerHTML = "";
-
-                // filing data about month and in the page via DOM.
-                monthAndYear.innerHTML = months[month] + " " + year;
-                selectYear.value = year;
-                selectMonth.value = month;
-
-                // creating all cells
-                let date = 1;
-                for (let i = 0; i < 6; i++) {
-                    // creates a table row
-                    let row = document.createElement("tr");
-
-                    //creating individual cells, filing them up with data.
-                    for (let j = 0; j < 7; j++) {
-                        if (i === 0 && j < firstDay) {
-                            let cell = document.createElement("td");
-                            let cellText = document.createTextNode("");
-                            cell.appendChild(cellText);
-                            row.appendChild(cell);
-                        } else if (date > daysInMonth) {
-                            break;
-                        } else {
-                            let cell = document.createElement("td");
-                            var a = document.createElement("a");
-                            let cellText = document.createTextNode(date);
-                            if (date === today.getDate() && year === today.getFullYear() && month === today.getMonth()) {
-                                cell.classList.add("bg-info");
-                            } // color today's date
-                            cell.appendChild(cellText);
-                            a.appendChild(cellText);
-                            //
-                            let selectYear = document.getElementById("year");
-                            let selectMonth = document.getElementById("month");
-                            let val = selectMonth.value;
-                            num = 1;
-                            let v = Number(val) + 1;
-			    var test = pvs2.join("&pv=");
-
-                            var str = test.toString().replace(/,/g, '');
+                 var s = pvs2.toString().replace(/,/g, '<br>');
+                                  show_pvs.innerHTML= s;
+                                  console.log(s);
 
 
 
-
-                            var d = date - 1;
-
-
-
-
-                            a.href = "http://vm-archiver-02.clsi.ca:17668/retrieval/ui/viewer/archViewer.html?pv=" + str + "&from=" + selectYear.value + "-" + v + "-" + d + "T23:59:59&to=" + selectYear.value + "-" + v + "-" + date + "T23:59:59";
-                            cell.appendChild(a);
-                            row.appendChild(cell);
-                            date++;
-
-                        }
-
-
-                    }
-
-                    tbl.appendChild(row);
-
-                    /////////////////
-
-
-                    //               console.log(pvs);
-
-
-
-
-                    // appending each row into calendar body.
-                }
 
 
 
@@ -398,8 +213,6 @@ function showCalendar(month, year) {
 
 
     }
-    //});
-    //}
 
 }
 
@@ -424,12 +237,12 @@ function getData(pv) {
 
 
 
-function get_pvs(url1, url2, urlParam, callback) {
+function get_pvs(url1, url2, patt, urlParam, callback) {
 
     EmptyList = []
     var request = new XMLHttpRequest();
 
-    //                request.responseType = 'json';
+    //request.responseType = 'json';
 
 
 
@@ -447,6 +260,9 @@ function get_pvs(url1, url2, urlParam, callback) {
 
                 console.log(pvList);
 
+
+                //store(pvList);
+
                 //return pvList;
                 callback(pvList);
 
@@ -455,42 +271,47 @@ function get_pvs(url1, url2, urlParam, callback) {
                 request.open('GET', url2, true);
                 request.send();
 
-            } else if (pvList.length==0 && checked ==1){
-               if (!patt.startsWith("%") && !patt.endsWith("$"))
-               {
-                    var p = ".*" + patt + ".*" ;
-                    var url= "http://vm-archiver-02.clsi.ca:17668/retrieval/bpl/getMatchingPVs?limit=10000&regex=" + p;
+            } else if (pvList.length == 0 && fcheck == 0) {
+                //adding ".*" to the beginning or ending of the patterns.
+                fcheck += 1;
+                if (!patt.startsWith("%") && !patt.endsWith("$")) {
+                    var p = ".*" + patt + ".*";
+                    var url = "http://vm-archiver-02.clsi.ca:17668/retrieval/bpl/getMatchingPVs?limit=10000&regex=" + p;
                     request.open('GET', url, true);
                     request.send();
 
-               }
-
-               else if (patt.startsWith("%") && !patt.endsWith("$"))
-               {
-                    var p = patt + ".*" ;
-                    var url= "http://vm-archiver-02.clsi.ca:17668/retrieval/bpl/getMatchingPVs?limit=10000&regex=" + p;
+                } else if (patt.startsWith("%") && !patt.endsWith("$")) {
+                    var p = patt + ".*";
+                    console.log(p);
+                    var url = "http://vm-archiver-02.clsi.ca:17668/retrieval/bpl/getMatchingPVs?limit=10000&regex=" + p;
                     request.open('GET', url, true);
                     request.send();
 
-               }
-
-               else if (!patt.startsWith("%") && patt.endsWith("$"))
-               {
-                    var p = ".*" + patt ;
-                    var url= "http://vm-archiver-02.clsi.ca:17668/retrieval/bpl/getMatchingPVs?limit=10000&regex=" + p;
+                } else if (!patt.startsWith("%") && patt.endsWith("$")) {
+                    var p = ".*" + patt;
+                    console.log(p);
+                    var url = "http://vm-archiver-02.clsi.ca:17668/retrieval/bpl/getMatchingPVs?limit=10000&regex=" + p;
                     request.open('GET', url, true);
                     request.send();
 
-               }
+                }
 
 
 
+            } else {
+                console.log("empty list");
+               alert("The requested item is empty.\nPlease confirm by trying to look this up in the old archiver.");
+
+                callback(EmptyList);
             }
+
+
         } else {
             callback(EmptyList);
         }
 
     };
+    var fcheck = 0;
     var checked = 0;
     request.open('GET', url1, true);
     request.send();
@@ -503,3 +324,32 @@ function get_pvs(url1, url2, urlParam, callback) {
 document.addEventListener("DOMContentLoaded", function() {
 
 });
+
+(function(console) {
+
+    console.save = function(data, filename) {
+
+        if (!data) {
+            console.error('Console.save: No data')
+            return;
+        }
+
+        if (!filename) filename = 'console.json'
+
+        if (typeof data === "object") {
+            data = JSON.stringify(data, undefined, 4)
+        }
+
+        var blob = new Blob([data], {
+                type: 'text/json'
+            }),
+            e = document.createEvent('MouseEvents'),
+            a = document.createElement('a')
+
+        a.download = filename
+        a.href = window.URL.createObjectURL(blob)
+        a.dataset.downloadurl = ['text/json', a.download, a.href].join(':')
+        e.initMouseEvent('click', true, false, window, 0, 0, 0, 0, 0, false, false, false, false, 0, null)
+        a.dispatchEvent(e)
+    }
+})(console)
