@@ -1,0 +1,26 @@
+<!doctype html public "-//W3C//DTD HTML 3.2 Final//EN">
+<html><head>
+<title>Channel Archive</title>
+<link REL="STYLESHEET" HREF="style.css" TYPE="text/css">
+</head>
+
+<FRAMESET COLS="30%,*">
+
+<frameset rows="500,*">
+    <FRAME NAME="menu" SRC="cgi-bin/Menu.cgi">     
+    <FRAME NAME="display" style="display: none;"> 
+    <FRAME name="mainpage" src="mainpage.html">
+</frameset>   
+   <FRAME name="graph">
+	 
+</FRAMESET>
+
+<script>
+    (function(){
+        $('img, button').on("click" , function (e) {
+            $('frame[name="display"], frame[name="graph"]').toggle();
+        });
+    }());
+</script>
+</html>
+
